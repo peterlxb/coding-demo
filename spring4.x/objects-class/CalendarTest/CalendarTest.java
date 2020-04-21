@@ -30,9 +30,12 @@ public class CalendarTest {
             }
 
             date = date.plusDays(1);
-            if (date.getDayOfWeek().getValue() != 1) {
+            if (date.getDayOfWeek().getValue() == 1) {
                 System.out.println();
             }
+        }
+        if (date.getDayOfWeek().getValue() != 1) {
+            System.out.println();
         }
     }
 }
