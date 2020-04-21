@@ -1,0 +1,16 @@
+com/spring/springbucks/waiter/model/CoffeeOrder.class
+com/spring/springbucks/waiter/model/CoffeeOrder$CoffeeOrderBuilder.class
+com/spring/springbucks/waiter/repository/CoffeeRepository.class
+com/spring/springbucks/waiter/controller/CoffeeController.class
+com/spring/springbucks/waiter/support/MoneyFormatter.class
+com/spring/springbucks/waiter/repository/CoffeeOrderRepository.class
+com/spring/springbucks/waiter/support/MoneySerializer.class
+com/spring/springbucks/waiter/WaiterServiceApplication.class
+com/spring/springbucks/waiter/support/MoneyDeserializer.class
+com/spring/springbucks/waiter/model/OrderState.class
+com/spring/springbucks/waiter/controller/request/NewCoffeeRequest.class
+com/spring/springbucks/waiter/service/CoffeeOrderService.class
+com/spring/springbucks/waiter/model/BaseEntity.class
+com/spring/springbucks/waiter/model/Coffee.class
+com/spring/springbucks/waiter/model/Coffee$CoffeeBuilder.class
+com/spring/springbucks/waiter/service/CoffeeService.class
