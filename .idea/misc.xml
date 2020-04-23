@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-web/session-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-web/hateoas-waiter-service/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-rest-template/advanced-resttemplate-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-rest-template/webclient-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-rest-template/simple-resttemplate-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-rest-template/customer-service/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-mvc/json-view-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-mvc/simple-controller-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-jdbc/simple-jdbc-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-jdbc/multi-datasource-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-mvc/springbucks/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-jdbc/druid-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-jdbc/datasource-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-ORMapping/spring-mysql/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-ORMapping/jpa-demo/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_12" default="false" project-jdk-name="1.8.0_211" project-jdk-type="JavaSDK" />
+</project>
