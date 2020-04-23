@@ -2,21 +2,18 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="helloworld" />
-        <module name="waiter-service (4) (com.spring.springbucks)" />
         <module name="waiter-service (3) (com.spring.springbucks)" />
-        <module name="waiter-service (5) (com.spring.springbucks)" />
-        <module name="waiter-service (1) (com.spring.springbucks)" />
         <module name="waiter-service (6) (com.spring.springbucks)" />
         <module name="spring-data-mysql" />
-        <module name="waiter-service" />
         <module name="waiter-service (7) (com.spring.springbucks)" />
+        <module name="waiter-service (4) (com.spring.springbucks)" />
+        <module name="waiter-service (5) (com.spring.springbucks)" />
         <module name="waiter-service (2) (com.spring.springbucks)" />
-        <module name="customer-service" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
