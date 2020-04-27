@@ -5,6 +5,11 @@ import java.lang.reflect.*;
 
 /**
  * Use reflection to print all features of a class
+ *
+ * reflect 包中的三个类 Field、Method、Constructor 分别用于描述类的域、方法和构造器.
+ *
+ * 都有 getName() 方法, 用来返回项目的名称.
+ * 都有 getModifiers() 方法, 返回一个整型数值, 描述 public 和 private 这样的修饰符使用的情况.
  * */
 public class ReflectionTest {
     public static void main(String[] args) {
