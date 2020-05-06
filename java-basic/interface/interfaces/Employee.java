@@ -1,5 +1,10 @@
 package interfaces;
 
+/**
+ * 任何实现 Comparable 接口的类都必须包含 compareTo 方法.
+ * 接口中的方法自动属于public.
+ * 接口中绝对不能含有实例域.
+ * */
 public class Employee implements Comparable<Employee> {
     private String name;
     private double salary;
