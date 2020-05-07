@@ -24,6 +24,12 @@ public class LambdaTest {
         Arrays.sort(planets, (first, second) -> first.length() - second.length());
         System.out.println(Arrays.toString(planets));
 
+        /**
+         * lambda 表达式可以转换为接口, 具体的语法很简短.
+         * 与实现了 ActionListener 接口的类相比,下面的代码可读性要好很多
+         *
+         * 实际上, 在 Java中对 lambda 表达式所能做的也只是能转换为函数式接口.
+         * */
         Timer t = new Timer(1000, event ->
                 System.out.println("The time is " + new Date()));
         t.start();
