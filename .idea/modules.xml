@@ -3,20 +3,30 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/spring-ORMapping/spring-mysql/accessing-data-mysql.iml" filepath="$PROJECT_DIR$/spring-ORMapping/spring-mysql/accessing-data-mysql.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-mvc/context-hierarchy-demo/context-hierarchy-demo.iml" filepath="$PROJECT_DIR$/spring-mvc/context-hierarchy-demo/context-hierarchy-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-rest-template/advanced-resttemplate-demo/customer-service.iml" filepath="$PROJECT_DIR$/spring-rest-template/advanced-resttemplate-demo/customer-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-rest-template/simple-resttemplate-demo/customer-service (1).iml" filepath="$PROJECT_DIR$/spring-rest-template/simple-resttemplate-demo/customer-service (1).iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-rest-template/customer-service/customer-service (2).iml" filepath="$PROJECT_DIR$/spring-rest-template/customer-service/customer-service (2).iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-web/hateoas-customer-service/customer-service (3).iml" filepath="$PROJECT_DIR$/spring-web/hateoas-customer-service/customer-service (3).iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-jdbc/datasource-demo/datasource-demo.iml" filepath="$PROJECT_DIR$/spring-jdbc/datasource-demo/datasource-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-jdbc/druid-demo/druid-demo.iml" filepath="$PROJECT_DIR$/spring-jdbc/druid-demo/druid-demo.iml" />
-      <module fileurl="file://$PROJECT_DIR$/spring-starter-demo/helloworld/helloworld.iml" filepath="$PROJECT_DIR$/spring-starter-demo/helloworld/helloworld.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-mvc/exception-demo/exception-demo.iml" filepath="$PROJECT_DIR$/spring-mvc/exception-demo/exception-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/helloworld.iml" filepath="$PROJECT_DIR$/helloworld.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-starter-demo/helloworld/helloworld (1).iml" filepath="$PROJECT_DIR$/spring-starter-demo/helloworld/helloworld (1).iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-ORMapping/jpa-demo/jpa-demo.iml" filepath="$PROJECT_DIR$/spring-ORMapping/jpa-demo/jpa-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-jdbc/multi-datasource-demo/multi-datasource-demo.iml" filepath="$PROJECT_DIR$/spring-jdbc/multi-datasource-demo/multi-datasource-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pay-mall/pay/pay.iml" filepath="$PROJECT_DIR$/pay-mall/pay/pay.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-web/session-demo/session-demo.iml" filepath="$PROJECT_DIR$/spring-web/session-demo/session-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-jdbc/simple-jdbc-demo/simple-jdbc-demo.iml" filepath="$PROJECT_DIR$/spring-jdbc/simple-jdbc-demo/simple-jdbc-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-mvc/simple-controller-demo/waiter-service.iml" filepath="$PROJECT_DIR$/spring-mvc/simple-controller-demo/waiter-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-web/hateoas-waiter-service/waiter-service (1).iml" filepath="$PROJECT_DIR$/spring-web/hateoas-waiter-service/waiter-service (1).iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-mvc/springbucks/waiter-service (1) (com.spring.springbucks).iml" filepath="$PROJECT_DIR$/spring-mvc/springbucks/waiter-service (1) (com.spring.springbucks).iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-mvc/json-view-demo/waiter-service (2).iml" filepath="$PROJECT_DIR$/spring-mvc/json-view-demo/waiter-service (2).iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-web/webflux-waiter-service/waiter-service (2) (com.spring.springbucks).iml" filepath="$PROJECT_DIR$/spring-web/webflux-waiter-service/waiter-service (2) (com.spring.springbucks).iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-mvc/cache-demo/waiter-service (3) (com.spring.springbucks).iml" filepath="$PROJECT_DIR$/spring-mvc/cache-demo/waiter-service (3) (com.spring.springbucks).iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-mvc/complex-controller-demo/waiter-service (4) (com.spring.springbucks).iml" filepath="$PROJECT_DIR$/spring-mvc/complex-controller-demo/waiter-service (4) (com.spring.springbucks).iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-mvc/more-complex-controller-demo/waiter-service (5) (com.spring.springbucks).iml" filepath="$PROJECT_DIR$/spring-mvc/more-complex-controller-demo/waiter-service (5) (com.spring.springbucks).iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-mvc/thymeleaf-view-demo/waiter-service (6) (com.spring.springbucks).iml" filepath="$PROJECT_DIR$/spring-mvc/thymeleaf-view-demo/waiter-service (6) (com.spring.springbucks).iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-rest-template/webclient-demo/webclient-demo.iml" filepath="$PROJECT_DIR$/spring-rest-template/webclient-demo/webclient-demo.iml" />
     </modules>
   </component>

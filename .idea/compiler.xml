@@ -8,40 +8,60 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="druid-demo" />
+        <module name="customer-service (3)" />
         <module name="waiter-service (2)" />
         <module name="waiter-service" />
         <module name="waiter-service (1)" />
         <module name="session-demo" />
+        <module name="waiter-service (6) (com.spring.springbucks)" />
         <module name="waiter-service (1) (com.spring.springbucks)" />
         <module name="webclient-demo" />
+        <module name="exception-demo" />
         <module name="datasource-demo" />
         <module name="simple-jdbc-demo" />
+        <module name="context-hierarchy-demo" />
+        <module name="pay" />
         <module name="customer-service (1)" />
+        <module name="waiter-service (2) (com.spring.springbucks)" />
         <module name="customer-service (2)" />
         <module name="customer-service" />
-        <module name="multi-datasource-demo" />
-        <module name="accessing-data-mysql" />
-        <module name="jpa-demo" />
+        <module name="waiter-service (5) (com.spring.springbucks)" />
+        <module name="waiter-service (4) (com.spring.springbucks)" />
+        <module name="waiter-service (3) (com.spring.springbucks)" />
         <module name="helloworld" />
+        <module name="accessing-data-mysql" />
+        <module name="helloworld (1)" />
+        <module name="jpa-demo" />
+        <module name="multi-datasource-demo" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="accessing-data-mysql" target="1.8" />
       <module name="coding-demo" target="1.8" />
+      <module name="context-hierarchy-demo" target="1.8" />
       <module name="customer-service" target="1.8" />
       <module name="customer-service (1)" target="1.8" />
       <module name="customer-service (2)" target="1.8" />
+      <module name="customer-service (3)" target="1.8" />
       <module name="datasource-demo" target="1.8" />
       <module name="druid-demo" target="1.8" />
+      <module name="exception-demo" target="1.8" />
       <module name="helloworld" target="1.8" />
+      <module name="helloworld (1)" target="1.8" />
       <module name="jpa-demo" target="1.8" />
       <module name="multi-datasource-demo" target="1.8" />
+      <module name="pay" target="1.8" />
       <module name="session-demo" target="1.8" />
       <module name="simple-jdbc-demo" target="1.8" />
       <module name="waiter-service" target="1.8" />
       <module name="waiter-service (1)" target="1.8" />
       <module name="waiter-service (1) (com.spring.springbucks)" target="1.8" />
       <module name="waiter-service (2)" target="1.8" />
+      <module name="waiter-service (2) (com.spring.springbucks)" target="1.8" />
+      <module name="waiter-service (3) (com.spring.springbucks)" target="1.8" />
+      <module name="waiter-service (4) (com.spring.springbucks)" target="1.8" />
+      <module name="waiter-service (5) (com.spring.springbucks)" target="1.8" />
+      <module name="waiter-service (6) (com.spring.springbucks)" target="1.8" />
       <module name="webclient-demo" target="1.8" />
     </bytecodeTargetLevel>
   </component>
@@ -49,20 +69,30 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="accessing-data-mysql" options="-parameters" />
       <module name="coding-demo" options="-parameters" />
+      <module name="context-hierarchy-demo" options="-parameters" />
       <module name="customer-service" options="-parameters" />
       <module name="customer-service (1)" options="-parameters" />
       <module name="customer-service (2)" options="-parameters" />
+      <module name="customer-service (3)" options="-parameters" />
       <module name="datasource-demo" options="-parameters" />
       <module name="druid-demo" options="-parameters" />
+      <module name="exception-demo" options="-parameters" />
       <module name="helloworld" options="-parameters" />
+      <module name="helloworld (1)" options="-parameters" />
       <module name="jpa-demo" options="-parameters" />
       <module name="multi-datasource-demo" options="-parameters" />
+      <module name="pay" options="-parameters" />
       <module name="session-demo" options="-parameters" />
       <module name="simple-jdbc-demo" options="-parameters" />
       <module name="waiter-service" options="-parameters" />
       <module name="waiter-service (1)" options="-parameters" />
       <module name="waiter-service (1) (com.spring.springbucks)" options="-parameters" />
       <module name="waiter-service (2)" options="-parameters" />
+      <module name="waiter-service (2) (com.spring.springbucks)" options="-parameters" />
+      <module name="waiter-service (3) (com.spring.springbucks)" options="-parameters" />
+      <module name="waiter-service (4) (com.spring.springbucks)" options="-parameters" />
+      <module name="waiter-service (5) (com.spring.springbucks)" options="-parameters" />
+      <module name="waiter-service (6) (com.spring.springbucks)" options="-parameters" />
       <module name="webclient-demo" options="-parameters" />
     </option>
   </component>

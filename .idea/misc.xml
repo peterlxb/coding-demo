@@ -19,6 +19,16 @@
         <option value="$PROJECT_DIR$/spring-jdbc/datasource-demo/pom.xml" />
         <option value="$PROJECT_DIR$/spring-ORMapping/spring-mysql/pom.xml" />
         <option value="$PROJECT_DIR$/spring-ORMapping/jpa-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-starter-demo/helloworld/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-web/hateoas-customer-service/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-web/webflux-waiter-service/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-mvc/cache-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-mvc/complex-controller-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-mvc/context-hierarchy-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-mvc/exception-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-mvc/more-complex-controller-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-mvc/thymeleaf-view-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/pay/pom.xml" />
       </list>
     </option>
   </component>
