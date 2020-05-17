@@ -23,13 +23,12 @@ public class Coffee implements Serializable {
     @Id
     @GeneratedValue
     private Long id;
-
     private String name;
 
     @Column
     @Type(type = "org.jadira.usertype.moneyandcurrency.joda.PersistentMoneyAmount",
          parameters = {@org.hibernate.annotations.Parameter(name = "currencyCode", value = "CNY")})
-    private Money money;
+    private Money price;
 
     @Column(updatable = false)
     @CreationTimestamp
