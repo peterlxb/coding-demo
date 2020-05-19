@@ -13,6 +13,7 @@
       <module fileurl="file://$PROJECT_DIR$/spring-mvc/exception-demo/exception-demo.iml" filepath="$PROJECT_DIR$/spring-mvc/exception-demo/exception-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/helloworld.iml" filepath="$PROJECT_DIR$/helloworld.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-starter-demo/helloworld/helloworld (1).iml" filepath="$PROJECT_DIR$/spring-starter-demo/helloworld/helloworld (1).iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-ORMapping/jpa-complex-demo/jpa-complex-demo.iml" filepath="$PROJECT_DIR$/spring-ORMapping/jpa-complex-demo/jpa-complex-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-ORMapping/jpa-demo/jpa-demo.iml" filepath="$PROJECT_DIR$/spring-ORMapping/jpa-demo/jpa-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-jdbc/multi-datasource-demo/multi-datasource-demo.iml" filepath="$PROJECT_DIR$/spring-jdbc/multi-datasource-demo/multi-datasource-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/pay-mall/pay/pay.iml" filepath="$PROJECT_DIR$/pay-mall/pay/pay.iml" />

@@ -8,7 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="druid-demo" />
-        <module name="customer-service (3)" />
+        <module name="waiter-service (5) (com.spring.springbucks)" />
         <module name="waiter-service (2)" />
         <module name="waiter-service" />
         <module name="waiter-service (1)" />
@@ -25,14 +25,15 @@
         <module name="waiter-service (2) (com.spring.springbucks)" />
         <module name="customer-service (2)" />
         <module name="customer-service" />
-        <module name="waiter-service (5) (com.spring.springbucks)" />
+        <module name="jpa-complex-demo" />
         <module name="waiter-service (4) (com.spring.springbucks)" />
         <module name="waiter-service (3) (com.spring.springbucks)" />
-        <module name="helloworld" />
+        <module name="customer-service (3)" />
         <module name="accessing-data-mysql" />
+        <module name="multi-datasource-demo" />
         <module name="helloworld (1)" />
         <module name="jpa-demo" />
-        <module name="multi-datasource-demo" />
+        <module name="helloworld" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -48,6 +49,7 @@
       <module name="exception-demo" target="1.8" />
       <module name="helloworld" target="1.8" />
       <module name="helloworld (1)" target="1.8" />
+      <module name="jpa-complex-demo" target="1.8" />
       <module name="jpa-demo" target="1.8" />
       <module name="multi-datasource-demo" target="1.8" />
       <module name="pay" target="1.8" />
@@ -79,6 +81,7 @@
       <module name="exception-demo" options="-parameters" />
       <module name="helloworld" options="-parameters" />
       <module name="helloworld (1)" options="-parameters" />
+      <module name="jpa-complex-demo" options="-parameters" />
       <module name="jpa-demo" options="-parameters" />
       <module name="multi-datasource-demo" options="-parameters" />
       <module name="pay" options="-parameters" />
