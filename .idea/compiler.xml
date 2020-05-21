@@ -7,35 +7,36 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="druid-demo" />
+        <module name="simple-jdbc-demo" />
         <module name="waiter-service (5) (com.spring.springbucks)" />
+        <module name="waiter-service (4) (com.spring.springbucks)" />
+        <module name="customer-service" />
         <module name="waiter-service (2)" />
-        <module name="waiter-service" />
-        <module name="waiter-service (1)" />
+        <module name="customer-service (3)" />
+        <module name="context-hierarchy-demo" />
+        <module name="waiter-service (2) (com.spring.springbucks)" />
+        <module name="exception-demo" />
         <module name="session-demo" />
+        <module name="waiter-service (3) (com.spring.springbucks)" />
+        <module name="datasource-demo" />
+        <module name="pay" />
+        <module name="mybatis-generator-demo" />
+        <module name="waiter-service" />
+        <module name="customer-service (1)" />
+        <module name="helloworld" />
+        <module name="multi-datasource-demo" />
+        <module name="jpa-complex-demo" />
+        <module name="druid-demo" />
+        <module name="waiter-service (1)" />
+        <module name="customer-service (2)" />
         <module name="waiter-service (6) (com.spring.springbucks)" />
         <module name="waiter-service (1) (com.spring.springbucks)" />
-        <module name="multi-datasource-demo" />
-        <module name="webclient-demo" />
-        <module name="exception-demo" />
-        <module name="datasource-demo" />
-        <module name="simple-jdbc-demo" />
-        <module name="context-hierarchy-demo" />
-        <module name="pay" />
-        <module name="customer-service (1)" />
-        <module name="jpa-complex-demo" />
-        <module name="customer-service (2)" />
-        <module name="customer-service" />
-        <module name="accessing-data-mysql" />
-        <module name="waiter-service (4) (com.spring.springbucks)" />
-        <module name="waiter-service (3) (com.spring.springbucks)" />
-        <module name="customer-service (3)" />
-        <module name="waiter-service (2) (com.spring.springbucks)" />
-        <module name="mybatis-demo" />
         <module name="helloworld (1)" />
+        <module name="mybatis-demo" />
+        <module name="webclient-demo" />
+        <module name="accessing-data-mysql" />
         <module name="jpa-demo" />
-        <module name="helloworld" />
-        <module name="mybatis-generator-demo" />
+        <module name="mybatis-pagehelper-demo" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -56,6 +57,7 @@
       <module name="multi-datasource-demo" target="1.8" />
       <module name="mybatis-demo" target="1.8" />
       <module name="mybatis-generator-demo" target="1.8" />
+      <module name="mybatis-pagehelper-demo" target="1.8" />
       <module name="pay" target="1.8" />
       <module name="session-demo" target="1.8" />
       <module name="simple-jdbc-demo" target="1.8" />
@@ -90,6 +92,7 @@
       <module name="multi-datasource-demo" options="-parameters" />
       <module name="mybatis-demo" options="-parameters" />
       <module name="mybatis-generator-demo" options="-parameters" />
+      <module name="mybatis-pagehelper-demo" options="-parameters" />
       <module name="pay" options="-parameters" />
       <module name="session-demo" options="-parameters" />
       <module name="simple-jdbc-demo" options="-parameters" />

@@ -33,6 +33,7 @@
         <option value="$PROJECT_DIR$/spring-ORMapping/jpa-complex-demo/pom.xml" />
         <option value="$PROJECT_DIR$/spring-ORMapping/mybatis-demo/pom.xml" />
         <option value="$PROJECT_DIR$/spring-ORMapping/mybatis-generator-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-ORMapping/mybatis-pagehelper-demo/pom.xml" />
       </list>
     </option>
   </component>
