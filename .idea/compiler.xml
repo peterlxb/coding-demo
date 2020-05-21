@@ -23,6 +23,7 @@
         <module name="mybatis-generator-demo" />
         <module name="waiter-service" />
         <module name="customer-service (1)" />
+        <module name="springbucks" />
         <module name="helloworld" />
         <module name="multi-datasource-demo" />
         <module name="jpa-complex-demo" />
@@ -61,6 +62,7 @@
       <module name="pay" target="1.8" />
       <module name="session-demo" target="1.8" />
       <module name="simple-jdbc-demo" target="1.8" />
+      <module name="springbucks" target="1.8" />
       <module name="waiter-service" target="1.8" />
       <module name="waiter-service (1)" target="1.8" />
       <module name="waiter-service (1) (com.spring.springbucks)" target="1.8" />
@@ -96,6 +98,7 @@
       <module name="pay" options="-parameters" />
       <module name="session-demo" options="-parameters" />
       <module name="simple-jdbc-demo" options="-parameters" />
+      <module name="springbucks" options="-parameters" />
       <module name="waiter-service" options="-parameters" />
       <module name="waiter-service (1)" options="-parameters" />
       <module name="waiter-service (1) (com.spring.springbucks)" options="-parameters" />

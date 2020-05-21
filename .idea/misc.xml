@@ -34,6 +34,7 @@
         <option value="$PROJECT_DIR$/spring-ORMapping/mybatis-demo/pom.xml" />
         <option value="$PROJECT_DIR$/spring-ORMapping/mybatis-generator-demo/pom.xml" />
         <option value="$PROJECT_DIR$/spring-ORMapping/mybatis-pagehelper-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-nosql/redis-demo/pom.xml" />
       </list>
     </option>
   </component>

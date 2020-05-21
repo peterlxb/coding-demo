@@ -22,6 +22,7 @@
       <module fileurl="file://$PROJECT_DIR$/pay-mall/pay/pay.iml" filepath="$PROJECT_DIR$/pay-mall/pay/pay.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-web/session-demo/session-demo.iml" filepath="$PROJECT_DIR$/spring-web/session-demo/session-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-jdbc/simple-jdbc-demo/simple-jdbc-demo.iml" filepath="$PROJECT_DIR$/spring-jdbc/simple-jdbc-demo/simple-jdbc-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-nosql/redis-demo/springbucks.iml" filepath="$PROJECT_DIR$/spring-nosql/redis-demo/springbucks.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-mvc/simple-controller-demo/waiter-service.iml" filepath="$PROJECT_DIR$/spring-mvc/simple-controller-demo/waiter-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-web/hateoas-waiter-service/waiter-service (1).iml" filepath="$PROJECT_DIR$/spring-web/hateoas-waiter-service/waiter-service (1).iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-mvc/springbucks/waiter-service (1) (com.spring.springbucks).iml" filepath="$PROJECT_DIR$/spring-mvc/springbucks/waiter-service (1) (com.spring.springbucks).iml" />
