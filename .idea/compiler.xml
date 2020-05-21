@@ -15,6 +15,7 @@
         <module name="session-demo" />
         <module name="waiter-service (6) (com.spring.springbucks)" />
         <module name="waiter-service (1) (com.spring.springbucks)" />
+        <module name="multi-datasource-demo" />
         <module name="webclient-demo" />
         <module name="exception-demo" />
         <module name="datasource-demo" />
@@ -22,19 +23,19 @@
         <module name="context-hierarchy-demo" />
         <module name="pay" />
         <module name="customer-service (1)" />
-        <module name="helloworld" />
         <module name="jpa-complex-demo" />
         <module name="customer-service (2)" />
-        <module name="customer-service (3)" />
         <module name="customer-service" />
+        <module name="accessing-data-mysql" />
         <module name="waiter-service (4) (com.spring.springbucks)" />
         <module name="waiter-service (3) (com.spring.springbucks)" />
+        <module name="customer-service (3)" />
         <module name="waiter-service (2) (com.spring.springbucks)" />
-        <module name="accessing-data-mysql" />
         <module name="mybatis-demo" />
         <module name="helloworld (1)" />
         <module name="jpa-demo" />
-        <module name="multi-datasource-demo" />
+        <module name="helloworld" />
+        <module name="mybatis-generator-demo" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -54,6 +55,7 @@
       <module name="jpa-demo" target="1.8" />
       <module name="multi-datasource-demo" target="1.8" />
       <module name="mybatis-demo" target="1.8" />
+      <module name="mybatis-generator-demo" target="1.8" />
       <module name="pay" target="1.8" />
       <module name="session-demo" target="1.8" />
       <module name="simple-jdbc-demo" target="1.8" />
@@ -87,6 +89,7 @@
       <module name="jpa-demo" options="-parameters" />
       <module name="multi-datasource-demo" options="-parameters" />
       <module name="mybatis-demo" options="-parameters" />
+      <module name="mybatis-generator-demo" options="-parameters" />
       <module name="pay" options="-parameters" />
       <module name="session-demo" options="-parameters" />
       <module name="simple-jdbc-demo" options="-parameters" />

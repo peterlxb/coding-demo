@@ -17,6 +17,7 @@
       <module fileurl="file://$PROJECT_DIR$/spring-ORMapping/jpa-demo/jpa-demo.iml" filepath="$PROJECT_DIR$/spring-ORMapping/jpa-demo/jpa-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-jdbc/multi-datasource-demo/multi-datasource-demo.iml" filepath="$PROJECT_DIR$/spring-jdbc/multi-datasource-demo/multi-datasource-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-ORMapping/mybatis-demo/mybatis-demo.iml" filepath="$PROJECT_DIR$/spring-ORMapping/mybatis-demo/mybatis-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-ORMapping/mybatis-generator-demo/mybatis-generator-demo.iml" filepath="$PROJECT_DIR$/spring-ORMapping/mybatis-generator-demo/mybatis-generator-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/pay-mall/pay/pay.iml" filepath="$PROJECT_DIR$/pay-mall/pay/pay.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-web/session-demo/session-demo.iml" filepath="$PROJECT_DIR$/spring-web/session-demo/session-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-jdbc/simple-jdbc-demo/simple-jdbc-demo.iml" filepath="$PROJECT_DIR$/spring-jdbc/simple-jdbc-demo/simple-jdbc-demo.iml" />
