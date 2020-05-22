@@ -10,6 +10,7 @@
         <module name="simple-jdbc-demo" />
         <module name="waiter-service (5) (com.spring.springbucks)" />
         <module name="waiter-service (4) (com.spring.springbucks)" />
+        <module name="mybatis-pagehelper-demo" />
         <module name="customer-service" />
         <module name="waiter-service (2)" />
         <module name="customer-service (3)" />
@@ -18,7 +19,6 @@
         <module name="exception-demo" />
         <module name="session-demo" />
         <module name="waiter-service (3) (com.spring.springbucks)" />
-        <module name="datasource-demo" />
         <module name="pay" />
         <module name="mybatis-generator-demo" />
         <module name="waiter-service" />
@@ -30,6 +30,7 @@
         <module name="druid-demo" />
         <module name="waiter-service (1)" />
         <module name="customer-service (2)" />
+        <module name="redis-demo" />
         <module name="waiter-service (6) (com.spring.springbucks)" />
         <module name="waiter-service (1) (com.spring.springbucks)" />
         <module name="helloworld (1)" />
@@ -37,7 +38,7 @@
         <module name="webclient-demo" />
         <module name="accessing-data-mysql" />
         <module name="jpa-demo" />
-        <module name="mybatis-pagehelper-demo" />
+        <module name="datasource-demo" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -60,6 +61,7 @@
       <module name="mybatis-generator-demo" target="1.8" />
       <module name="mybatis-pagehelper-demo" target="1.8" />
       <module name="pay" target="1.8" />
+      <module name="redis-demo" target="1.8" />
       <module name="session-demo" target="1.8" />
       <module name="simple-jdbc-demo" target="1.8" />
       <module name="springbucks" target="1.8" />
@@ -96,6 +98,7 @@
       <module name="mybatis-generator-demo" options="-parameters" />
       <module name="mybatis-pagehelper-demo" options="-parameters" />
       <module name="pay" options="-parameters" />
+      <module name="redis-demo" options="-parameters" />
       <module name="session-demo" options="-parameters" />
       <module name="simple-jdbc-demo" options="-parameters" />
       <module name="springbucks" options="-parameters" />

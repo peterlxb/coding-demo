@@ -20,6 +20,7 @@
       <module fileurl="file://$PROJECT_DIR$/spring-ORMapping/mybatis-generator-demo/mybatis-generator-demo.iml" filepath="$PROJECT_DIR$/spring-ORMapping/mybatis-generator-demo/mybatis-generator-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-ORMapping/mybatis-pagehelper-demo/mybatis-pagehelper-demo.iml" filepath="$PROJECT_DIR$/spring-ORMapping/mybatis-pagehelper-demo/mybatis-pagehelper-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/pay-mall/pay/pay.iml" filepath="$PROJECT_DIR$/pay-mall/pay/pay.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-nosql/redis-demo/redis-demo.iml" filepath="$PROJECT_DIR$/spring-nosql/redis-demo/redis-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-web/session-demo/session-demo.iml" filepath="$PROJECT_DIR$/spring-web/session-demo/session-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-jdbc/simple-jdbc-demo/simple-jdbc-demo.iml" filepath="$PROJECT_DIR$/spring-jdbc/simple-jdbc-demo/simple-jdbc-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-nosql/redis-demo/springbucks.iml" filepath="$PROJECT_DIR$/spring-nosql/redis-demo/springbucks.iml" />
