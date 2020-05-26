@@ -10,8 +10,9 @@
         <module name="simple-jdbc-demo" />
         <module name="waiter-service (5) (com.spring.springbucks)" />
         <module name="waiter-service (4) (com.spring.springbucks)" />
-        <module name="mybatis-pagehelper-demo" />
+        <module name="jedis-demo" />
         <module name="customer-service" />
+        <module name="springbucks" />
         <module name="waiter-service (2)" />
         <module name="customer-service (3)" />
         <module name="context-hierarchy-demo" />
@@ -19,30 +20,33 @@
         <module name="exception-demo" />
         <module name="session-demo" />
         <module name="waiter-service (3) (com.spring.springbucks)" />
-        <module name="pay" />
+        <module name="datasource-demo" />
         <module name="mybatis-generator-demo" />
         <module name="waiter-service" />
         <module name="customer-service (1)" />
-        <module name="springbucks" />
         <module name="helloworld" />
         <module name="multi-datasource-demo" />
         <module name="jpa-complex-demo" />
         <module name="druid-demo" />
         <module name="waiter-service (1)" />
         <module name="customer-service (2)" />
+        <module name="cache-demo" />
         <module name="redis-demo" />
         <module name="waiter-service (6) (com.spring.springbucks)" />
         <module name="waiter-service (1) (com.spring.springbucks)" />
         <module name="helloworld (1)" />
-        <module name="mybatis-demo" />
+        <module name="mybatis-pagehelper-demo" />
         <module name="webclient-demo" />
+        <module name="springbucks (1)" />
         <module name="accessing-data-mysql" />
+        <module name="mybatis-demo" />
         <module name="jpa-demo" />
-        <module name="datasource-demo" />
+        <module name="pay" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="accessing-data-mysql" target="1.8" />
+      <module name="cache-demo" target="1.8" />
       <module name="coding-demo" target="1.8" />
       <module name="context-hierarchy-demo" target="1.8" />
       <module name="customer-service" target="1.8" />
@@ -54,6 +58,7 @@
       <module name="exception-demo" target="1.8" />
       <module name="helloworld" target="1.8" />
       <module name="helloworld (1)" target="1.8" />
+      <module name="jedis-demo" target="1.8" />
       <module name="jpa-complex-demo" target="1.8" />
       <module name="jpa-demo" target="1.8" />
       <module name="multi-datasource-demo" target="1.8" />
@@ -65,6 +70,7 @@
       <module name="session-demo" target="1.8" />
       <module name="simple-jdbc-demo" target="1.8" />
       <module name="springbucks" target="1.8" />
+      <module name="springbucks (1)" target="1.8" />
       <module name="waiter-service" target="1.8" />
       <module name="waiter-service (1)" target="1.8" />
       <module name="waiter-service (1) (com.spring.springbucks)" target="1.8" />
@@ -80,6 +86,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="accessing-data-mysql" options="-parameters" />
+      <module name="cache-demo" options="-parameters" />
       <module name="coding-demo" options="-parameters" />
       <module name="context-hierarchy-demo" options="-parameters" />
       <module name="customer-service" options="-parameters" />
@@ -91,6 +98,7 @@
       <module name="exception-demo" options="-parameters" />
       <module name="helloworld" options="-parameters" />
       <module name="helloworld (1)" options="-parameters" />
+      <module name="jedis-demo" options="-parameters" />
       <module name="jpa-complex-demo" options="-parameters" />
       <module name="jpa-demo" options="-parameters" />
       <module name="multi-datasource-demo" options="-parameters" />
@@ -102,6 +110,7 @@
       <module name="session-demo" options="-parameters" />
       <module name="simple-jdbc-demo" options="-parameters" />
       <module name="springbucks" options="-parameters" />
+      <module name="springbucks (1)" options="-parameters" />
       <module name="waiter-service" options="-parameters" />
       <module name="waiter-service (1)" options="-parameters" />
       <module name="waiter-service (1) (com.spring.springbucks)" options="-parameters" />
