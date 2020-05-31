@@ -23,6 +23,9 @@ public class CoffeeOrderController {
     @Autowired
     private CoffeeService coffeeService;
 
+    /**
+     * 使用 Post请求创建一个订单
+     * */
     @PostMapping("/")
     @ResponseStatus(HttpStatus.CREATED)
     public CoffeeOrder create(@RequestBody NewOrderRequest newOrder) {
