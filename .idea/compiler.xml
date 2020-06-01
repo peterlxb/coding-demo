@@ -16,11 +16,14 @@
         <module name="waiter-service (2)" />
         <module name="customer-service (3)" />
         <module name="context-hierarchy-demo" />
+        <module name="taco-cloud" />
         <module name="waiter-service (2) (com.spring.springbucks)" />
         <module name="exception-demo" />
+        <module name="customer-service (2)" />
         <module name="session-demo" />
         <module name="waiter-service (3) (com.spring.springbucks)" />
         <module name="datasource-demo" />
+        <module name="pay" />
         <module name="mybatis-generator-demo" />
         <module name="waiter-service" />
         <module name="customer-service (1)" />
@@ -29,19 +32,17 @@
         <module name="jpa-complex-demo" />
         <module name="druid-demo" />
         <module name="waiter-service (1)" />
-        <module name="customer-service (2)" />
-        <module name="cache-demo" />
         <module name="redis-demo" />
+        <module name="cache-demo" />
         <module name="waiter-service (6) (com.spring.springbucks)" />
         <module name="waiter-service (1) (com.spring.springbucks)" />
         <module name="helloworld (1)" />
-        <module name="mybatis-pagehelper-demo" />
+        <module name="mybatis-demo" />
         <module name="webclient-demo" />
         <module name="springbucks (1)" />
         <module name="accessing-data-mysql" />
-        <module name="mybatis-demo" />
         <module name="jpa-demo" />
-        <module name="pay" />
+        <module name="mybatis-pagehelper-demo" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -71,6 +72,7 @@
       <module name="simple-jdbc-demo" target="1.8" />
       <module name="springbucks" target="1.8" />
       <module name="springbucks (1)" target="1.8" />
+      <module name="taco-cloud" target="1.8" />
       <module name="waiter-service" target="1.8" />
       <module name="waiter-service (1)" target="1.8" />
       <module name="waiter-service (1) (com.spring.springbucks)" target="1.8" />
@@ -111,6 +113,7 @@
       <module name="simple-jdbc-demo" options="-parameters" />
       <module name="springbucks" options="-parameters" />
       <module name="springbucks (1)" options="-parameters" />
+      <module name="taco-cloud" options="-parameters" />
       <module name="waiter-service" options="-parameters" />
       <module name="waiter-service (1)" options="-parameters" />
       <module name="waiter-service (1) (com.spring.springbucks)" options="-parameters" />
