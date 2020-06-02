@@ -28,6 +28,8 @@
       <module fileurl="file://$PROJECT_DIR$/spring-nosql/cache-with-redis-demo/springbucks.iml" filepath="$PROJECT_DIR$/spring-nosql/cache-with-redis-demo/springbucks.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-nosql/cache-with-redis-demo/springbucks (1).iml" filepath="$PROJECT_DIR$/spring-nosql/cache-with-redis-demo/springbucks (1).iml" />
       <module fileurl="file://$PROJECT_DIR$/springInAction/chap2/taco-cloud/taco-cloud.iml" filepath="$PROJECT_DIR$/springInAction/chap2/taco-cloud/taco-cloud.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springInAction/chap1/taco-cloud/taco-cloud (1).iml" filepath="$PROJECT_DIR$/springInAction/chap1/taco-cloud/taco-cloud (1).iml" />
+      <module fileurl="file://$PROJECT_DIR$/springInAction/chap2/taco-cloud/taco-cloud (2).iml" filepath="$PROJECT_DIR$/springInAction/chap2/taco-cloud/taco-cloud (2).iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-mvc/simple-controller-demo/waiter-service.iml" filepath="$PROJECT_DIR$/spring-mvc/simple-controller-demo/waiter-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-web/hateoas-waiter-service/waiter-service (1).iml" filepath="$PROJECT_DIR$/spring-web/hateoas-waiter-service/waiter-service (1).iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-mvc/springbucks/waiter-service (1) (com.spring.springbucks).iml" filepath="$PROJECT_DIR$/spring-mvc/springbucks/waiter-service (1) (com.spring.springbucks).iml" />

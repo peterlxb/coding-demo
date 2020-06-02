@@ -7,24 +7,22 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="webclient-demo" />
         <module name="simple-jdbc-demo" />
         <module name="waiter-service (5) (com.spring.springbucks)" />
         <module name="waiter-service (4) (com.spring.springbucks)" />
+        <module name="taco-cloud (2)" />
         <module name="jedis-demo" />
         <module name="customer-service" />
-        <module name="springbucks" />
         <module name="waiter-service (2)" />
         <module name="customer-service (3)" />
         <module name="context-hierarchy-demo" />
-        <module name="taco-cloud" />
         <module name="waiter-service (2) (com.spring.springbucks)" />
         <module name="exception-demo" />
         <module name="customer-service (2)" />
         <module name="session-demo" />
         <module name="waiter-service (3) (com.spring.springbucks)" />
         <module name="datasource-demo" />
-        <module name="pay" />
-        <module name="mybatis-generator-demo" />
         <module name="waiter-service" />
         <module name="customer-service (1)" />
         <module name="helloworld" />
@@ -38,10 +36,12 @@
         <module name="waiter-service (1) (com.spring.springbucks)" />
         <module name="helloworld (1)" />
         <module name="mybatis-demo" />
-        <module name="webclient-demo" />
+        <module name="mybatis-generator-demo" />
         <module name="springbucks (1)" />
         <module name="accessing-data-mysql" />
+        <module name="taco-cloud (1)" />
         <module name="jpa-demo" />
+        <module name="pay" />
         <module name="mybatis-pagehelper-demo" />
       </profile>
     </annotationProcessing>
@@ -73,6 +73,8 @@
       <module name="springbucks" target="1.8" />
       <module name="springbucks (1)" target="1.8" />
       <module name="taco-cloud" target="1.8" />
+      <module name="taco-cloud (1)" target="1.8" />
+      <module name="taco-cloud (2)" target="1.8" />
       <module name="waiter-service" target="1.8" />
       <module name="waiter-service (1)" target="1.8" />
       <module name="waiter-service (1) (com.spring.springbucks)" target="1.8" />
@@ -114,6 +116,8 @@
       <module name="springbucks" options="-parameters" />
       <module name="springbucks (1)" options="-parameters" />
       <module name="taco-cloud" options="-parameters" />
+      <module name="taco-cloud (1)" options="-parameters" />
+      <module name="taco-cloud (2)" options="-parameters" />
       <module name="waiter-service" options="-parameters" />
       <module name="waiter-service (1)" options="-parameters" />
       <module name="waiter-service (1) (com.spring.springbucks)" options="-parameters" />
