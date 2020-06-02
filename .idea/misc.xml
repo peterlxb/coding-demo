@@ -39,6 +39,7 @@
         <option value="$PROJECT_DIR$/spring-nosql/cache-demo/pom.xml" />
         <option value="$PROJECT_DIR$/spring-nosql/cache-with-redis-demo/pom.xml" />
         <option value="$PROJECT_DIR$/taco-cloud/pom.xml" />
+        <option value="$PROJECT_DIR$/springInAction/chap2/taco-cloud/pom.xml" />
       </list>
     </option>
   </component>
