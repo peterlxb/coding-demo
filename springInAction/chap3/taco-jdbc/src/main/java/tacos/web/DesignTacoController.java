@@ -1,13 +1,11 @@
 package tacos.web;
 
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.Errors;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
 import tacos.Ingredient;
 
 import java.util.Arrays;
@@ -15,14 +13,55 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 import tacos.Ingredient.Type;
+import tacos.Order;
 import tacos.Taco;
+import tacos.data.IngredientRepository;
+import tacos.data.TacoRepository;
 
 import javax.validation.Valid;
 
 @Slf4j
 @Controller
 @RequestMapping("/design")
+@SessionAttributes("order")
 public class DesignTacoController {
+
+    private final IngredientRepository ingredientRepo;
+    private TacoRepository designRepo;
+
+    @Autowired
+    public DesignTacoController(IngredientRepository ingredientRepo, TacoRepository designRepo) {
+        this.ingredientRepo = ingredientRepo;
+        this.designRepo = designRepo;
+    }
+
+    @ModelAttribute(name = "order")
+    public Order order() {
+        return new Order();
+    }
+
+    @ModelAttribute(name = "taco")
+    public Taco taco() {
+        return new Taco();
+    }
+
+
+    @PostMapping
+    public String processDesign(@Valid Taco design, Errors errors, @ModelAttribute Order order) {
+
+        if (errors.hasErrors()) {
+            return "design";
+        }
+
+        Taco saved = designRepo.save(design);
+//        order.addDeisn(saved);
+
+        log.info("Processing Design: " + design);
+        return "redirect:/orders/current";
+
+    }
+
+
 
     @GetMapping
     public String showDesignForm (Model model) {
@@ -56,19 +95,6 @@ public class DesignTacoController {
                 .collect(Collectors.toList());
     }
 
-//    @PostMapping
-//    public String processDesign(@Valid Taco design, Errors errors) {
-//
-//        if (errors.hasErrors()) {
-//            return "design";
-//        }
-//
-//        // save the taco design
-//        // do this in chap'3
-//        log.info("Processing Design: " + design);
-//        return "redirect:/orders/current";
-//
-//    }
 
     @PostMapping
     public String processDesign(@Valid @ModelAttribute("design") Taco design, Errors errors, Model model) {
