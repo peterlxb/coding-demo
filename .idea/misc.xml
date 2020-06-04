@@ -42,6 +42,7 @@
         <option value="$PROJECT_DIR$/springInAction/chap2/taco-cloud/pom.xml" />
         <option value="$PROJECT_DIR$/springInAction/chap1/taco-cloud/pom.xml" />
         <option value="$PROJECT_DIR$/springInAction/chap3/taco-cloud/pom.xml" />
+        <option value="$PROJECT_DIR$/springInAction/chap3/taco-jdbc/pom.xml" />
       </list>
     </option>
   </component>
