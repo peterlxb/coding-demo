@@ -16,6 +16,7 @@ import java.util.Date;
 
 @Repository
 public class JdbcTacoRepository implements TacoRepository {
+
     private JdbcTemplate jdbc;
 
     public JdbcTacoRepository(JdbcTemplate jdbc) {
@@ -57,7 +58,7 @@ public class JdbcTacoRepository implements TacoRepository {
 
     private void saveIngredientToTaco(Ingredient ingredient, long tacoId) {
         jdbc.update(
-                "insert into taco_ingredients (taco, ingredient) " +
+                "insert into Taco_Ingredients (taco, ingredient) " +
                         "values (?, ?)",
                         tacoId, ingredient.getId()
         );
