@@ -10,7 +10,6 @@
         <module name="simple-jdbc-demo" />
         <module name="waiter-service (5) (com.spring.springbucks)" />
         <module name="waiter-service (4) (com.spring.springbucks)" />
-        <module name="springbucks (1)" />
         <module name="taco-cloud (2)" />
         <module name="jedis-demo" />
         <module name="customer-service" />
@@ -18,12 +17,13 @@
         <module name="waiter-service (2)" />
         <module name="customer-service (3)" />
         <module name="context-hierarchy-demo" />
-        <module name="waiter-service (2) (com.spring.springbucks)" />
+        <module name="multi-datasource-demo" />
+        <module name="taco-cloud" />
         <module name="exception-demo" />
         <module name="customer-service (2)" />
         <module name="session-demo" />
         <module name="waiter-service (3) (com.spring.springbucks)" />
-        <module name="pay" />
+        <module name="datasource-demo" />
         <module name="waiter-service" />
         <module name="customer-service (1)" />
         <module name="taco-jdbc" />
@@ -34,16 +34,17 @@
         <module name="waiter-service (1)" />
         <module name="redis-demo" />
         <module name="cache-demo" />
-        <module name="waiter-service (6) (com.spring.springbucks)" />
+        <module name="waiter-service (2) (com.spring.springbucks)" />
         <module name="waiter-service (1) (com.spring.springbucks)" />
+        <module name="waiter-service (6) (com.spring.springbucks)" />
         <module name="helloworld (1)" />
         <module name="mybatis-demo" />
         <module name="mybatis-generator-demo" />
-        <module name="multi-datasource-demo" />
+        <module name="springbucks (1)" />
         <module name="accessing-data-mysql" />
         <module name="taco-cloud (1)" />
         <module name="jpa-demo" />
-        <module name="datasource-demo" />
+        <module name="pay" />
         <module name="mybatis-pagehelper-demo" />
       </profile>
     </annotationProcessing>
