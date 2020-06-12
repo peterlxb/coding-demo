@@ -9,7 +9,7 @@ import tacos.Ingredient;
 import tacos.data.IngredientRepository;
 
 @RestController
-@RequestMapping(path="/ingredient", produces = "application/json")
+@RequestMapping(path="/ingredientsx", produces = "application/json")
 @CrossOrigin(origins = "*")
 public class IngredientController {
     private IngredientRepository repo;
