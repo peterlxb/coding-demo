@@ -9,26 +9,26 @@
         <outputRelativeToContentRoot value="true" />
         <module name="simple-jdbc-demo" />
         <module name="waiter-service (5) (com.spring.springbucks)" />
-        <module name="waiter-service (4) (com.spring.springbucks)" />
+        <module name="tacocloud-data (1)" />
         <module name="tacocloud-web (1)" />
-        <module name="springbucks (1)" />
-        <module name="tacocloud-api" />
-        <module name="customer-service" />
-        <module name="jedis-demo" />
         <module name="taco-cloud (3)" />
+        <module name="waiter-service (4) (com.spring.springbucks)" />
+        <module name="taco-cloud (2)" />
+        <module name="jedis-demo" />
+        <module name="customer-service" />
         <module name="springbucks" />
         <module name="waiter-service (2)" />
         <module name="customer-service (3)" />
+        <module name="datasource-demo" />
         <module name="context-hierarchy-demo" />
+        <module name="multi-datasource-demo" />
         <module name="tacocloud-data" />
         <module name="taco-cloud" />
+        <module name="waiter-service (2) (com.spring.springbucks)" />
         <module name="exception-demo" />
-        <module name="customer-service (2)" />
         <module name="session-demo" />
         <module name="waiter-service (3) (com.spring.springbucks)" />
-        <module name="tacocloud-restclient" />
-        <module name="pay" />
-        <module name="tacocloud-data (1)" />
+        <module name="druid-demo" />
         <module name="waiter-service" />
         <module name="customer-service (1)" />
         <module name="tacocloud-ui" />
@@ -37,28 +37,28 @@
         <module name="webclient-demo" />
         <module name="tacocloud-api (1)" />
         <module name="jpa-complex-demo" />
-        <module name="druid-demo" />
+        <module name="tacocloud-api" />
         <module name="tacocloud-ui (1)" />
         <module name="waiter-service (1)" />
-        <module name="redis-demo" />
+        <module name="customer-service (2)" />
         <module name="cache-demo" />
+        <module name="redis-demo" />
         <module name="taco-cloud (4)" />
-        <module name="waiter-service (2) (com.spring.springbucks)" />
         <module name="waiter-service (1) (com.spring.springbucks)" />
         <module name="waiter-service (6) (com.spring.springbucks)" />
         <module name="helloworld (1)" />
-        <module name="mybatis-demo" />
+        <module name="tacocloud-restclient" />
         <module name="mybatis-generator-demo" />
-        <module name="multi-datasource-demo" />
+        <module name="springbucks (1)" />
         <module name="accessing-data-mysql" />
         <module name="tacocloud-security (1)" />
-        <module name="taco-cloud (2)" />
+        <module name="mybatis-demo" />
         <module name="tacocloud-security" />
         <module name="taco-cloud (1)" />
         <module name="jpa-demo" />
         <module name="tacocloud-web" />
         <module name="tacocloud-domain (1)" />
-        <module name="datasource-demo" />
+        <module name="pay" />
         <module name="tacocloud-domain" />
         <module name="mybatis-pagehelper-demo" />
       </profile>
@@ -104,7 +104,7 @@
       <module name="tacocloud-data (1)" target="1.8" />
       <module name="tacocloud-domain" target="1.8" />
       <module name="tacocloud-domain (1)" target="1.8" />
-      <module name="tacocloud-restclient" target="1.5" />
+      <module name="tacocloud-restclient" target="1.8" />
       <module name="tacocloud-security" target="1.8" />
       <module name="tacocloud-security (1)" target="1.8" />
       <module name="tacocloud-ui" target="1.8" />
@@ -163,6 +163,7 @@
       <module name="tacocloud-data (1)" options="-parameters" />
       <module name="tacocloud-domain" options="-parameters" />
       <module name="tacocloud-domain (1)" options="-parameters" />
+      <module name="tacocloud-restclient" options="-parameters" />
       <module name="tacocloud-security" options="-parameters" />
       <module name="tacocloud-security (1)" options="-parameters" />
       <module name="tacocloud-ui" options="-parameters" />
