@@ -38,10 +38,10 @@ public class TacoCloudClient {
      * 将参数指定为 varargs 参数
      * getForObject 接收三个参数
      * */
-//    public Ingredient getIngredientById(String ingredientId) {
-//        return rest.getForObject("http://localhost:8080/ingredients/{id}",
-//                Ingredient.class, ingredientId);
-//    }
+    public Ingredient getIngredientById(String ingredientId) {
+        return rest.getForObject("http://localhost:8080/ingredients/{id}",
+                Ingredient.class, ingredientId);
+    }
 
     /**
      * 使用一个Map 来指定Url变量
@@ -69,16 +69,16 @@ public class TacoCloudClient {
      * 替换为getForEntity
      * 返回 ResponseEntity 包含更丰富的信息
      * */
-    public Ingredient getIngredientById(String ingredientId) {
-        ResponseEntity<Ingredient> responseEntity =
-                rest.getForEntity("http://localhost:8080/ingredients/{id}",
-                        Ingredient.class, ingredientId);
-
-        log.info("Fetch time: " +
-                responseEntity.getHeaders().getDate());
-
-        return responseEntity.getBody();
-    }
+//    public Ingredient getIngredientById(String ingredientId) {
+//        ResponseEntity<Ingredient> responseEntity =
+//                rest.getForEntity("http://localhost:8080/ingredients/{id}",
+//                        Ingredient.class, ingredientId);
+//
+//        log.info("Fetch time: " +
+//                responseEntity.getHeaders().getDate());
+//
+//        return responseEntity.getBody();
+//    }
 
     public List<Ingredient> getAllIngredients() {
         return rest.exchange("http://localhost:8080/ingredients",
@@ -107,9 +107,10 @@ public class TacoCloudClient {
      *
      * 如果想接收最新创建的 ingreident 对象, 可以使用postForObject
      * */
-//    public Ingredient createIngredient(Ingredient ingredient) {
-//        return rest.postForObject("http://localhost:8080/ingredients", ingredient, Ingredient.class);
-//    }
+    public Ingredient createIngredient(Ingredient ingredient) {
+        return rest.postForObject("http://localhost:8080/ingredients",
+                ingredient, Ingredient.class);
+    }
 
     /**
      * 如果 client 想要获取最新创建ingredient 的location
@@ -121,30 +122,30 @@ public class TacoCloudClient {
     /**
      * 使用 postForEntity
      * */
-    public Ingredient createIngredient(Ingredient ingredient) {
-        ResponseEntity<Ingredient> responseEntity =
-                rest.postForEntity("http://localhost:8080/ingredients",
-                        ingredient,
-                        Ingredient.class);
-
-        log.info("New Resource created at " +
-                responseEntity.getHeaders().getDate());
-
-        return responseEntity.getBody();
-    }
+//    public Ingredient createIngredient(Ingredient ingredient) {
+//        ResponseEntity<Ingredient> responseEntity =
+//                rest.postForEntity("http://localhost:8080/ingredients",
+//                        ingredient,
+//                        Ingredient.class);
+//
+//        log.info("New Resource created at " +
+//                responseEntity.getHeaders().getDate());
+//
+//        return responseEntity.getBody();
+//    }
 
     /**
      * Traverson with restTemplate
      * */
     public Iterable<Ingredient> getAllIngredientsWithTraverson() {
-        ParameterizedTypeReference<Resources<Ingredient>> ingredientTypes =
+        ParameterizedTypeReference<Resources<Ingredient>> ingredientType =
                 new ParameterizedTypeReference<Resources<Ingredient>>() {
                 };
 
         Resources<Ingredient> ingredientRes =
                 traverson
                 .follow("ingredients")
-                .toObject(ingredientTypes);
+                .toObject(ingredientType);
 
         Collection<Ingredient> ingredients = ingredientRes.getContent();
 
@@ -157,7 +158,9 @@ public class TacoCloudClient {
                 .asLink()
                 .getHref();
 
-        return rest.postForObject(ingredientsUrl, ingredient, Ingredient.class);
+        return rest.postForObject(ingredientsUrl,
+                ingredient,
+                Ingredient.class);
     }
 
     public Iterable<Taco> getRecentTacosWithTraverson() {
@@ -172,8 +175,6 @@ public class TacoCloudClient {
                 .toObject(tacoTypes);
 
         return tacoRes.getContent();
-
     }
-
 
 }

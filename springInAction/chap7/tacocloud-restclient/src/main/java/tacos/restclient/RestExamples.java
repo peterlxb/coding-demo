@@ -18,10 +18,10 @@ import java.util.List;
 @SpringBootConfiguration
 @ComponentScan
 @Slf4j
-public class RestExample {
+public class RestExamples {
 
     public static void main(String[] args) {
-        SpringApplication.run(RestExample.class, args);
+        SpringApplication.run(RestExamples.class, args);
     }
 
     @Bean
@@ -33,6 +33,9 @@ public class RestExample {
     public CommandLineRunner fetchIngredients(TacoCloudClient tacoCloudClient) {
         return args -> {
             log.info("--------GET---------");
+            log.info("GETTING INGREDIENT BY IDE");
+            log.info("Ingredient:  " + tacoCloudClient.getIngredientById("CHED"));
+            log.info("GETTING ALL INGREDIENTS");
             List<Ingredient> ingredients = tacoCloudClient.getAllIngredients();
             log.info("All Ingredients:");
             for (Ingredient ingredient: ingredients) {
@@ -119,14 +122,15 @@ public class RestExample {
     @Bean
     public CommandLineRunner traversonSaveIngredient(TacoCloudClient tacoCloudClient) {
         return args -> {
-            Ingredient pico = tacoCloudClient.addIngredient(
-                    new Ingredient("PICO", "Pico de Gallo", Ingredient.Type.SAUCE));
+//            Ingredient pico = tacoCloudClient.addIngredient(
+//                    new Ingredient("PICO", "Pico de Gallo", Ingredient.Type.SAUCE));
+
             List<Ingredient> allIngredients = tacoCloudClient.getAllIngredients();
             log.info("----------------------- ALL INGREDIENTS AFTER SAVING PICO -------------------------");
             for (Ingredient ingredient : allIngredients) {
                 log.info("   -  " + ingredient);
             }
-            tacoCloudClient.deleteIngredient(pico);
+//            tacoCloudClient.deleteIngredient(pico);
         };
     }
 
