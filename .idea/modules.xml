@@ -32,22 +32,31 @@
       <module fileurl="file://$PROJECT_DIR$/springInAction/chap2/taco-cloud/taco-cloud (2).iml" filepath="$PROJECT_DIR$/springInAction/chap2/taco-cloud/taco-cloud (2).iml" />
       <module fileurl="file://$PROJECT_DIR$/springInAction/chap6/tacos/taco-cloud (3).iml" filepath="$PROJECT_DIR$/springInAction/chap6/tacos/taco-cloud (3).iml" />
       <module fileurl="file://$PROJECT_DIR$/springInAction/chap7/tacos/taco-cloud (4).iml" filepath="$PROJECT_DIR$/springInAction/chap7/tacos/taco-cloud (4).iml" />
+      <module fileurl="file://$PROJECT_DIR$/springInAction/chap8/tacos/taco-cloud (5).iml" filepath="$PROJECT_DIR$/springInAction/chap8/tacos/taco-cloud (5).iml" />
       <module fileurl="file://$PROJECT_DIR$/springInAction/chap6/taco-cloud-parent.iml" filepath="$PROJECT_DIR$/springInAction/chap6/taco-cloud-parent.iml" />
       <module fileurl="file://$PROJECT_DIR$/springInAction/chap7/taco-cloud-parent (1).iml" filepath="$PROJECT_DIR$/springInAction/chap7/taco-cloud-parent (1).iml" />
+      <module fileurl="file://$PROJECT_DIR$/springInAction/chap8/taco-cloud-parent (2).iml" filepath="$PROJECT_DIR$/springInAction/chap8/taco-cloud-parent (2).iml" />
       <module fileurl="file://$PROJECT_DIR$/springInAction/chap3/taco-jdbc/taco-jdbc.iml" filepath="$PROJECT_DIR$/springInAction/chap3/taco-jdbc/taco-jdbc.iml" />
       <module fileurl="file://$PROJECT_DIR$/springInAction/chap6/tacocloud-api/tacocloud-api.iml" filepath="$PROJECT_DIR$/springInAction/chap6/tacocloud-api/tacocloud-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/springInAction/chap7/tacocloud-api/tacocloud-api (1).iml" filepath="$PROJECT_DIR$/springInAction/chap7/tacocloud-api/tacocloud-api (1).iml" />
+      <module fileurl="file://$PROJECT_DIR$/springInAction/chap8/tacocloud-api/tacocloud-api (2).iml" filepath="$PROJECT_DIR$/springInAction/chap8/tacocloud-api/tacocloud-api (2).iml" />
       <module fileurl="file://$PROJECT_DIR$/springInAction/chap6/tacocloud-data/tacocloud-data.iml" filepath="$PROJECT_DIR$/springInAction/chap6/tacocloud-data/tacocloud-data.iml" />
       <module fileurl="file://$PROJECT_DIR$/springInAction/chap7/tacocloud-data/tacocloud-data (1).iml" filepath="$PROJECT_DIR$/springInAction/chap7/tacocloud-data/tacocloud-data (1).iml" />
+      <module fileurl="file://$PROJECT_DIR$/springInAction/chap8/tacocloud-data/tacocloud-data (2).iml" filepath="$PROJECT_DIR$/springInAction/chap8/tacocloud-data/tacocloud-data (2).iml" />
       <module fileurl="file://$PROJECT_DIR$/springInAction/chap6/tacocloud-domain/tacocloud-domain.iml" filepath="$PROJECT_DIR$/springInAction/chap6/tacocloud-domain/tacocloud-domain.iml" />
       <module fileurl="file://$PROJECT_DIR$/springInAction/chap7/tacocloud-domain/tacocloud-domain (1).iml" filepath="$PROJECT_DIR$/springInAction/chap7/tacocloud-domain/tacocloud-domain (1).iml" />
+      <module fileurl="file://$PROJECT_DIR$/springInAction/chap8/tacocloud-domain/tacocloud-domain (2).iml" filepath="$PROJECT_DIR$/springInAction/chap8/tacocloud-domain/tacocloud-domain (2).iml" />
       <module fileurl="file://$PROJECT_DIR$/springInAction/chap7/tacocloud-restclient/tacocloud-restclient.iml" filepath="$PROJECT_DIR$/springInAction/chap7/tacocloud-restclient/tacocloud-restclient.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springInAction/chap8/tacocloud-restclient/tacocloud-restclient (1).iml" filepath="$PROJECT_DIR$/springInAction/chap8/tacocloud-restclient/tacocloud-restclient (1).iml" />
       <module fileurl="file://$PROJECT_DIR$/springInAction/chap6/tacocloud-security/tacocloud-security.iml" filepath="$PROJECT_DIR$/springInAction/chap6/tacocloud-security/tacocloud-security.iml" />
       <module fileurl="file://$PROJECT_DIR$/springInAction/chap7/tacocloud-security/tacocloud-security (1).iml" filepath="$PROJECT_DIR$/springInAction/chap7/tacocloud-security/tacocloud-security (1).iml" />
+      <module fileurl="file://$PROJECT_DIR$/springInAction/chap8/tacocloud-security/tacocloud-security (2).iml" filepath="$PROJECT_DIR$/springInAction/chap8/tacocloud-security/tacocloud-security (2).iml" />
       <module fileurl="file://$PROJECT_DIR$/springInAction/chap6/tacocloud-ui/tacocloud-ui.iml" filepath="$PROJECT_DIR$/springInAction/chap6/tacocloud-ui/tacocloud-ui.iml" />
       <module fileurl="file://$PROJECT_DIR$/springInAction/chap7/tacocloud-ui/tacocloud-ui (1).iml" filepath="$PROJECT_DIR$/springInAction/chap7/tacocloud-ui/tacocloud-ui (1).iml" />
+      <module fileurl="file://$PROJECT_DIR$/springInAction/chap8/tacocloud-ui/tacocloud-ui (2).iml" filepath="$PROJECT_DIR$/springInAction/chap8/tacocloud-ui/tacocloud-ui (2).iml" />
       <module fileurl="file://$PROJECT_DIR$/springInAction/chap6/tacocloud-web/tacocloud-web.iml" filepath="$PROJECT_DIR$/springInAction/chap6/tacocloud-web/tacocloud-web.iml" />
       <module fileurl="file://$PROJECT_DIR$/springInAction/chap7/tacocloud-web/tacocloud-web (1).iml" filepath="$PROJECT_DIR$/springInAction/chap7/tacocloud-web/tacocloud-web (1).iml" />
+      <module fileurl="file://$PROJECT_DIR$/springInAction/chap8/tacocloud-web/tacocloud-web (2).iml" filepath="$PROJECT_DIR$/springInAction/chap8/tacocloud-web/tacocloud-web (2).iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-mvc/simple-controller-demo/waiter-service.iml" filepath="$PROJECT_DIR$/spring-mvc/simple-controller-demo/waiter-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-web/hateoas-waiter-service/waiter-service (1).iml" filepath="$PROJECT_DIR$/spring-web/hateoas-waiter-service/waiter-service (1).iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-mvc/springbucks/waiter-service (1) (com.spring.springbucks).iml" filepath="$PROJECT_DIR$/spring-mvc/springbucks/waiter-service (1) (com.spring.springbucks).iml" />
