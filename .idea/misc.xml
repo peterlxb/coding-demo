@@ -49,6 +49,11 @@
         <option value="$PROJECT_DIR$/springInAction/chap6/tacocloud-web/pom.xml" />
         <option value="$PROJECT_DIR$/springInAction/chap7/pom.xml" />
         <option value="$PROJECT_DIR$/springInAction/chap8/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-autoconfig/geektime-spring-boot-starter/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-autoconfig/geektime-spring-boot-autoconfigure/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-autoconfig/greeting/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-autoconfig/autoconfigure-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-autoconfig/property-source-demo/pom.xml" />
       </list>
     </option>
   </component>

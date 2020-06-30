@@ -13,6 +13,9 @@
     <file url="file://$PROJECT_DIR$/spring-ORMapping/mybatis-pagehelper-demo/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-ORMapping/spring-mysql" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-ORMapping/spring-mysql/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-autoconfig/autoconfigure-demo/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-autoconfig/autoconfigure-demo/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-autoconfig/property-source-demo/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-jdbc/datasource-demo" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-jdbc/datasource-demo/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-jdbc/druid-demo" charset="UTF-8" />
@@ -58,10 +61,12 @@
     <file url="file://$PROJECT_DIR$/springInAction/chap2/taco-cloud/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springInAction/chap3/taco-jdbc/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springInAction/chap3/taco-jpa/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springInAction/chap3/taco-jpa/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springInAction/chap6/tacocloud-api/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springInAction/chap6/tacocloud-data/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springInAction/chap6/tacocloud-domain/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springInAction/chap6/tacocloud-security/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springInAction/chap6/tacocloud-web/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springInAction/chap6/tacos/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springInAction/chap7/tacocloud-api/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springInAction/chap7/tacocloud-data/src/main/java" charset="UTF-8" />
@@ -74,6 +79,12 @@
     <file url="file://$PROJECT_DIR$/springInAction/chap8/tacocloud-api/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springInAction/chap8/tacocloud-data/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springInAction/chap8/tacocloud-domain/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springInAction/chap8/tacocloud-messaging-jms/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springInAction/chap8/tacocloud-messaging-jms/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springInAction/chap8/tacocloud-messaging-kafka/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springInAction/chap8/tacocloud-messaging-kafka/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springInAction/chap8/tacocloud-messaging-rabbitmq/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springInAction/chap8/tacocloud-messaging-rabbitmq/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springInAction/chap8/tacocloud-restclient/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springInAction/chap8/tacocloud-restclient/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springInAction/chap8/tacocloud-security/src/main/java" charset="UTF-8" />
