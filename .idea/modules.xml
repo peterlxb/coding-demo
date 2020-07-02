@@ -70,8 +70,10 @@
       <module fileurl="file://$PROJECT_DIR$/spring-mvc/simple-controller-demo/waiter-service.iml" filepath="$PROJECT_DIR$/spring-mvc/simple-controller-demo/waiter-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-web/hateoas-waiter-service/waiter-service (1).iml" filepath="$PROJECT_DIR$/spring-web/hateoas-waiter-service/waiter-service (1).iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-mvc/springbucks/waiter-service (1) (com.spring.springbucks).iml" filepath="$PROJECT_DIR$/spring-mvc/springbucks/waiter-service (1) (com.spring.springbucks).iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-running/indicator-demo/waiter-service (1) (geektime.spring.springbucks).iml" filepath="$PROJECT_DIR$/spring-running/indicator-demo/waiter-service (1) (geektime.spring.springbucks).iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-mvc/json-view-demo/waiter-service (2).iml" filepath="$PROJECT_DIR$/spring-mvc/json-view-demo/waiter-service (2).iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-web/webflux-waiter-service/waiter-service (2) (com.spring.springbucks).iml" filepath="$PROJECT_DIR$/spring-web/webflux-waiter-service/waiter-service (2) (com.spring.springbucks).iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-running/metrics-demo/waiter-service (2) (geektime.spring.springbucks).iml" filepath="$PROJECT_DIR$/spring-running/metrics-demo/waiter-service (2) (geektime.spring.springbucks).iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-mvc/cache-demo/waiter-service (3) (com.spring.springbucks).iml" filepath="$PROJECT_DIR$/spring-mvc/cache-demo/waiter-service (3) (com.spring.springbucks).iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-mvc/complex-controller-demo/waiter-service (4) (com.spring.springbucks).iml" filepath="$PROJECT_DIR$/spring-mvc/complex-controller-demo/waiter-service (4) (com.spring.springbucks).iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-mvc/more-complex-controller-demo/waiter-service (5) (com.spring.springbucks).iml" filepath="$PROJECT_DIR$/spring-mvc/more-complex-controller-demo/waiter-service (5) (com.spring.springbucks).iml" />

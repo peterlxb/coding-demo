@@ -54,6 +54,8 @@
         <option value="$PROJECT_DIR$/spring-autoconfig/greeting/pom.xml" />
         <option value="$PROJECT_DIR$/spring-autoconfig/autoconfigure-demo/pom.xml" />
         <option value="$PROJECT_DIR$/spring-autoconfig/property-source-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-running/indicator-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-running/metrics-demo/pom.xml" />
       </list>
     </option>
   </component>
