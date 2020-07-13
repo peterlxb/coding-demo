@@ -11,6 +11,8 @@
         <module name="tacocloud-ui" />
         <module name="tacocloud-ui (1)" />
         <module name="tacocloud-web (2)" />
+        <module name="taco-cloud (4)" />
+        <module name="customer-service (1) (geektime.spring.springbucks)" />
         <module name="helloworld" />
         <module name="waiter-service (2) (com.spring.springbucks)" />
         <module name="waiter-service (4) (com.spring.springbucks)" />
@@ -19,14 +21,15 @@
         <module name="waiter-service (5) (com.spring.springbucks)" />
         <module name="tacocloud-data (2)" />
         <module name="tacocloud-api (2)" />
-        <module name="tacocloud-security (2)" />
+        <module name="tacocloud-security (1)" />
         <module name="datasource-demo" />
         <module name="tacocloud-kitchen" />
         <module name="tacocloud-web (1)" />
-        <module name="waiter-service (1)" />
-        <module name="waiter-service (1) (geektime.spring.springbucks)" />
+        <module name="waiter-service (4)" />
+        <module name="springbucks (1)" />
         <module name="taco-jdbc" />
         <module name="waiter-service (1) (com.spring.springbucks)" />
+        <module name="redis-demo" />
         <module name="tacocloud-security" />
         <module name="taco-cloud (2)" />
         <module name="greeting" />
@@ -39,6 +42,7 @@
         <module name="tacocloud-data" />
         <module name="session-demo" />
         <module name="context-hierarchy-demo" />
+        <module name="waiter-service (7) (com.spring.springbucks)" />
         <module name="cache-demo" />
         <module name="tacocloud-restclient" />
         <module name="tacocloud-restclient (1)" />
@@ -46,34 +50,34 @@
         <module name="tacocloud-domain" />
         <module name="helloworld (1)" />
         <module name="taco-cloud (1)" />
+        <module name="waiter-service (1)" />
         <module name="jpa-complex-demo" />
         <module name="autoconfigure-demo" />
         <module name="com-spring-boot-autoconfigure" />
-        <module name="taco-cloud (6)" />
+        <module name="waiter-service (3)" />
         <module name="customer-service (2)" />
         <module name="jedis-demo" />
         <module name="waiter-service (3) (com.spring.springbucks)" />
-        <module name="customer-service (1)" />
-        <module name="tacocloud-security (1)" />
         <module name="multi-datasource-demo" />
         <module name="exception-demo" />
         <module name="property-source-demo" />
         <module name="simple-jdbc-demo" />
-        <module name="jpa-demo" />
+        <module name="waiter-service (2)" />
+        <module name="waiter-service (1) (geektime.spring.springbucks)" />
         <module name="accessing-data-mysql" />
         <module name="tacocloud-messaging-jms" />
         <module name="waiter-service" />
         <module name="taco-cloud (5)" />
-        <module name="waiter-service (2)" />
-        <module name="taco-cloud (4)" />
+        <module name="customer-service (1)" />
+        <module name="jpa-demo" />
         <module name="mybatis-demo" />
         <module name="tacocloud-domain (2)" />
         <module name="waiter-service (2) (geektime.spring.springbucks)" />
         <module name="tacocloud-ui (2)" />
-        <module name="springbucks (1)" />
+        <module name="tacocloud-security (2)" />
         <module name="tacocloud-web" />
         <module name="druid-demo" />
-        <module name="redis-demo" />
+        <module name="taco-cloud (6)" />
         <module name="mybatis-pagehelper-demo" />
         <module name="tacocloud-messaging-kafka" />
         <module name="taco-cloud" />
@@ -89,9 +93,11 @@
       <module name="cache-demo" target="1.8" />
       <module name="coding-demo" target="1.8" />
       <module name="com-spring-boot-autoconfigure" target="1.5" />
+      <module name="consul-waiter-service" target="1.8" />
       <module name="context-hierarchy-demo" target="1.8" />
       <module name="customer-service" target="1.8" />
       <module name="customer-service (1)" target="1.8" />
+      <module name="customer-service (1) (geektime.spring.springbucks)" target="1.8" />
       <module name="customer-service (2)" target="1.8" />
       <module name="customer-service (3)" target="1.8" />
       <module name="datasource-demo" target="1.8" />
@@ -157,10 +163,13 @@
       <module name="waiter-service (2)" target="1.8" />
       <module name="waiter-service (2) (com.spring.springbucks)" target="1.8" />
       <module name="waiter-service (2) (geektime.spring.springbucks)" target="1.8" />
+      <module name="waiter-service (3)" target="1.8" />
       <module name="waiter-service (3) (com.spring.springbucks)" target="1.8" />
+      <module name="waiter-service (4)" target="1.8" />
       <module name="waiter-service (4) (com.spring.springbucks)" target="1.8" />
       <module name="waiter-service (5) (com.spring.springbucks)" target="1.8" />
       <module name="waiter-service (6) (com.spring.springbucks)" target="1.8" />
+      <module name="waiter-service (7) (com.spring.springbucks)" target="1.8" />
       <module name="webclient-demo" target="1.8" />
     </bytecodeTargetLevel>
   </component>
@@ -170,9 +179,11 @@
       <module name="autoconfigure-demo" options="-parameters" />
       <module name="cache-demo" options="-parameters" />
       <module name="coding-demo" options="-parameters" />
+      <module name="consul-waiter-service" options="-parameters" />
       <module name="context-hierarchy-demo" options="-parameters" />
       <module name="customer-service" options="-parameters" />
       <module name="customer-service (1)" options="-parameters" />
+      <module name="customer-service (1) (geektime.spring.springbucks)" options="-parameters" />
       <module name="customer-service (2)" options="-parameters" />
       <module name="customer-service (3)" options="-parameters" />
       <module name="datasource-demo" options="-parameters" />
@@ -237,6 +248,7 @@
       <module name="waiter-service (4) (com.spring.springbucks)" options="-parameters" />
       <module name="waiter-service (5) (com.spring.springbucks)" options="-parameters" />
       <module name="waiter-service (6) (com.spring.springbucks)" options="-parameters" />
+      <module name="waiter-service (7) (com.spring.springbucks)" options="-parameters" />
       <module name="webclient-demo" options="-parameters" />
     </option>
   </component>
