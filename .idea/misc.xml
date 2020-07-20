@@ -58,6 +58,7 @@
         <option value="$PROJECT_DIR$/spring-running/metrics-demo/pom.xml" />
         <option value="$PROJECT_DIR$/spring-service-discovery/consul-waiter-service/pom.xml" />
         <option value="$PROJECT_DIR$/spring-service-discovery/consul-customer-service/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-circuit-break/circuit-break-demo/pom.xml" />
       </list>
     </option>
   </component>
