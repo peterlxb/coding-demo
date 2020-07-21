@@ -59,6 +59,13 @@
         <option value="$PROJECT_DIR$/spring-service-discovery/consul-waiter-service/pom.xml" />
         <option value="$PROJECT_DIR$/spring-service-discovery/consul-customer-service/pom.xml" />
         <option value="$PROJECT_DIR$/spring-circuit-break/circuit-break-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-circuit-break/hystrix-customer-service/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-circuit-break/hystrix-stream-customer-service/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-circuit-break/hystrix-dashboard-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-circuit-break/turbine-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-circuit-break/resilience4j-circuitbreaker-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-circuit-break/ratelimiter-waiter-service/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-circuit-break/bulkhead-customer-service/pom.xml" />
       </list>
     </option>
   </component>
