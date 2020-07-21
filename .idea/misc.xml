@@ -66,6 +66,7 @@
         <option value="$PROJECT_DIR$/spring-circuit-break/resilience4j-circuitbreaker-demo/pom.xml" />
         <option value="$PROJECT_DIR$/spring-circuit-break/ratelimiter-waiter-service/pom.xml" />
         <option value="$PROJECT_DIR$/spring-circuit-break/bulkhead-customer-service/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-config/config-server/pom.xml" />
       </list>
     </option>
   </component>

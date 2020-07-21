@@ -92,6 +92,7 @@
         <module name="waiter-service (1)" />
         <module name="webclient-demo" />
         <module name="tacocloud-api" />
+        <module name="config-server" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -100,6 +101,7 @@
       <module name="cache-demo" target="1.8" />
       <module name="coding-demo" target="1.8" />
       <module name="com-spring-boot-autoconfigure" target="1.5" />
+      <module name="config-server" target="1.8" />
       <module name="consul-waiter-service" target="1.8" />
       <module name="context-hierarchy-demo" target="1.8" />
       <module name="customer-service" target="1.8" />
@@ -194,6 +196,7 @@
       <module name="autoconfigure-demo" options="-parameters" />
       <module name="cache-demo" options="-parameters" />
       <module name="coding-demo" options="-parameters" />
+      <module name="config-server" options="-parameters" />
       <module name="consul-waiter-service" options="-parameters" />
       <module name="context-hierarchy-demo" options="-parameters" />
       <module name="customer-service" options="-parameters" />
