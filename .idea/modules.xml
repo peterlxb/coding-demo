@@ -91,6 +91,7 @@
       <module fileurl="file://$PROJECT_DIR$/spring-mvc/thymeleaf-view-demo/waiter-service (6) (com.spring.springbucks).iml" filepath="$PROJECT_DIR$/spring-mvc/thymeleaf-view-demo/waiter-service (6) (com.spring.springbucks).iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-service-discovery/consul-waiter-service/waiter-service (7) (com.spring.springbucks).iml" filepath="$PROJECT_DIR$/spring-service-discovery/consul-waiter-service/waiter-service (7) (com.spring.springbucks).iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-circuit-break/ratelimiter-waiter-service/waiter-service (8) (com.spring.springbucks).iml" filepath="$PROJECT_DIR$/spring-circuit-break/ratelimiter-waiter-service/waiter-service (8) (com.spring.springbucks).iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-config/git-config-waiter-serivce/waiter-service (9) (com.spring.springbucks).iml" filepath="$PROJECT_DIR$/spring-config/git-config-waiter-serivce/waiter-service (9) (com.spring.springbucks).iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-rest-template/webclient-demo/webclient-demo.iml" filepath="$PROJECT_DIR$/spring-rest-template/webclient-demo/webclient-demo.iml" />
     </modules>
   </component>

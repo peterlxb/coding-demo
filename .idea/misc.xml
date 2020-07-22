@@ -67,6 +67,7 @@
         <option value="$PROJECT_DIR$/spring-circuit-break/ratelimiter-waiter-service/pom.xml" />
         <option value="$PROJECT_DIR$/spring-circuit-break/bulkhead-customer-service/pom.xml" />
         <option value="$PROJECT_DIR$/spring-config/config-server/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-config/git-config-waiter-serivce/pom.xml" />
       </list>
     </option>
   </component>
