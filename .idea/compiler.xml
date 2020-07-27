@@ -79,6 +79,7 @@
         <module name="customer-service (1)" />
         <module name="jpa-demo" />
         <module name="mybatis-demo" />
+        <module name="waiter-service (1) (geektime.spring.springbucks)" />
         <module name="tacocloud-domain (2)" />
         <module name="customer-service (6)" />
         <module name="tacocloud-ui (2)" />
