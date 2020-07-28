@@ -75,6 +75,9 @@
     <file url="file://$PROJECT_DIR$/spring-service-discovery/consul-waiter-service/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-starter-demo/helloworld" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-starter-demo/helloworld/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-stream/rabbitmq-barista-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-stream/rabbitmq-barista-service/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-stream/rabbitmq-waiter-service/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-web/hateoas-customer-service/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-web/hateoas-waiter-service" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-web/hateoas-waiter-service/src/main/java" charset="UTF-8" />

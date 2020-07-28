@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/spring-ORMapping/spring-mysql/accessing-data-mysql.iml" filepath="$PROJECT_DIR$/spring-ORMapping/spring-mysql/accessing-data-mysql.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-autoconfig/autoconfigure-demo/autoconfigure-demo.iml" filepath="$PROJECT_DIR$/spring-autoconfig/autoconfigure-demo/autoconfigure-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-stream/rabbitmq-barista-service/barista-service.iml" filepath="$PROJECT_DIR$/spring-stream/rabbitmq-barista-service/barista-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-nosql/cache-demo/cache-demo.iml" filepath="$PROJECT_DIR$/spring-nosql/cache-demo/cache-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-autoconfig/geektime-spring-boot-autoconfigure/com-spring-boot-autoconfigure.iml" filepath="$PROJECT_DIR$/spring-autoconfig/geektime-spring-boot-autoconfigure/com-spring-boot-autoconfigure.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-config/config-server/config-server.iml" filepath="$PROJECT_DIR$/spring-config/config-server/config-server.iml" />
@@ -81,6 +82,7 @@
       <module fileurl="file://$PROJECT_DIR$/spring-mvc/springbucks/waiter-service (1) (com.spring.springbucks).iml" filepath="$PROJECT_DIR$/spring-mvc/springbucks/waiter-service (1) (com.spring.springbucks).iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-config/consul-config-waiter-service/waiter-service (1) (geektime.spring.springbucks).iml" filepath="$PROJECT_DIR$/spring-config/consul-config-waiter-service/waiter-service (1) (geektime.spring.springbucks).iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-config/zk-config-waiter-service/waiter-service (10) (com.spring.springbucks).iml" filepath="$PROJECT_DIR$/spring-config/zk-config-waiter-service/waiter-service (10) (com.spring.springbucks).iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-stream/rabbitmq-waiter-service/waiter-service (11) (com.spring.springbucks).iml" filepath="$PROJECT_DIR$/spring-stream/rabbitmq-waiter-service/waiter-service (11) (com.spring.springbucks).iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-mvc/json-view-demo/waiter-service (2).iml" filepath="$PROJECT_DIR$/spring-mvc/json-view-demo/waiter-service (2).iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-web/webflux-waiter-service/waiter-service (2) (com.spring.springbucks).iml" filepath="$PROJECT_DIR$/spring-web/webflux-waiter-service/waiter-service (2) (com.spring.springbucks).iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-config/nacos-config-waiter-service/waiter-service (2) (geektime.spring.springbucks).iml" filepath="$PROJECT_DIR$/spring-config/nacos-config-waiter-service/waiter-service (2) (geektime.spring.springbucks).iml" />

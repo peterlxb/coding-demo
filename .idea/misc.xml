@@ -71,6 +71,8 @@
         <option value="$PROJECT_DIR$/spring-config/zk-config-waiter-service/pom.xml" />
         <option value="$PROJECT_DIR$/spring-config/consul-config-waiter-service/pom.xml" />
         <option value="$PROJECT_DIR$/spring-config/nacos-config-waiter-service/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-stream/rabbitmq-barista-service/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-stream/rabbitmq-waiter-service/pom.xml" />
       </list>
     </option>
   </component>
