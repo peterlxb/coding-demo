@@ -20,7 +20,7 @@ public class DataSourceDemoApplication implements CommandLineRunner {
     @Autowired
     private JdbcTemplate jdbcTemplate;
 
-    public  static  void main(String[] args) {
+    public static void main(String[] args) {
         SpringApplication.run(DataSourceDemoApplication.class, args);
     }
 
@@ -31,15 +31,15 @@ public class DataSourceDemoApplication implements CommandLineRunner {
     }
 
     private void showConnection() throws SQLException {
-        log.info(dataSource.toString());
+        log.info("dataSource: "+dataSource.toString());
 
         Connection conn = dataSource.getConnection();
-        log.info(conn.toString());
+        log.info("conn: "+conn.toString());
 
         conn.close();
     }
 
-    // 输出 data.sql 数据，只能通过 maven插件启动
+    // 输出 data.sql 数据，只能通过 maven 插件启动
     private void showData() {
         jdbcTemplate.queryForList("SELECT * FROM FOO")
                 .forEach(row -> log.info(row.toString()));

@@ -15,10 +15,11 @@
       <module fileurl="file://$PROJECT_DIR$/spring-rest-template/customer-service/customer-service (2).iml" filepath="$PROJECT_DIR$/spring-rest-template/customer-service/customer-service (2).iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-web/hateoas-customer-service/customer-service (3).iml" filepath="$PROJECT_DIR$/spring-web/hateoas-customer-service/customer-service (3).iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-circuit-break/circuit-break-demo/customer-service (4).iml" filepath="$PROJECT_DIR$/spring-circuit-break/circuit-break-demo/customer-service (4).iml" />
-      <module fileurl="file://$PROJECT_DIR$/spring-circuit-break/hystrix-customer-service/customer-service (5).iml" filepath="$PROJECT_DIR$/spring-circuit-break/hystrix-customer-service/customer-service (5).iml" />
-      <module fileurl="file://$PROJECT_DIR$/spring-circuit-break/hystrix-stream-customer-service/customer-service (6).iml" filepath="$PROJECT_DIR$/spring-circuit-break/hystrix-stream-customer-service/customer-service (6).iml" />
-      <module fileurl="file://$PROJECT_DIR$/spring-circuit-break/resilience4j-circuitbreaker-demo/customer-service (7).iml" filepath="$PROJECT_DIR$/spring-circuit-break/resilience4j-circuitbreaker-demo/customer-service (7).iml" />
-      <module fileurl="file://$PROJECT_DIR$/spring-circuit-break/bulkhead-customer-service/customer-service (8).iml" filepath="$PROJECT_DIR$/spring-circuit-break/bulkhead-customer-service/customer-service (8).iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-circuit-break/bulkhead-customer-service/customer-service (5).iml" filepath="$PROJECT_DIR$/spring-circuit-break/bulkhead-customer-service/customer-service (5).iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-circuit-break/hystrix-customer-service/customer-service (6).iml" filepath="$PROJECT_DIR$/spring-circuit-break/hystrix-customer-service/customer-service (6).iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-circuit-break/hystrix-stream-customer-service/customer-service (7).iml" filepath="$PROJECT_DIR$/spring-circuit-break/hystrix-stream-customer-service/customer-service (7).iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-circuit-break/resilience4j-circuitbreaker-demo/customer-service (8).iml" filepath="$PROJECT_DIR$/spring-circuit-break/resilience4j-circuitbreaker-demo/customer-service (8).iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-service-discovery/consul-customer-service/customer-service (9) (geektime.spring.springbucks).iml" filepath="$PROJECT_DIR$/spring-service-discovery/consul-customer-service/customer-service (9) (geektime.spring.springbucks).iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-jdbc/datasource-demo/datasource-demo.iml" filepath="$PROJECT_DIR$/spring-jdbc/datasource-demo/datasource-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-jdbc/druid-demo/druid-demo.iml" filepath="$PROJECT_DIR$/spring-jdbc/druid-demo/druid-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-mvc/exception-demo/exception-demo.iml" filepath="$PROJECT_DIR$/spring-mvc/exception-demo/exception-demo.iml" />
@@ -36,6 +37,7 @@
       <module fileurl="file://$PROJECT_DIR$/spring-ORMapping/mybatis-pagehelper-demo/mybatis-pagehelper-demo.iml" filepath="$PROJECT_DIR$/spring-ORMapping/mybatis-pagehelper-demo/mybatis-pagehelper-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/pay-mall/pay/pay.iml" filepath="$PROJECT_DIR$/pay-mall/pay/pay.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-autoconfig/property-source-demo/property-source-demo.iml" filepath="$PROJECT_DIR$/spring-autoconfig/property-source-demo/property-source-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-jdbc/pure-spring-datasource-demo/pure-spring-datasource-demo.iml" filepath="$PROJECT_DIR$/spring-jdbc/pure-spring-datasource-demo/pure-spring-datasource-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-nosql/redis-demo/redis-demo.iml" filepath="$PROJECT_DIR$/spring-nosql/redis-demo/redis-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-web/session-demo/session-demo.iml" filepath="$PROJECT_DIR$/spring-web/session-demo/session-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-jdbc/simple-jdbc-demo/simple-jdbc-demo.iml" filepath="$PROJECT_DIR$/spring-jdbc/simple-jdbc-demo/simple-jdbc-demo.iml" />
@@ -44,9 +46,9 @@
       <module fileurl="file://$PROJECT_DIR$/springInAction/chap3/taco-jpa/taco-cloud.iml" filepath="$PROJECT_DIR$/springInAction/chap3/taco-jpa/taco-cloud.iml" />
       <module fileurl="file://$PROJECT_DIR$/springInAction/chap1/taco-cloud/taco-cloud (1).iml" filepath="$PROJECT_DIR$/springInAction/chap1/taco-cloud/taco-cloud (1).iml" />
       <module fileurl="file://$PROJECT_DIR$/springInAction/chap2/taco-cloud/taco-cloud (2).iml" filepath="$PROJECT_DIR$/springInAction/chap2/taco-cloud/taco-cloud (2).iml" />
-      <module fileurl="file://$PROJECT_DIR$/springInAction/chap6/tacos/taco-cloud (3).iml" filepath="$PROJECT_DIR$/springInAction/chap6/tacos/taco-cloud (3).iml" />
-      <module fileurl="file://$PROJECT_DIR$/springInAction/chap7/tacos/taco-cloud (4).iml" filepath="$PROJECT_DIR$/springInAction/chap7/tacos/taco-cloud (4).iml" />
-      <module fileurl="file://$PROJECT_DIR$/springInAction/chap8/tacos/taco-cloud (5).iml" filepath="$PROJECT_DIR$/springInAction/chap8/tacos/taco-cloud (5).iml" />
+      <module fileurl="file://$PROJECT_DIR$/springInAction/chap3/taco-jpa/taco-cloud (3).iml" filepath="$PROJECT_DIR$/springInAction/chap3/taco-jpa/taco-cloud (3).iml" />
+      <module fileurl="file://$PROJECT_DIR$/springInAction/chap6/tacos/taco-cloud (4).iml" filepath="$PROJECT_DIR$/springInAction/chap6/tacos/taco-cloud (4).iml" />
+      <module fileurl="file://$PROJECT_DIR$/springInAction/chap7/tacos/taco-cloud (5).iml" filepath="$PROJECT_DIR$/springInAction/chap7/tacos/taco-cloud (5).iml" />
       <module fileurl="file://$PROJECT_DIR$/springInAction/chap8/tacos/taco-cloud (6).iml" filepath="$PROJECT_DIR$/springInAction/chap8/tacos/taco-cloud (6).iml" />
       <module fileurl="file://$PROJECT_DIR$/springInAction/chap6/taco-cloud-parent.iml" filepath="$PROJECT_DIR$/springInAction/chap6/taco-cloud-parent.iml" />
       <module fileurl="file://$PROJECT_DIR$/springInAction/chap7/taco-cloud-parent (1).iml" filepath="$PROJECT_DIR$/springInAction/chap7/taco-cloud-parent (1).iml" />
@@ -81,19 +83,26 @@
       <module fileurl="file://$PROJECT_DIR$/spring-web/hateoas-waiter-service/waiter-service (1).iml" filepath="$PROJECT_DIR$/spring-web/hateoas-waiter-service/waiter-service (1).iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-mvc/springbucks/waiter-service (1) (com.spring.springbucks).iml" filepath="$PROJECT_DIR$/spring-mvc/springbucks/waiter-service (1) (com.spring.springbucks).iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-config/consul-config-waiter-service/waiter-service (1) (geektime.spring.springbucks).iml" filepath="$PROJECT_DIR$/spring-config/consul-config-waiter-service/waiter-service (1) (geektime.spring.springbucks).iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-service-discovery/consul-waiter-service/waiter-service (10).iml" filepath="$PROJECT_DIR$/spring-service-discovery/consul-waiter-service/waiter-service (10).iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-config/zk-config-waiter-service/waiter-service (10) (com.spring.springbucks).iml" filepath="$PROJECT_DIR$/spring-config/zk-config-waiter-service/waiter-service (10) (com.spring.springbucks).iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-stream/rabbitmq-waiter-service/waiter-service (11).iml" filepath="$PROJECT_DIR$/spring-stream/rabbitmq-waiter-service/waiter-service (11).iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-stream/rabbitmq-waiter-service/waiter-service (11) (com.spring.springbucks).iml" filepath="$PROJECT_DIR$/spring-stream/rabbitmq-waiter-service/waiter-service (11) (com.spring.springbucks).iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-mvc/json-view-demo/waiter-service (2).iml" filepath="$PROJECT_DIR$/spring-mvc/json-view-demo/waiter-service (2).iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-web/webflux-waiter-service/waiter-service (2) (com.spring.springbucks).iml" filepath="$PROJECT_DIR$/spring-web/webflux-waiter-service/waiter-service (2) (com.spring.springbucks).iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-config/nacos-config-waiter-service/waiter-service (2) (geektime.spring.springbucks).iml" filepath="$PROJECT_DIR$/spring-config/nacos-config-waiter-service/waiter-service (2) (geektime.spring.springbucks).iml" />
-      <module fileurl="file://$PROJECT_DIR$/spring-running/indicator-demo/waiter-service (3).iml" filepath="$PROJECT_DIR$/spring-running/indicator-demo/waiter-service (3).iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-circuit-break/ratelimiter-waiter-service/waiter-service (3).iml" filepath="$PROJECT_DIR$/spring-circuit-break/ratelimiter-waiter-service/waiter-service (3).iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-mvc/cache-demo/waiter-service (3) (com.spring.springbucks).iml" filepath="$PROJECT_DIR$/spring-mvc/cache-demo/waiter-service (3) (com.spring.springbucks).iml" />
-      <module fileurl="file://$PROJECT_DIR$/spring-running/metrics-demo/waiter-service (4).iml" filepath="$PROJECT_DIR$/spring-running/metrics-demo/waiter-service (4).iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-config/consul-config-waiter-service/waiter-service (4).iml" filepath="$PROJECT_DIR$/spring-config/consul-config-waiter-service/waiter-service (4).iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-mvc/complex-controller-demo/waiter-service (4) (com.spring.springbucks).iml" filepath="$PROJECT_DIR$/spring-mvc/complex-controller-demo/waiter-service (4) (com.spring.springbucks).iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-config/git-config-waiter-serivce/waiter-service (5).iml" filepath="$PROJECT_DIR$/spring-config/git-config-waiter-serivce/waiter-service (5).iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-mvc/more-complex-controller-demo/waiter-service (5) (com.spring.springbucks).iml" filepath="$PROJECT_DIR$/spring-mvc/more-complex-controller-demo/waiter-service (5) (com.spring.springbucks).iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-config/nacos-config-waiter-service/waiter-service (6).iml" filepath="$PROJECT_DIR$/spring-config/nacos-config-waiter-service/waiter-service (6).iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-mvc/thymeleaf-view-demo/waiter-service (6) (com.spring.springbucks).iml" filepath="$PROJECT_DIR$/spring-mvc/thymeleaf-view-demo/waiter-service (6) (com.spring.springbucks).iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-config/zk-config-waiter-service/waiter-service (7).iml" filepath="$PROJECT_DIR$/spring-config/zk-config-waiter-service/waiter-service (7).iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-service-discovery/consul-waiter-service/waiter-service (7) (com.spring.springbucks).iml" filepath="$PROJECT_DIR$/spring-service-discovery/consul-waiter-service/waiter-service (7) (com.spring.springbucks).iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-running/indicator-demo/waiter-service (8).iml" filepath="$PROJECT_DIR$/spring-running/indicator-demo/waiter-service (8).iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-circuit-break/ratelimiter-waiter-service/waiter-service (8) (com.spring.springbucks).iml" filepath="$PROJECT_DIR$/spring-circuit-break/ratelimiter-waiter-service/waiter-service (8) (com.spring.springbucks).iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-running/metrics-demo/waiter-service (9).iml" filepath="$PROJECT_DIR$/spring-running/metrics-demo/waiter-service (9).iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-config/git-config-waiter-serivce/waiter-service (9) (com.spring.springbucks).iml" filepath="$PROJECT_DIR$/spring-config/git-config-waiter-serivce/waiter-service (9) (com.spring.springbucks).iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-rest-template/webclient-demo/webclient-demo.iml" filepath="$PROJECT_DIR$/spring-rest-template/webclient-demo/webclient-demo.iml" />
     </modules>
