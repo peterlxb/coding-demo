@@ -76,6 +76,9 @@
         <option value="$PROJECT_DIR$/spring-jdbc/pure-spring-datasource-demo/pom.xml" />
         <option value="$PROJECT_DIR$/spring-stream/kafka-barista-service/pom.xml" />
         <option value="$PROJECT_DIR$/spring-stream/kafka-waiter-service/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-stream/lazy-customer-service/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-stream/busy-waiter-service/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-stream/scheduled-customer-service/pom.xml" />
       </list>
     </option>
   </component>
