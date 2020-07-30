@@ -99,6 +99,7 @@
       <module fileurl="file://$PROJECT_DIR$/spring-stream/kafka-waiter-service/waiter-service (3) (geektime.spring.springbucks).iml" filepath="$PROJECT_DIR$/spring-stream/kafka-waiter-service/waiter-service (3) (geektime.spring.springbucks).iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-running/metrics-demo/waiter-service (4).iml" filepath="$PROJECT_DIR$/spring-running/metrics-demo/waiter-service (4).iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-mvc/complex-controller-demo/waiter-service (4) (com.spring.springbucks).iml" filepath="$PROJECT_DIR$/spring-mvc/complex-controller-demo/waiter-service (4) (com.spring.springbucks).iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-sleuth/sleuth-waiter-service/waiter-service (4) (geektime.spring.springbucks).iml" filepath="$PROJECT_DIR$/spring-sleuth/sleuth-waiter-service/waiter-service (4) (geektime.spring.springbucks).iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-config/git-config-waiter-serivce/waiter-service (5).iml" filepath="$PROJECT_DIR$/spring-config/git-config-waiter-serivce/waiter-service (5).iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-mvc/more-complex-controller-demo/waiter-service (5) (com.spring.springbucks).iml" filepath="$PROJECT_DIR$/spring-mvc/more-complex-controller-demo/waiter-service (5) (com.spring.springbucks).iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-config/nacos-config-waiter-service/waiter-service (6).iml" filepath="$PROJECT_DIR$/spring-config/nacos-config-waiter-service/waiter-service (6).iml" />

@@ -79,6 +79,7 @@
         <option value="$PROJECT_DIR$/spring-stream/lazy-customer-service/pom.xml" />
         <option value="$PROJECT_DIR$/spring-stream/busy-waiter-service/pom.xml" />
         <option value="$PROJECT_DIR$/spring-stream/scheduled-customer-service/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-sleuth/sleuth-waiter-service/pom.xml" />
       </list>
     </option>
   </component>
