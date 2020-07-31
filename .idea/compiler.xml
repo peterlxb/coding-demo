@@ -109,6 +109,7 @@
         <module name="taco-cloud (4)" />
         <module name="waiter-service" />
         <module name="waiter-service (1)" />
+        <module name="customer-service (4) (geektime.spring.springbucks)" />
         <module name="webclient-demo" />
         <module name="tacocloud-api" />
         <module name="waiter-service (12) (com.spring.springbucks)" />
@@ -134,6 +135,7 @@
       <module name="customer-service (3)" target="1.8" />
       <module name="customer-service (3) (geektime.spring.springbucks)" target="1.8" />
       <module name="customer-service (4)" target="1.8" />
+      <module name="customer-service (4) (geektime.spring.springbucks)" target="1.8" />
       <module name="customer-service (5)" target="1.8" />
       <module name="customer-service (6)" target="1.8" />
       <module name="customer-service (7)" target="1.8" />
@@ -248,6 +250,7 @@
       <module name="customer-service (3)" options="-parameters" />
       <module name="customer-service (3) (geektime.spring.springbucks)" options="-parameters" />
       <module name="customer-service (4)" options="-parameters" />
+      <module name="customer-service (4) (geektime.spring.springbucks)" options="-parameters" />
       <module name="customer-service (5)" options="-parameters" />
       <module name="customer-service (6)" options="-parameters" />
       <module name="customer-service (7)" options="-parameters" />
