@@ -12,21 +12,18 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.jdbc.datasource.DataSourceTransactionManager;
 import org.springframework.transaction.PlatformTransactionManager;
 
-
 import javax.annotation.Resource;
 import javax.sql.DataSource;
 
+    @SpringBootApplication(exclude = {DataSourceAutoConfiguration.class,
+            DataSourceTransactionManagerAutoConfiguration.class,
+            JdbcTemplateAutoConfiguration.class})
+    @Slf4j
+    public class MultiDataSourceDemoApplication {
 
-@SpringBootApplication(exclude = {DataSourceAutoConfiguration.class,
-        DataSourceTransactionManagerAutoConfiguration.class,
-        JdbcTemplateAutoConfiguration.class})
-@Slf4j
-public class MultiDataSourceDemoApplication {
-
-
-    public  static  void main(String[] args) {
-        SpringApplication.run(MultiDataSourceDemoApplication.class, args);
-    }
+        public  static  void main(String[] args) {
+            SpringApplication.run(MultiDataSourceDemoApplication.class, args);
+        }
 
     @Bean
     @ConfigurationProperties("foo.datasource")
@@ -65,6 +62,5 @@ public class MultiDataSourceDemoApplication {
     public PlatformTransactionManager barTxManager(DataSource barDataSource) {
         return new DataSourceTransactionManager(barDataSource);
     }
-
 
 }
