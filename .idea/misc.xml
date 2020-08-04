@@ -54,8 +54,6 @@
         <option value="$PROJECT_DIR$/spring-autoconfig/greeting/pom.xml" />
         <option value="$PROJECT_DIR$/spring-autoconfig/autoconfigure-demo/pom.xml" />
         <option value="$PROJECT_DIR$/spring-autoconfig/property-source-demo/pom.xml" />
-        <option value="$PROJECT_DIR$/spring-running/indicator-demo/pom.xml" />
-        <option value="$PROJECT_DIR$/spring-running/metrics-demo/pom.xml" />
         <option value="$PROJECT_DIR$/spring-service-discovery/consul-waiter-service/pom.xml" />
         <option value="$PROJECT_DIR$/spring-service-discovery/consul-customer-service/pom.xml" />
         <option value="$PROJECT_DIR$/spring-circuit-break/circuit-break-demo/pom.xml" />
@@ -86,7 +84,16 @@
         <option value="$PROJECT_DIR$/spring-sleuth/final-customer-service/pom.xml" />
         <option value="$PROJECT_DIR$/spring-sleuth/final-barista-service/pom.xml" />
         <option value="$PROJECT_DIR$/spring-gateway/gateway-service-zuul-simple/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-jdbc/programmatic-transaction-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-jdbc/declarative-transaction-demo/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/springInAction/chap6/tacos/pom.xml" />
+        <option value="$PROJECT_DIR$/springInAction/chap7/tacos/pom.xml" />
+        <option value="$PROJECT_DIR$/springInAction/chap8/tacos/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_12" default="false" project-jdk-name="1.8.0_211" project-jdk-type="JavaSDK" />
