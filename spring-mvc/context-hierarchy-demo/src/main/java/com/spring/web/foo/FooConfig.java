@@ -1,6 +1,5 @@
 package com.spring.web.foo;
 
-
 import com.spring.web.context.TestBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
