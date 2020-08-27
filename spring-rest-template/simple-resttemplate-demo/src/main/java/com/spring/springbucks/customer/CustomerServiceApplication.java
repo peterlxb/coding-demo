@@ -40,7 +40,7 @@ public class CustomerServiceApplication implements ApplicationRunner {
     }
 
     /*
-    * 先要启动waiter service
+    * 先要启动 Waiter Service
     * */
     @Override
     public void run(ApplicationArguments args) throws Exception {

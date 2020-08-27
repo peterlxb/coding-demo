@@ -81,6 +81,8 @@
         <option value="$PROJECT_DIR$/spring-jdbc/declarative-transaction-demo/pom.xml" />
         <option value="$PROJECT_DIR$/spring-mvc/thymeleaf-view-demo/pom.xml" />
         <option value="$PROJECT_DIR$/spring-mvc/cache-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-rest-template/complex-resttemplate-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-mvc/springbucks/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
