@@ -92,6 +92,8 @@
       <module fileurl="file://$PROJECT_DIR$/springInAction/chap6/tacocloud-web/tacocloud-web.iml" filepath="$PROJECT_DIR$/springInAction/chap6/tacocloud-web/tacocloud-web.iml" />
       <module fileurl="file://$PROJECT_DIR$/springInAction/chap7/tacocloud-web/tacocloud-web (1).iml" filepath="$PROJECT_DIR$/springInAction/chap7/tacocloud-web/tacocloud-web (1).iml" />
       <module fileurl="file://$PROJECT_DIR$/springInAction/chap8/tacocloud-web/tacocloud-web (2).iml" filepath="$PROJECT_DIR$/springInAction/chap8/tacocloud-web/tacocloud-web (2).iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-web/spring-hateoas-demo/todolist (1).iml" filepath="$PROJECT_DIR$/spring-web/spring-hateoas-demo/todolist (1).iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-web/spring-hateoas-demo/todolist (2).iml" filepath="$PROJECT_DIR$/spring-web/spring-hateoas-demo/todolist (2).iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-circuit-break/turbine-demo/turbine-demo.iml" filepath="$PROJECT_DIR$/spring-circuit-break/turbine-demo/turbine-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-mvc/simple-controller-demo/waiter-service.iml" filepath="$PROJECT_DIR$/spring-mvc/simple-controller-demo/waiter-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-web/hateoas-waiter-service/waiter-service (1).iml" filepath="$PROJECT_DIR$/spring-web/hateoas-waiter-service/waiter-service (1).iml" />
