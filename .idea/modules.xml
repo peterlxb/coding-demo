@@ -33,7 +33,7 @@
       <module fileurl="file://$PROJECT_DIR$/spring-circuit-break/hystrix-customer-service/customer-service (6).iml" filepath="$PROJECT_DIR$/spring-circuit-break/hystrix-customer-service/customer-service (6).iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-circuit-break/hystrix-stream-customer-service/customer-service (7).iml" filepath="$PROJECT_DIR$/spring-circuit-break/hystrix-stream-customer-service/customer-service (7).iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-circuit-break/resilience4j-circuitbreaker-demo/customer-service (8).iml" filepath="$PROJECT_DIR$/spring-circuit-break/resilience4j-circuitbreaker-demo/customer-service (8).iml" />
-      <module fileurl="file://$PROJECT_DIR$/spring-rest-template/complex-resttemplate-demo/customer-service (9).iml" filepath="$PROJECT_DIR$/spring-rest-template/complex-resttemplate-demo/customer-service (9).iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-sleuth/final-customer-service/customer-service (9).iml" filepath="$PROJECT_DIR$/spring-sleuth/final-customer-service/customer-service (9).iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-service-discovery/consul-customer-service/customer-service (9) (geektime.spring.springbucks).iml" filepath="$PROJECT_DIR$/spring-service-discovery/consul-customer-service/customer-service (9) (geektime.spring.springbucks).iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-jdbc/datasource-demo/datasource-demo.iml" filepath="$PROJECT_DIR$/spring-jdbc/datasource-demo/datasource-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-jdbc/declarative-transaction-demo/declarative-transaction-demo.iml" filepath="$PROJECT_DIR$/spring-jdbc/declarative-transaction-demo/declarative-transaction-demo.iml" />
@@ -41,7 +41,7 @@
       <module fileurl="file://$PROJECT_DIR$/spring-mvc/exception-demo/exception-demo.iml" filepath="$PROJECT_DIR$/spring-mvc/exception-demo/exception-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-autoconfig/geektime-spring-boot-starter/geektime-spring-boot-starter.iml" filepath="$PROJECT_DIR$/spring-autoconfig/geektime-spring-boot-starter/geektime-spring-boot-starter.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-autoconfig/greeting/greeting.iml" filepath="$PROJECT_DIR$/spring-autoconfig/greeting/greeting.iml" />
-      <module fileurl="file://$PROJECT_DIR$/helloworld.iml" filepath="$PROJECT_DIR$/helloworld.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-starter-demo/helloworld/helloworld.iml" filepath="$PROJECT_DIR$/spring-starter-demo/helloworld/helloworld.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-starter-demo/helloworld/helloworld (1).iml" filepath="$PROJECT_DIR$/spring-starter-demo/helloworld/helloworld (1).iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-gateway/gateway-service-zuul-simple/helloworld (1) (com.demo).iml" filepath="$PROJECT_DIR$/spring-gateway/gateway-service-zuul-simple/helloworld (1) (com.demo).iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-starter-demo/helloworld/helloworld (2).iml" filepath="$PROJECT_DIR$/spring-starter-demo/helloworld/helloworld (2).iml" />

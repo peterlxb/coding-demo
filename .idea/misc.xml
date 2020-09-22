@@ -3,7 +3,6 @@
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/spring-web/session-demo/pom.xml" />
         <option value="$PROJECT_DIR$/spring-web/hateoas-waiter-service/pom.xml" />
         <option value="$PROJECT_DIR$/spring-rest-template/advanced-resttemplate-demo/pom.xml" />
@@ -23,7 +22,6 @@
         <option value="$PROJECT_DIR$/spring-mvc/context-hierarchy-demo/pom.xml" />
         <option value="$PROJECT_DIR$/spring-mvc/exception-demo/pom.xml" />
         <option value="$PROJECT_DIR$/pay/pom.xml" />
-        <option value="$PROJECT_DIR$/pay-mall/pay/pom.xml" />
         <option value="$PROJECT_DIR$/spring-ORMapping/jpa-complex-demo/pom.xml" />
         <option value="$PROJECT_DIR$/spring-ORMapping/mybatis-demo/pom.xml" />
         <option value="$PROJECT_DIR$/spring-ORMapping/mybatis-generator-demo/pom.xml" />
@@ -84,6 +82,7 @@
         <option value="$PROJECT_DIR$/spring-rest-template/complex-resttemplate-demo/pom.xml" />
         <option value="$PROJECT_DIR$/spring-mvc/springbucks/pom.xml" />
         <option value="$PROJECT_DIR$/spring-web/spring-hateoas-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/pay-mall/pay/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
