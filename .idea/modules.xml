@@ -42,18 +42,18 @@
       <module fileurl="file://$PROJECT_DIR$/spring-autoconfig/geektime-spring-boot-starter/geektime-spring-boot-starter.iml" filepath="$PROJECT_DIR$/spring-autoconfig/geektime-spring-boot-starter/geektime-spring-boot-starter.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-autoconfig/greeting/greeting.iml" filepath="$PROJECT_DIR$/spring-autoconfig/greeting/greeting.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-starter-demo/helloworld/helloworld.iml" filepath="$PROJECT_DIR$/spring-starter-demo/helloworld/helloworld.iml" />
-      <module fileurl="file://$PROJECT_DIR$/spring-starter-demo/helloworld/helloworld (1).iml" filepath="$PROJECT_DIR$/spring-starter-demo/helloworld/helloworld (1).iml" />
+      <module fileurl="file://$PROJECT_DIR$/helloworld (1).iml" filepath="$PROJECT_DIR$/helloworld (1).iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-gateway/gateway-service-zuul-simple/helloworld (1) (com.demo).iml" filepath="$PROJECT_DIR$/spring-gateway/gateway-service-zuul-simple/helloworld (1) (com.demo).iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-starter-demo/helloworld/helloworld (2).iml" filepath="$PROJECT_DIR$/spring-starter-demo/helloworld/helloworld (2).iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-circuit-break/hystrix-dashboard-demo/hystrix-dashboard-demo.iml" filepath="$PROJECT_DIR$/spring-circuit-break/hystrix-dashboard-demo/hystrix-dashboard-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-nosql/jedis-demo/jedis-demo.iml" filepath="$PROJECT_DIR$/spring-nosql/jedis-demo/jedis-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-ORMapping/jpa-complex-demo/jpa-complex-demo.iml" filepath="$PROJECT_DIR$/spring-ORMapping/jpa-complex-demo/jpa-complex-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-ORMapping/jpa-demo/jpa-demo.iml" filepath="$PROJECT_DIR$/spring-ORMapping/jpa-demo/jpa-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pay-mall/mall/mall.iml" filepath="$PROJECT_DIR$/pay-mall/mall/mall.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-jdbc/multi-datasource-demo/multi-datasource-demo.iml" filepath="$PROJECT_DIR$/spring-jdbc/multi-datasource-demo/multi-datasource-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-ORMapping/mybatis-demo/mybatis-demo.iml" filepath="$PROJECT_DIR$/spring-ORMapping/mybatis-demo/mybatis-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-ORMapping/mybatis-generator-demo/mybatis-generator-demo.iml" filepath="$PROJECT_DIR$/spring-ORMapping/mybatis-generator-demo/mybatis-generator-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-ORMapping/mybatis-pagehelper-demo/mybatis-pagehelper-demo.iml" filepath="$PROJECT_DIR$/spring-ORMapping/mybatis-pagehelper-demo/mybatis-pagehelper-demo.iml" />
-      <module fileurl="file://$PROJECT_DIR$/pay-mall/pay/pay.iml" filepath="$PROJECT_DIR$/pay-mall/pay/pay.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-jdbc/programmatic-transaction-demo/programmatic-transaction-demo.iml" filepath="$PROJECT_DIR$/spring-jdbc/programmatic-transaction-demo/programmatic-transaction-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-autoconfig/property-source-demo/property-source-demo.iml" filepath="$PROJECT_DIR$/spring-autoconfig/property-source-demo/property-source-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-jdbc/pure-spring-datasource-demo/pure-spring-datasource-demo.iml" filepath="$PROJECT_DIR$/spring-jdbc/pure-spring-datasource-demo/pure-spring-datasource-demo.iml" />
