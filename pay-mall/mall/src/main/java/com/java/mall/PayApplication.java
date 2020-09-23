@@ -24,8 +24,12 @@ public class PayApplication implements ApplicationRunner {
 
     @Override
     public void run(ApplicationArguments args) {
-        Category category = categoryMapper.findById(100002);
-        log.info("Find category: {}",category);
+
+        Category category = categoryMapper.findById(100005);
+        log.info("Find category: {}", category);
+
+        Category category1 = categoryMapper.queryById(100004);
+        log.info("Find xml category: {}", category1);
     }
 
 }

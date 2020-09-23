@@ -1,5 +1,7 @@
 package com.java.mall.pojo;
 
+import lombok.Data;
+
 import java.util.Date;
 
 /**
@@ -9,6 +11,7 @@ import java.util.Date;
  * Created by peter liu
  * 2020-09-22
  * */
+@Data
 public class Category {
 
     private Integer id;
