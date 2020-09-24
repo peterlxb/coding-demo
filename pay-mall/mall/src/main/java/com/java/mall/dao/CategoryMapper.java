@@ -13,4 +13,5 @@ public interface CategoryMapper {
     Category findById(@Param("id") Integer id);
 
     Category queryById(Integer id);
+
 }

@@ -23,4 +23,8 @@ public class CategoryMapperTest extends MallApplicationTests {
         Category category = categoryMapper.queryById(100001);
         System.out.println(category.toString());
     }
+
+
+
+
 }
