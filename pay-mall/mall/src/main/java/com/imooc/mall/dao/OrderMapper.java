@@ -1,6 +1,6 @@
-package com.java.mall.dao;
+package com.imooc.mall.dao;
 
-import com.java.mall.pojo.Order;
+import com.imooc.mall.pojo.Order;
 
 public interface OrderMapper {
     int deleteByPrimaryKey(Integer id);

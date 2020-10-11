@@ -1,4 +1,4 @@
-package com.java.pay;
+package com.imooc.pay;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

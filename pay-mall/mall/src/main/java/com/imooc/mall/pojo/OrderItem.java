@@ -1,4 +1,4 @@
-package com.java.mall.pojo;
+package com.imooc.mall.pojo;
 
 import java.math.BigDecimal;
 import java.util.Date;

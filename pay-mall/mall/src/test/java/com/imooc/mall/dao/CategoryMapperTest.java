@@ -1,7 +1,7 @@
-package com.java.mall.dao;
+package com.imooc.mall.dao;
 
-import com.java.mall.MallApplicationTests;
-import com.java.mall.pojo.Category;
+import com.imooc.mall.MallApplicationTests;
+import com.imooc.mall.pojo.Category;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 

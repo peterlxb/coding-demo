@@ -1,6 +1,6 @@
-package com.java.mall.dao;
+package com.imooc.mall.dao;
 
-import com.java.mall.pojo.Category;
+import com.imooc.mall.pojo.Category;
 import org.apache.ibatis.annotations.*;
 
 //@Mapper

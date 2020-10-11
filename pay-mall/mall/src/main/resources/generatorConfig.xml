@@ -26,7 +26,7 @@
         <property name="forceBigDecimals" value="false" />
     </javaTypeResolver>
 
-    <javaModelGenerator targetPackage="com.java.mall.pojo" targetProject="src/main/java">
+    <javaModelGenerator targetPackage="com.imooc.mall.pojo" targetProject="src/main/java">
         <property name="enableSubPackages" value="true" />
         <!--            <property name="trimStrings" value="true" />-->
     </javaModelGenerator>
@@ -35,7 +35,7 @@
         <property name="enableSubPackages" value="true" />
     </sqlMapGenerator>
 
-    <javaClientGenerator type="XMLMAPPER" targetPackage="com.java.mall.dao"  targetProject="src/main/java">
+    <javaClientGenerator type="XMLMAPPER" targetPackage="com.imooc.mall.dao"  targetProject="src/main/java">
         <property name="enableSubPackages" value="true" />
     </javaClientGenerator>
 

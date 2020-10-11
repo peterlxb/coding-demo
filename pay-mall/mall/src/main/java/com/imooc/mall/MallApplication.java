@@ -1,7 +1,7 @@
-package com.java.mall;
+package com.imooc.mall;
 
-import com.java.mall.dao.CategoryMapper;
-import com.java.mall.pojo.Category;
+import com.imooc.mall.dao.CategoryMapper;
+import com.imooc.mall.pojo.Category;
 import lombok.extern.slf4j.Slf4j;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,14 +12,14 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 @Slf4j
-@MapperScan(basePackages = "com.java.mall.dao")
-public class PayApplication implements ApplicationRunner {
+@MapperScan(basePackages = "com.imooc.mall.dao")
+public class MallApplication implements ApplicationRunner {
 
     @Autowired
     private CategoryMapper categoryMapper;
 
     public static void main(String[] args) {
-        SpringApplication.run(PayApplication.class, args);
+        SpringApplication.run(MallApplication.class, args);
     }
 
     @Override
