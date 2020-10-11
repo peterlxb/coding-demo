@@ -54,6 +54,7 @@
       <module fileurl="file://$PROJECT_DIR$/spring-ORMapping/mybatis-demo/mybatis-demo.iml" filepath="$PROJECT_DIR$/spring-ORMapping/mybatis-demo/mybatis-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-ORMapping/mybatis-generator-demo/mybatis-generator-demo.iml" filepath="$PROJECT_DIR$/spring-ORMapping/mybatis-generator-demo/mybatis-generator-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-ORMapping/mybatis-pagehelper-demo/mybatis-pagehelper-demo.iml" filepath="$PROJECT_DIR$/spring-ORMapping/mybatis-pagehelper-demo/mybatis-pagehelper-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pay-mall/pay/pay.iml" filepath="$PROJECT_DIR$/pay-mall/pay/pay.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-jdbc/programmatic-transaction-demo/programmatic-transaction-demo.iml" filepath="$PROJECT_DIR$/spring-jdbc/programmatic-transaction-demo/programmatic-transaction-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-autoconfig/property-source-demo/property-source-demo.iml" filepath="$PROJECT_DIR$/spring-autoconfig/property-source-demo/property-source-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-jdbc/pure-spring-datasource-demo/pure-spring-datasource-demo.iml" filepath="$PROJECT_DIR$/spring-jdbc/pure-spring-datasource-demo/pure-spring-datasource-demo.iml" />
