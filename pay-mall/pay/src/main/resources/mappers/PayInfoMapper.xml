@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.imooc.mall.dao.PayInfoMapper">
-  <resultMap id="BaseResultMap" type="com.imooc.mall.pojo.PayInfo">
+<mapper namespace="com.imooc.pay.dao.PayInfoMapper">
+  <resultMap id="BaseResultMap" type="com.imooc.pay.pojo.PayInfo">
     <id column="id" jdbcType="INTEGER" property="id" />
     <result column="user_id" jdbcType="INTEGER" property="userId" />
     <result column="order_no" jdbcType="BIGINT" property="orderNo" />
@@ -26,7 +26,7 @@
     delete from mall_pay_info
     where id = #{id,jdbcType=INTEGER}
   </delete>
-  <insert id="insert" parameterType="com.imooc.mall.pojo.PayInfo">
+  <insert id="insert" parameterType="com.imooc.pay.pojo.PayInfo">
     insert into mall_pay_info (id, user_id, order_no, 
       pay_platform, platform_number, platform_status, 
       pay_amount, create_time, update_time
@@ -36,7 +36,7 @@
       #{payAmount,jdbcType=DECIMAL}, #{createTime,jdbcType=TIMESTAMP}, #{updateTime,jdbcType=TIMESTAMP}
       )
   </insert>
-  <insert id="insertSelective" parameterType="com.imooc.mall.pojo.PayInfo">
+  <insert id="insertSelective" parameterType="com.imooc.pay.pojo.PayInfo">
     insert into mall_pay_info
     <trim prefix="(" suffix=")" suffixOverrides=",">
       <if test="id != null">
@@ -97,7 +97,7 @@
       </if>
     </trim>
   </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="com.imooc.mall.pojo.PayInfo">
+  <update id="updateByPrimaryKeySelective" parameterType="com.imooc.pay.pojo.PayInfo">
     update mall_pay_info
     <set>
       <if test="userId != null">
@@ -127,7 +127,7 @@
     </set>
     where id = #{id,jdbcType=INTEGER}
   </update>
-  <update id="updateByPrimaryKey" parameterType="com.imooc.mall.pojo.PayInfo">
+  <update id="updateByPrimaryKey" parameterType="com.imooc.pay.pojo.PayInfo">
     update mall_pay_info
     set user_id = #{userId,jdbcType=INTEGER},
       order_no = #{orderNo,jdbcType=BIGINT},

@@ -1,6 +1,6 @@
-package com.imooc.dao;
+package com.imooc.pay.dao;
 
-import com.imooc.mall.pojo.PayInfo;
+import com.imooc.pay.pojo.PayInfo;
 
 public interface PayInfoMapper {
     int deleteByPrimaryKey(Integer id);
