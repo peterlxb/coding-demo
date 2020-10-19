@@ -97,4 +97,9 @@ public class PayService implements IPayService {
         throw new RuntimeException("异步通知中错误的支付平台");
 
     }
+
+    @Override
+    public PayInfo queryByOrderId(String orderId) {
+        return payInfoMapper.selectByOrderNo(Long.parseLong(orderId));
+    }
 }

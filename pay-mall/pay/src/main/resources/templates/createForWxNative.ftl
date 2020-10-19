@@ -13,6 +13,29 @@
     jQuery('#myQrcode').qrcode({
         text	: "${codeUrl}"
     });
+
+    $(function () {
+        //定时器
+        setInterval(function () {
+            console.log('开始查询支付状态...')
+            $.ajax({
+                'url': '/pay/queryByOrderId',
+                data: {
+                    'orderId': $('#orderId').text()
+                },
+                success: function (result) {
+                    console.log(result)
+                    if (result.platformStatus != null
+                        && result.platformStatus === 'SUCCESS') {
+                        location.href = $('#returnUrl').text()
+                    }
+                },
+                error: function (result) {
+                    alert(result)
+                }
+            })
+        }, 2000)
+    });
 </script>
 </body>
 
