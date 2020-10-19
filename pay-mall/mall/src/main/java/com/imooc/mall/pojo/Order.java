@@ -1,5 +1,7 @@
 package com.imooc.mall.pojo;
+
 import lombok.Data;
+
 import java.math.BigDecimal;
 import java.util.Date;
 
@@ -32,5 +34,6 @@ public class Order {
     private Date createTime;
 
     private Date updateTime;
+
 
 }

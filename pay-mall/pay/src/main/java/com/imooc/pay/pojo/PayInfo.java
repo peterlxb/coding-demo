@@ -6,27 +6,22 @@ import java.math.BigDecimal;
 import java.util.Date;
 
 @Data
-public class OrderItem {
+public class PayInfo {
     private Integer id;
 
     private Integer userId;
 
     private Long orderNo;
 
-    private Integer productId;
+    private Integer payPlatform;
 
-    private String productName;
+    private String platformNumber;
 
-    private String productImage;
+    private String platformStatus;
 
-    private BigDecimal currentUnitPrice;
-
-    private Integer quantity;
-
-    private BigDecimal totalPrice;
+    private BigDecimal payAmount;
 
     private Date createTime;
 
     private Date updateTime;
-
 }
