@@ -1,6 +1,7 @@
 package com.imooc.pay.service.impl;
 
 import com.imooc.pay.service.IPayService;
+import com.lly835.bestpay.enums.BestPayPlatformEnum;
 import com.lly835.bestpay.enums.BestPayTypeEnum;
 import com.lly835.bestpay.model.PayRequest;
 import com.lly835.bestpay.model.PayResponse;
@@ -28,12 +29,14 @@ public class PayService implements IPayService {
      * @param amount
      * */
     @Override
-    public PayResponse create(String orderId, BigDecimal amount) {
+    public PayResponse create(String orderId, BigDecimal amount, BestPayTypeEnum bestPayTypeEnum) {
+
+        // 写入数据库
         PayRequest request = new PayRequest();
         request.setOrderName("1157174-peterLiu");
         request.setOrderId(orderId);
         request.setOrderAmount(amount.doubleValue());
-        request.setPayTypeEnum(BestPayTypeEnum.WXPAY_NATIVE);
+        request.setPayTypeEnum(bestPayTypeEnum);
 
         PayResponse response =  bestPayService.pay(request);
         log.info("response: ", response);
@@ -51,11 +54,17 @@ public class PayService implements IPayService {
 
         // 3. 修改订单支付状态
 
-        // 4. 通知微信结果(避免重复通知)
-        return "<xml>\n" +
-                "  <return_code><![CDATA[SUCCESS]]></return_code>\n" +
-                "  <return_msg><![CDATA[OK]]></return_msg>\n" +
-                "</xml>";
-    }
+        if (payResponse.getPayPlatformEnum() == BestPayPlatformEnum.WX) {
+            // 4. 通知微信结果(避免重复通知)
+            return "<xml>\n" +
+                    "  <return_code><![CDATA[SUCCESS]]></return_code>\n" +
+                    "  <return_msg><![CDATA[OK]]></return_msg>\n" +
+                    "</xml>";
+        } else  if (payResponse.getPayPlatformEnum() == BestPayPlatformEnum.ALIPAY) {
+            return "success";
+        }
 
+        throw new RuntimeException("异步通知中错误的支付平台");
+
+    }
 }
