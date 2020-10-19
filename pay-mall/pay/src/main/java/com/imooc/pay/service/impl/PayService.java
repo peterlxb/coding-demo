@@ -39,9 +39,11 @@ public class PayService implements IPayService {
     public PayResponse create(String orderId, BigDecimal amount, BestPayTypeEnum bestPayTypeEnum) {
 
         // 写入数据库
-        PayInfo payInfo = new PayInfo(Long.parseLong(orderId), PayPlatformEnum.getByBestPayTypeEnum(bestPayTypeEnum).getCode(),
-                OrderStatusEnum.NOTPAY.name(),amount);
-        payInfoMapper.insert(payInfo);
+        PayInfo payInfo = new PayInfo(Long.parseLong(orderId),
+                PayPlatformEnum.getByBestPayTypeEnum(bestPayTypeEnum).getCode(),
+                OrderStatusEnum.NOTPAY.name(),
+                amount);
+        payInfoMapper.insertSelective(payInfo);
 
         PayRequest request = new PayRequest();
         request.setOrderName("1157174-peterLiu");
@@ -50,7 +52,7 @@ public class PayService implements IPayService {
         request.setPayTypeEnum(bestPayTypeEnum);
 
         PayResponse response =  bestPayService.pay(request);
-        log.info("response: ", response);
+        log.info("发起支付 response: ", response);
 
         return response;
     }
@@ -59,11 +61,28 @@ public class PayService implements IPayService {
     public String asyncNotify(String notifyDate) {
         // 1. 签名校验
         PayResponse payResponse = bestPayService.asyncNotify(notifyDate);
-        log.info("payResponse={}", payResponse);
+        log.info("异步通知 payResponse={}", payResponse);
 
         // 2. 金额检验(从数据库查订单)
+        PayInfo payInfo = payInfoMapper.selectByOrderNo(Long.parseLong((payResponse.getOrderId())));
+        if (payInfo == null) {
+            // 比较严重错误告警
+            throw new RuntimeException("通过orderNo查询到的结果是null");
+        }
 
-        // 3. 修改订单支付状态
+        // 订单支付状态为已支付(减少冗余代码)
+        if (!payInfo.getPlatformStatus().equals(OrderStatusEnum.SUCCESS.name())) {
+            // Double 类型比较
+            if (payInfo.getPayAmount().compareTo(BigDecimal.valueOf(payResponse.getOrderAmount())) != 0) {
+                // warning
+                throw new RuntimeException("异步通知中的金额和数据库里的不一致，orderNo="+payResponse.getOrderId());
+            }
+
+            // 3. 修改订单支付状态
+            payInfo.setPlatformStatus(OrderStatusEnum.SUCCESS.name());
+            payInfo.setPlatformNumber(payResponse.getOutTradeNo());
+            payInfoMapper.updateByPrimaryKeySelective(payInfo);
+        }
 
         if (payResponse.getPayPlatformEnum() == BestPayPlatformEnum.WX) {
             // 4. 通知微信结果(避免重复通知)
