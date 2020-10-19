@@ -5,7 +5,8 @@
 </head>
 <body>
 <div id="myQrcode"></div>
-
+<div id="orderId" hidden>${orderId}</div>
+<div id="returnUrl" hidden>${returnUrl}</div>
 <script src="https://cdn.bootcss.com/jquery/1.5.1/jquery.min.js"></script>
 <script src="https://cdn.bootcss.com/jquery.qrcode/1.0/jquery.qrcode.min.js"></script>
 
