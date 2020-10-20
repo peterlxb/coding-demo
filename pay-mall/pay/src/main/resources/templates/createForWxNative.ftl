@@ -32,7 +32,7 @@
                     }
                 },
                 error: function (result) {
-                    alert(result)
+                    console.error(result);
                 }
             })
         }, 2000)

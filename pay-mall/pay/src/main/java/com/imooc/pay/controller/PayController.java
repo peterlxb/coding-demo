@@ -45,7 +45,7 @@ public class PayController {
         // 支付方式不同，渲染不同 WX 使用 code_url/alipay 使用body
         if (bestPayTypeEnum == BestPayTypeEnum.WXPAY_NATIVE) {
             map.put("codeUrl", response.getCodeUrl());
-            map.put("orderId", response.getOrderId());
+            map.put("orderId", orderId);
             map.put("returnUrl", wxPayConfig.getReturnUrl());
 
             return new ModelAndView("createForWxNative",map);
@@ -69,7 +69,7 @@ public class PayController {
         return payService.asyncNotify(notifyData);
     }
 
-    @GetMapping
+    @GetMapping("/queryByOrderId")
     @ResponseBody
     public PayInfo queryByOrderId(@RequestParam String orderId) {
         log.info("查询支付记录....");
