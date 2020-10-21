@@ -1,8 +1,11 @@
 package com.imooc.mall.service.impl;
 
 import com.imooc.mall.dao.UserMapper;
+import com.imooc.mall.enums.ResponseEnum;
+import com.imooc.mall.enums.RoleEnum;
 import com.imooc.mall.pojo.User;
 import com.imooc.mall.service.IUserService;
+import com.imooc.mall.vo.ResponseVo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.util.DigestUtils;
@@ -15,20 +18,22 @@ public class UserServiceImpl implements IUserService {
     @Autowired
     UserMapper userMapper;
 
-
     @Override
-    public void register(User user) {
+    public ResponseVo register(User user) {
         // 1.校验 username 是否重复
         int countByUsername = userMapper.countByUsername(user.getUsername());
         if (countByUsername > 0) {
-            throw new RuntimeException("该username已被注册");
+            return ResponseVo.error(ResponseEnum.USERNAME_EXIST);
         }
 
         // 2.校验 email
         int countByEmail = userMapper.countByUsername(user.getEmail());
         if (countByEmail > 0) {
-            throw new RuntimeException("该email已被注册");
+            return ResponseVo.error(ResponseEnum.EMAIL_EXIST);
         }
+
+        // 默认普通用户
+        user.setRole(RoleEnum.CUSTOMER.getCode());
 
         // 3.密码使用md5摘要
         user.setPassword(DigestUtils.md5DigestAsHex(
@@ -38,7 +43,9 @@ public class UserServiceImpl implements IUserService {
         // 4.写入数据库
         int resultCount = userMapper.insertSelective(user);
         if (resultCount == 0) {
-            throw new RuntimeException("注册失败");
+            return ResponseVo.error(ResponseEnum.ERROR);
         }
+
+        return ResponseVo.success();
     }
 }

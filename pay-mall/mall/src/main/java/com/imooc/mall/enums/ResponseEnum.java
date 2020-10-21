@@ -14,9 +14,11 @@ public enum ResponseEnum {
 
     PASSWORD_ERROR(1, "密码错误"),
 
-    USER_EXIST(2, "用户已存在"),
+    USERNAME_EXIST(2, "用户名已存在"),
 
     PARAM_ERROR(3, "参数错误"),
+
+    EMAIL_EXIST(4,"邮箱已存在"),
 
     NEED_LOGIN(10, "用户未登录, 请先登录"),
     ;
