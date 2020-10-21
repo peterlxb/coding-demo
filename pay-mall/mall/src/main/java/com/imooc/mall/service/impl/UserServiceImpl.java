@@ -20,6 +20,7 @@ public class UserServiceImpl implements IUserService {
 
     @Override
     public ResponseVo register(User user) {
+//        error();
         // 1.校验 username 是否重复
         int countByUsername = userMapper.countByUsername(user.getUsername());
         if (countByUsername > 0) {
@@ -47,5 +48,9 @@ public class UserServiceImpl implements IUserService {
         }
 
         return ResponseVo.success();
+    }
+
+    private void error() {
+        throw new RuntimeException("意外错误");
     }
 }
