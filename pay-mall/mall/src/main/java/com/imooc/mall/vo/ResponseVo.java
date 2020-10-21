@@ -3,6 +3,9 @@ package com.imooc.mall.vo;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.imooc.mall.enums.ResponseEnum;
 import lombok.Data;
+import org.springframework.validation.BindingResult;
+
+import java.util.Objects;
 
 /**
  * Created By Peter Liu
@@ -34,6 +37,16 @@ public class ResponseVo<T> {
 
     public static <T> ResponseVo<T> error(ResponseEnum responseEnum) {
         return new ResponseVo<>(responseEnum.getCode(),responseEnum.getDesc());
+    }
+
+    public static <T> ResponseVo<T> error(ResponseEnum responseEnum, String msg) {
+        return new ResponseVo<>(responseEnum.getCode(),msg);
+    }
+
+    // 将 bindResult 作为error返回值传入
+    public static <T> ResponseVo<T> error(ResponseEnum responseEnum, BindingResult bindingResult) {
+        return new ResponseVo<>(responseEnum.getCode(),
+                Objects.requireNonNull(bindingResult.getFieldError()).getField() + " " + bindingResult.getFieldError().getDefaultMessage());
     }
 
 }
