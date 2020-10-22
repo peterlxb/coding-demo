@@ -10,13 +10,13 @@ import com.imooc.mall.vo.ResponseVo;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpSession;
 import javax.validation.Valid;
 import java.util.Objects;
-
 
 /**
  * Created By Peter Liu
@@ -67,31 +67,22 @@ public class UserController {
         return userResponseVo;
     }
 
+    // session 保存在内存里，改进版：token+redis
     @GetMapping("/user")
     public ResponseVo<User> userInfo(HttpSession session) {
         log.info("/user sessionId={}", session.getId());
         User user = (User) session.getAttribute(MallConst.CURRENT_USER);
 
-        if (user == null) {
-            return ResponseVo.error(ResponseEnum.NEED_LOGIN);
-        }
-
         // 返回一个 data 对象
         return ResponseVo.success(user);
     }
 
-    //TODO 判断登陆状态, 拦截器
-    @PostMapping("/user/logout")
     /**
-     * {@link TomcatServletWebServerFactory } getSessionTimeoutInMinutes
-     * */
+     * {@link TomcatServletWebServerFactory} getSessionTimeoutInMinutes
+     */
+    @PostMapping("/user/logout")
     public ResponseVo logout(HttpSession session) {
         log.info("/user sessionId={}", session.getId());
-        User user = (User) session.getAttribute(MallConst.CURRENT_USER);
-
-        if (user == null) {
-            return ResponseVo.error(ResponseEnum.NEED_LOGIN);
-        }
 
         session.removeAttribute(MallConst.CURRENT_USER);
         return ResponseVo.success();

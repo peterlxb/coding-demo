@@ -20,4 +20,11 @@ public class RuntimeExceptionHandler {
         // 返回通用的错误
         return ResponseVo.error(ResponseEnum.ERROR, e.getMessage());
     }
+
+    // 捕获User拦截器异常
+    @ExceptionHandler(UserLoginException.class)
+    @ResponseBody
+    public ResponseVo userLoginHandler() {
+        return ResponseVo.error(ResponseEnum.NEED_LOGIN);
+    }
 }
