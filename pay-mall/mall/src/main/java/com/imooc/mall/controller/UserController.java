@@ -62,12 +62,14 @@ public class UserController {
 
         // 设置 session
         session.setAttribute(MallConst.CURRENT_USER, userResponseVo.getData());
+        log.info("/login sessionId={}", session.getId());
 
         return userResponseVo;
     }
 
     @GetMapping("/user")
     public ResponseVo<User> userInfo(HttpSession session) {
+        log.info("/user sessionId={}", session.getId());
         User user = (User) session.getAttribute(MallConst.CURRENT_USER);
 
         if (user == null) {
