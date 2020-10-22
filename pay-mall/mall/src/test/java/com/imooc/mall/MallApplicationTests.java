@@ -10,6 +10,6 @@ import org.junit.Test;
 public class MallApplicationTests {
 
     @Test
-    public void insert() {
+    public void load() {
     }
 }
