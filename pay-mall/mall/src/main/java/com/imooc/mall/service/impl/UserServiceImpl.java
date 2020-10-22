@@ -19,7 +19,7 @@ public class UserServiceImpl implements IUserService {
     UserMapper userMapper;
 
     @Override
-    public ResponseVo register(User user) {
+    public ResponseVo<User> register(User user) {
 //        error();
         // 1.校验 username 是否重复
         int countByUsername = userMapper.countByUsername(user.getUsername());
@@ -48,6 +48,28 @@ public class UserServiceImpl implements IUserService {
         }
 
         return ResponseVo.success();
+    }
+
+    @Override
+    public ResponseVo<User> login(String username, String password) {
+
+        // 通过用户名查数据
+        User user =  userMapper.selectByUsername(username);
+        if (user == null) {
+            // 用户不存在(返回用户名或密码错误)
+            return ResponseVo.error(ResponseEnum.USERNAME_OR_PASSWORD_ERROR);
+        }
+
+        // 比较密码
+        if(!user.getPassword().equalsIgnoreCase(
+                DigestUtils.md5DigestAsHex(password.getBytes(StandardCharsets.UTF_8)))) {
+            // 密码错误(返回：用户名或密码错误 )
+            return ResponseVo.error(ResponseEnum.USERNAME_OR_PASSWORD_ERROR);
+        }
+
+        user.setPassword("");
+        // 返回一个 data 对象
+        return ResponseVo.success(user);
     }
 
     private void error() {

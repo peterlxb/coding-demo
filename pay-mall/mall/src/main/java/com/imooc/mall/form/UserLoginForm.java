@@ -9,16 +9,14 @@ import javax.validation.constraints.NotBlank;
  * Controller 接收到的参数用form包装
  */
 @Data
-public class UserForm {
+public class UserLoginForm {
 
-    // @NotBlank(message = "用户名不能为空") 用于 String 判断空格
-    // @NotEmpty 用于集合
-    // @NotNull
+    @NotBlank
     private String username;
 
     @NotBlank
     private String password;
 
-    @NotBlank
-    private String email;
 }
+
+

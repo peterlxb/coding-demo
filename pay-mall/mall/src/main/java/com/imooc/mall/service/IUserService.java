@@ -9,9 +9,10 @@ public interface IUserService {
      * 注册
      * @return
      */
-    ResponseVo register(User user);
+    ResponseVo<User> register(User user);
 
     /**
      * 登陆
      */
+    ResponseVo<User> login(String username, String password);
 }
