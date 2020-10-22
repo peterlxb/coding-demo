@@ -80,5 +80,23 @@ public class UserController {
         return ResponseVo.success(user);
     }
 
+    //TODO 判断登陆状态, 拦截器
+    @PostMapping("/user/logout")
+    /**
+     * {@link TomcatServletWebServerFactory } getSessionTimeoutInMinutes
+     * */
+    public ResponseVo logout(HttpSession session) {
+        log.info("/user sessionId={}", session.getId());
+        User user = (User) session.getAttribute(MallConst.CURRENT_USER);
+
+        if (user == null) {
+            return ResponseVo.error(ResponseEnum.NEED_LOGIN);
+        }
+
+        session.removeAttribute(MallConst.CURRENT_USER);
+        return ResponseVo.success();
+    }
+
+
 
 }
