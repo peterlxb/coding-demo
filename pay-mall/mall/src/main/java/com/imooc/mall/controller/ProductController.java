@@ -1,5 +1,6 @@
 package com.imooc.mall.controller;
 
+import com.github.pagehelper.PageInfo;
 import com.imooc.mall.service.IProductService;
 import com.imooc.mall.vo.ProductDetailVo;
 import com.imooc.mall.vo.ResponseVo;
@@ -16,9 +17,9 @@ public class ProductController {
     IProductService productService;
 
     @GetMapping("/products")
-    public ResponseVo list(@RequestParam(required = false) Integer categoryId,
-                           @RequestParam(required = false,defaultValue = "1") Integer pageNum,
-                           @RequestParam(required = false, defaultValue = "10") Integer pageSize){
+    public ResponseVo<PageInfo> list(@RequestParam(required = false) Integer categoryId,
+                                     @RequestParam(required = false,defaultValue = "1") Integer pageNum,
+                                     @RequestParam(required = false, defaultValue = "10") Integer pageSize){
         return productService.list(categoryId, pageNum, pageSize);
     }
 

@@ -1,5 +1,7 @@
 package com.imooc.mall.service.impl;
 
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
 import com.imooc.mall.dao.ProductMapper;
 import com.imooc.mall.enums.ProductStatusEnum;
 import com.imooc.mall.enums.ResponseEnum;
@@ -30,18 +32,17 @@ public class ProductServiceImpl implements IProductService {
     private ProductMapper productMapper;
 
     @Override
-    public ResponseVo<List<ProductVo>> list(Integer categoryId,
+    public ResponseVo<PageInfo> list(Integer categoryId,
                                             Integer pageNum, Integer pageSize) {
 
         Set<Integer> categoryIdSet = new HashSet<>();
-
         if (categoryId != null) {
             categoryService.findSubCategoryId(categoryId, categoryIdSet);
             categoryIdSet.add(categoryId);
         }
 
         // 转换成List
-        // PageHelper.startPage(pageNum, pageSize);
+        PageHelper.startPage(pageNum, pageSize);
         List<Product> productsList = productMapper.selectByCategoryIdSet(categoryIdSet);
         List<ProductVo>  productVoList =  productsList.stream()
                 .map(e -> {
@@ -50,11 +51,10 @@ public class ProductServiceImpl implements IProductService {
                     return productVo;
                 }).collect(Collectors.toList());
 
-        log.info("productVoList: "+productVoList);
+         PageInfo pageInfo = new PageInfo(productsList);
+         pageInfo.setList(productVoList);
 
-        // PageInfo pageInfo = new PageInfo(productsList);
-        // pageInfo.setList(productVoList);
-        return ResponseVo.success(productVoList);
+         return ResponseVo.success(pageInfo);
     }
 
     @Override
