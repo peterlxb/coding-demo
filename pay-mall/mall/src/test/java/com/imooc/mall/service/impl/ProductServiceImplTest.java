@@ -3,6 +3,7 @@ package com.imooc.mall.service.impl;
 import com.imooc.mall.MallApplicationTests;
 import com.imooc.mall.enums.ResponseEnum;
 import com.imooc.mall.service.IProductService;
+import com.imooc.mall.vo.ProductDetailVo;
 import com.imooc.mall.vo.ProductVo;
 import com.imooc.mall.vo.ResponseVo;
 import lombok.extern.slf4j.Slf4j;
@@ -21,6 +22,12 @@ public class ProductServiceImplTest extends MallApplicationTests {
     @Test
     public void list() {
         ResponseVo<List<ProductVo>> responseVo =  productService.list(100012,1,1);
+        Assert.assertEquals(ResponseEnum.SUCCESS.getCode(), responseVo.getStatus());
+    }
+
+    @Test
+    public void detail() {
+        ResponseVo<ProductDetailVo> responseVo =  productService.detail(100012);
         Assert.assertEquals(ResponseEnum.SUCCESS.getCode(), responseVo.getStatus());
     }
 }
