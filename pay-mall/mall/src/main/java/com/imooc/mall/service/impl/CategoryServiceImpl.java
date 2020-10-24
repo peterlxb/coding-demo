@@ -13,6 +13,7 @@ import org.springframework.stereotype.Service;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
+import java.util.Set;
 import java.util.stream.Collectors;
 
 /**
@@ -49,6 +50,28 @@ public class CategoryServiceImpl implements ICategoryService {
         findSubCategory(categoryVoList, categories);
 
         return ResponseVo.success(categoryVoList);
+    }
+
+    // 查出某个 categoryId 的子目录
+    @Override
+    public void findSubCategoryId(Integer id, Set<Integer> resultSet) {
+        List<Category> categories = categoryMapper.selectAll();
+        // 只调用一次数据库查询
+        findSubCategoryId(id, resultSet, categories);
+    }
+
+    // 方法的重载, 解决数据库查询多次问题
+    private void findSubCategoryId(Integer id, Set<Integer> resultSet,
+                                   List<Category> categories) {
+        for (Category category: categories) {
+            // 查到子目录
+            if (category.getParentId().equals(id)) {
+                resultSet.add(category.getId());
+
+                // 递归查找
+                findSubCategoryId(category.getId(), resultSet,categories);
+            }
+        }
     }
 
     private void findSubCategory(List<CategoryVo> categoryVoList, List<Category> categories) {
