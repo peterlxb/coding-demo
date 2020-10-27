@@ -29,18 +29,7 @@ public class UserController {
     private IUserService userService;
 
     @PostMapping("/user/register")
-    public ResponseVo<User> register(@Valid @RequestBody UserRegisterForm userRegisterForm,
-                               BindingResult bindingResult) {
-
-        // 校验基本字段
-        if (bindingResult.hasErrors()) {
-            log.error("注册提交的参数有误, {} {}",
-                    Objects.requireNonNull(bindingResult.getFieldError()).getField(),
-                    bindingResult.getFieldError().getDefaultMessage());
-
-            return ResponseVo.error(ResponseEnum.PARAM_ERROR, bindingResult);
-        }
-
+    public ResponseVo<User> register(@Valid @RequestBody UserRegisterForm userRegisterForm) {
         User user = new User();
         // 对象之间拷贝
         BeanUtils.copyProperties(userRegisterForm, user);
@@ -50,14 +39,8 @@ public class UserController {
 
     @PostMapping("/user/login")
     public ResponseVo<User> login(@Valid @RequestBody UserLoginForm userLoginForm,
-                                    BindingResult bindingResult,
                                     HttpSession session
                                   ){
-
-        if (bindingResult.hasErrors()) {
-            return ResponseVo.error(ResponseEnum.PARAM_ERROR, bindingResult);
-        }
-
         ResponseVo<User> userResponseVo = userService.login(userLoginForm.getUsername(), userLoginForm.getPassword());
 
         // 设置 session
