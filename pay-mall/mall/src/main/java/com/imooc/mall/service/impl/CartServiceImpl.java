@@ -10,8 +10,10 @@ import com.imooc.mall.service.ICartService;
 import com.imooc.mall.vo.CartVo;
 import com.imooc.mall.vo.ResponseVo;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.redis.core.HashOperations;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.stereotype.Service;
+import org.springframework.util.StringUtils;
 
 
 /**
@@ -51,10 +53,28 @@ public class CartServiceImpl implements ICartService {
             return ResponseVo.error(ResponseEnum.PRODUCT_STOCK_ERROR);
         }
 
-        // 写入到 redis
+        // 写入到 redis (使用hash来存储代替list结构)
         // set 接收两个参数
-        redisTemplate.opsForValue().set(String.format(CART_REDIS_KEY_TEMPLATE, uid),
-                gson.toJson(new Cart(product.getId(), quantity, form.isSelected())));
+        HashOperations<String, String, String> optsForHash  = redisTemplate.opsForHash();
+        String redisKey = String.format(CART_REDIS_KEY_TEMPLATE, uid);
+
+        // 从数据库获取数据
+        String value = optsForHash.get(redisKey, String.valueOf(product.getId()));
+
+        Cart cart;
+        if (StringUtils.isEmpty(value)) {
+            // 没有该商品/新增
+            cart = new Cart(product.getId(), quantity, form.isSelected());
+        } else {
+            // 存在先反序列化/加1
+            cart = gson.fromJson(value, Cart.class);
+            cart.setQuantity(cart.getQuantity() + quantity);
+        }
+
+        optsForHash.put(redisKey,
+                        String.valueOf(product.getId()),
+                        gson.toJson(cart)
+                 );
 
         return null;
     }

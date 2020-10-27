@@ -2,6 +2,9 @@ package com.imooc.mall.pojo;
 
 import lombok.Data;
 
+/**
+ * Created By Peter Liu
+ * */
 @Data
 public class Cart {
 

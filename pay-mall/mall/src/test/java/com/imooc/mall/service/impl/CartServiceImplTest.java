@@ -16,7 +16,7 @@ public class CartServiceImplTest extends MallApplicationTests {
     @Test
     public void add() {
         CartAddForm form = new CartAddForm();
-        form.setProductId(27);
+        form.setProductId(26);
         form.setSelected(true);
         cartService.add(1,form);
     }
