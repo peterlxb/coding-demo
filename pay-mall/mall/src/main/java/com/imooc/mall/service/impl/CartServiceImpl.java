@@ -4,6 +4,7 @@ import com.google.gson.Gson;
 import com.imooc.mall.dao.ProductMapper;
 import com.imooc.mall.enums.ResponseEnum;
 import com.imooc.mall.form.CartAddForm;
+import com.imooc.mall.form.CartUpdateForm;
 import com.imooc.mall.pojo.Cart;
 import com.imooc.mall.pojo.Product;
 import com.imooc.mall.service.ICartService;
@@ -139,5 +140,46 @@ public class CartServiceImpl implements ICartService {
         cartVo.setCartTotalPrice(cartTotalPrice);
         cartVo.setCartProductVoList(cartProductVoList);
         return ResponseVo.success(cartVo);
+    }
+
+    @Override
+    public ResponseVo<CartVo> update(Integer uid, Integer productId, CartUpdateForm form) {
+        HashOperations<String, String, String> optsForHash = redisTemplate.opsForHash();
+        String redisKey = String.format(CART_REDIS_KEY_TEMPLATE, uid);
+
+        String value = optsForHash.get(redisKey, String.valueOf(productId));
+        if (StringUtils.isEmpty(value)) {
+            // 没有该商品
+            return ResponseVo.error(ResponseEnum.CART_PRODUCT_NOT_EXIST);
+        }
+
+        // 已经有了，修改内容
+        Cart cart = gson.fromJson(value, Cart.class);
+        if (form.getQuantity() != null && form.getQuantity() >= 0) {
+            cart.setQuantity(form.getQuantity());
+        }
+
+        if (form.getSelected() != null) {
+             cart.setProductSelected(form.getSelected());
+        }
+
+        // update redis
+        optsForHash.put(redisKey, String.valueOf(productId), gson.toJson(cart));
+        return list(uid);
+    }
+
+    @Override
+    public ResponseVo<CartVo> delete(Integer uid, Integer productId) {
+        HashOperations<String, String, String> optsForHash = redisTemplate.opsForHash();
+        String redisKey = String.format(CART_REDIS_KEY_TEMPLATE, uid);
+
+        String value = optsForHash.get(redisKey, String.valueOf(productId));
+        if (StringUtils.isEmpty(value)) {
+            // 没有该商品,报错
+            return ResponseVo.error(ResponseEnum.CART_PRODUCT_NOT_EXIST);
+        }
+
+        optsForHash.delete(redisKey, String.valueOf(productId));
+        return list(uid);
     }
 }
