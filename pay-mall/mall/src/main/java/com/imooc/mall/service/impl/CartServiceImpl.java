@@ -11,6 +11,7 @@ import com.imooc.mall.service.ICartService;
 import com.imooc.mall.vo.CartProductVo;
 import com.imooc.mall.vo.CartVo;
 import com.imooc.mall.vo.ResponseVo;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.HashOperations;
 import org.springframework.data.redis.core.StringRedisTemplate;
@@ -27,6 +28,7 @@ import java.util.Map;
  * Created By Peter Liu
  * */
 @Service
+@Slf4j
 public class CartServiceImpl implements ICartService {
 
     private final static String CART_REDIS_KEY_TEMPLATE = "cart_%d";
@@ -218,10 +220,11 @@ public class CartServiceImpl implements ICartService {
     @Override
     public ResponseVo<Integer> sum(Integer uid) {
         Integer sum = listForCart(uid)
-                                .stream()
+                                 .stream()
                                  .map(Cart::getQuantity)
                                  .reduce(0, Integer::sum);
 
+        log.info("sum={}",sum);
         return ResponseVo.success(sum);
     }
 
