@@ -182,4 +182,60 @@ public class CartServiceImpl implements ICartService {
         optsForHash.delete(redisKey, String.valueOf(productId));
         return list(uid);
     }
+
+    @Override
+    public ResponseVo<CartVo> selectAll(Integer uid) {
+        HashOperations<String, String,String> optsForHash = redisTemplate.opsForHash();
+        String redisKey = String.format(CART_REDIS_KEY_TEMPLATE, uid);
+
+        for (Cart cart: listForCart(uid)) {
+            cart.setProductSelected(true);
+            optsForHash.put(redisKey,
+                            String.valueOf(cart.getProductId()),
+                            gson.toJson(cart)
+                    );
+        }
+
+        return list(uid);
+    }
+
+    @Override
+    public ResponseVo<CartVo> unSelectAll(Integer uid) {
+        HashOperations<String, String,String> optsForHash = redisTemplate.opsForHash();
+        String redisKey = String.format(CART_REDIS_KEY_TEMPLATE, uid);
+
+        for (Cart cart: listForCart(uid)) {
+            cart.setProductSelected(false);
+            optsForHash.put(redisKey,
+                            String.valueOf(cart.getProductId()),
+                            gson.toJson(cart)
+            );
+        }
+
+        return list(uid);
+    }
+
+    @Override
+    public ResponseVo<Integer> sum(Integer uid) {
+        Integer sum = listForCart(uid)
+                                .stream()
+                                 .map(Cart::getQuantity)
+                                 .reduce(0, Integer::sum);
+
+        return ResponseVo.success(sum);
+    }
+
+    // 辅助方法,构建list
+    private List<Cart> listForCart(Integer uid) {
+        HashOperations<String, String, String> opsForHash = redisTemplate.opsForHash();
+        String redisKey  = String.format(CART_REDIS_KEY_TEMPLATE, uid);
+        Map<String, String> entries = opsForHash.entries(redisKey);
+
+        List<Cart> cartList = new ArrayList<>();
+        for (Map.Entry<String, String > entry: entries.entrySet()) {
+            cartList.add(gson.fromJson(entry.getValue(), Cart.class));
+        }
+
+        return cartList;
+    }
 }
