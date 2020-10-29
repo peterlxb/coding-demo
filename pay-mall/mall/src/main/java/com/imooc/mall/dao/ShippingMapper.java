@@ -3,6 +3,8 @@ package com.imooc.mall.dao;
 import com.imooc.mall.pojo.Shipping;
 import org.apache.ibatis.annotations.Param;
 
+import java.util.List;
+
 public interface ShippingMapper {
     int deleteByPrimaryKey(Integer id);
 
@@ -18,4 +20,6 @@ public interface ShippingMapper {
 
     int deleteByIdAndUid(@Param("uid") Integer uid,
                          @Param("shippingId") Integer shippingId);
+
+    List<Shipping> selectByUid(Integer uid);
 }

@@ -167,4 +167,10 @@
     where id = #{shippingId,jdbcType=INTEGER}
     and user_id = #{uid,jdbcType=INTEGER}
   </delete>
+  <select id="selectByUid" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from mall_shipping
+    where user_id = #{uid,jdbcType=INTEGER}
+  </select>
 </mapper>

@@ -13,7 +13,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.Map;
 
-
+/**
+ * Created By Peter Liu
+ * */
 @Slf4j
 public class ShippingServiceImplTest extends MallApplicationTests {
 
@@ -67,5 +69,8 @@ public class ShippingServiceImplTest extends MallApplicationTests {
 
     @Test
     public void list() {
+        ResponseVo responseVo = shippingService.list(uid,1,10);
+        log.info("result={}",responseVo);
+        Assert.assertEquals(ResponseEnum.SUCCESS.getCode(), responseVo.getStatus());
     }
 }
