@@ -14,7 +14,7 @@ import java.util.Map;
 
 
 @Slf4j
-public class ShippingServiceTest extends MallApplicationTests {
+public class ShippingServiceImplTest extends MallApplicationTests {
 
     @Autowired
     private IShippingService shippingService;
@@ -25,13 +25,13 @@ public class ShippingServiceTest extends MallApplicationTests {
     public void add() {
         ShippingForm form = new ShippingForm();
         form.setReceiverName("PeterLiu");
-        form.setReceiverAddress("CODING");
+        form.setReceiverAddress("NETEASE");
         form.setReceiverCity("深圳");
         form.setReceiverMobile("18812345678");
         form.setReceiverPhone("010123456");
         form.setReceiverProvince("深圳");
         form.setReceiverDistrict("南山区");
-        form.setReceiverZip("518052");
+        form.setReceiverZip("318052");
 
         ResponseVo<Map<String, Integer>> responseVo =  shippingService.add(1,form);
         log.info("result={}",responseVo);

@@ -1,9 +1,13 @@
-package com.imooc.mall.form;
+package com.imooc.mall.pojo;
 
 import lombok.Data;
+import java.util.Date;
 
 @Data
-public class ShippingForm {
+public class Shipping {
+    private Integer id;
+
+    private Integer userId;
 
     private String receiverName;
 
@@ -20,5 +24,9 @@ public class ShippingForm {
     private String receiverAddress;
 
     private String receiverZip;
+
+    private Date createTime;
+
+    private Date updateTime;
 
 }
