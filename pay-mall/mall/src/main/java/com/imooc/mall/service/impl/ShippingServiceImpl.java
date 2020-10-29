@@ -36,7 +36,7 @@ public class ShippingServiceImpl implements IShippingService {
         BeanUtils.copyProperties(form, shipping);
         shipping.setUserId(uid);
 
-        int row =  shippingMapper.insertSelective(shipping);
+        int row = shippingMapper.insertSelective(shipping);
         // 更新失败
         if (row == 0) {
             ResponseVo.error(ResponseEnum.ERROR);
@@ -49,12 +49,28 @@ public class ShippingServiceImpl implements IShippingService {
 
     @Override
     public ResponseVo delete(Integer uid, Integer shippingId) {
-        return null;
+        // 根据 uid/shippingId 删除
+        int row = shippingMapper.deleteByIdAndUid(uid, shippingId);
+        if (row == 0) {
+            ResponseVo.error(ResponseEnum.ERROR);
+        }
+
+        return ResponseVo.success();
     }
 
     @Override
     public ResponseVo update(Integer uid, Integer shippingId, ShippingForm form) {
-        return null;
+        Shipping shipping = new Shipping();
+        BeanUtils.copyProperties(form, shipping);
+        shipping.setUserId(uid);
+        shipping.setId(shippingId);
+
+        int row = shippingMapper.updateByPrimaryKeySelective(shipping);
+        if (row == 0) {
+            ResponseVo.error(ResponseEnum.ERROR);
+        }
+
+        return ResponseVo.success();
     }
 
     @Override
