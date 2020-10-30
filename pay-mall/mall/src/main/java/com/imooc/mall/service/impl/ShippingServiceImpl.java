@@ -54,7 +54,7 @@ public class ShippingServiceImpl implements IShippingService {
         // 根据 uid/shippingId 删除
         int row = shippingMapper.deleteByIdAndUid(uid, shippingId);
         if (row == 0) {
-            ResponseVo.error(ResponseEnum.ERROR);
+            ResponseVo.error(ResponseEnum.DELETE_SHIPPING_FAIL);
         }
 
         return ResponseVo.success();

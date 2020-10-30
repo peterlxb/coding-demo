@@ -43,7 +43,7 @@ public class ProductServiceImpl implements IProductService {
 
         // 转换成List
         PageHelper.startPage(pageNum, pageSize);
-        List<Product> productsList = productMapper.selectByCategoryIdSet(categoryIdSet);
+        List<Product> productsList = productMapper.selectByProductIdSet(categoryIdSet);
         List<ProductVo>  productVoList =  productsList.stream()
                 .map(e -> {
                     ProductVo productVo = new ProductVo();

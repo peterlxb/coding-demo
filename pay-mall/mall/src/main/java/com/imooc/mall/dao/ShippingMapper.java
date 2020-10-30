@@ -22,4 +22,8 @@ public interface ShippingMapper {
                          @Param("shippingId") Integer shippingId);
 
     List<Shipping> selectByUid(Integer uid);
+
+    // 根据uid 和 shippingId 查出对应收货地址
+    Shipping selectByUidAndShippingId(@Param("uid") Integer uid,
+                         @Param("shippingId") Integer shippingId);
 }

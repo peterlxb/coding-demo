@@ -20,5 +20,5 @@ public interface ProductMapper {
     int updateByPrimaryKey(Product record);
 
     // @Param("categoryIdSet") 对应 xml 配置中 collection
-    List<Product> selectByCategoryIdSet(@Param("categoryIdSet") Set<Integer> categoryIdSet);
+    List<Product> selectByProductIdSet(@Param("productIdSet") Set<Integer> productIdSet);
 }
