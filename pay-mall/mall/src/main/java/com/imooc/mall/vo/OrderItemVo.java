@@ -1,12 +1,15 @@
 package com.imooc.mall.vo;
 
 
+import lombok.Data;
+
 import java.math.BigDecimal;
 import java.util.Date;
 
 /**
  * Created By Peter Liu
  * */
+@Data
 public class OrderItemVo {
 
     private Long orderNo;

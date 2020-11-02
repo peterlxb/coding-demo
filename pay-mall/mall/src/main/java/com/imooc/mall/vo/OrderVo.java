@@ -1,6 +1,8 @@
 package com.imooc.mall.vo;
 
 import com.imooc.mall.pojo.Shipping;
+import lombok.Data;
+
 import java.math.BigDecimal;
 import java.util.Date;
 import java.util.List;
@@ -8,6 +10,7 @@ import java.util.List;
 /**
  * Created By Peter Liu
  * */
+@Data
 public class OrderVo {
 
     private Long orderNo;
@@ -35,4 +38,5 @@ public class OrderVo {
     private Integer shippingId;
 
     private Shipping shippingVo;
+
 }
