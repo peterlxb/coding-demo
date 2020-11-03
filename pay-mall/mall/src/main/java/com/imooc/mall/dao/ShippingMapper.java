@@ -4,6 +4,7 @@ import com.imooc.mall.pojo.Shipping;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
+import java.util.Set;
 
 public interface ShippingMapper {
     int deleteByPrimaryKey(Integer id);
@@ -26,4 +27,6 @@ public interface ShippingMapper {
     // 根据uid 和 shippingId 查出对应收货地址
     Shipping selectByUidAndShippingId(@Param("uid") Integer uid,
                          @Param("shippingId") Integer shippingId);
+
+    List<Shipping> selectByIdSet(@Param("idSet")Set idSet);
 }

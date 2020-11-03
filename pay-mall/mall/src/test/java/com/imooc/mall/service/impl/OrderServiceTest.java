@@ -1,5 +1,6 @@
 package com.imooc.mall.service.impl;
 
+import com.github.pagehelper.PageInfo;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.imooc.mall.MallApplicationTests;
@@ -25,11 +26,11 @@ public class OrderServiceTest extends MallApplicationTests {
     @Autowired
     private ICartService cartService;
 
-    private Integer uid = 1;
+    private Integer uid = 6;
 
-    private Integer shippingId = 4;
+    private Integer shippingId = 6;
 
-    private Integer productId = 26;
+    private Integer productId = 27;
 
     private Gson gson = new GsonBuilder().setPrettyPrinting().create();
 
@@ -45,6 +46,13 @@ public class OrderServiceTest extends MallApplicationTests {
     @Test
     public void create() {
         ResponseVo<OrderVo> responseVo = orderService.create(uid, shippingId);
+        log.info("result={}", gson.toJson(responseVo));
+        Assert.assertEquals(ResponseEnum.SUCCESS.getCode(), responseVo.getStatus());
+    }
+
+    @Test
+    public void list() {
+        ResponseVo<PageInfo> responseVo = orderService.list(uid,1,2);
         log.info("result={}", gson.toJson(responseVo));
         Assert.assertEquals(ResponseEnum.SUCCESS.getCode(), responseVo.getStatus());
     }

@@ -1,5 +1,7 @@
 package com.imooc.mall.service.impl;
 
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
 import com.imooc.mall.dao.OrderItemMapper;
 import com.imooc.mall.dao.OrderMapper;
 import com.imooc.mall.dao.ProductMapper;
@@ -133,6 +135,49 @@ public class OrderServiceImpl implements IOrderService {
         // 构造 orderVo
         OrderVo orderVo =  buildOrderVo(order, orderItemList, shipping);
         return ResponseVo.success(orderVo);
+    }
+
+    @Override
+    public ResponseVo<PageInfo> list(Integer uid, Integer pageNum, Integer pageSize) {
+        PageHelper.startPage(pageNum,pageSize);
+        List<Order> orderList = orderMapper.selectByUid(uid);
+
+        // 订单number 集合
+        Set<Long> orderNoSet = orderList.stream()
+                .map(Order::getOrderNo)
+                .collect(Collectors.toSet());
+
+        List<OrderItem> orderItemList = orderItemMapper.selectByOrderNoSet(orderNoSet);
+        // list 转 map
+        Map<Long, List<OrderItem>> orderItemMap = orderItemList.stream()
+                                                    .collect(Collectors.groupingBy(OrderItem::getOrderNo));
+
+        // 地址集合
+        Set<Integer> shippingIdSet = orderList.stream()
+                .map(Order::getShippingId)
+                .collect(Collectors.toSet());
+        List<Shipping> shippingList = shippingMapper.selectByIdSet(shippingIdSet);
+        Map<Integer,Shipping> shippingMap = shippingList.stream()
+                                            .collect(Collectors.toMap(Shipping::getId, shipping -> shipping));
+
+        List<OrderVo> orderVoList = new ArrayList<>();
+        for (Order order: orderList) {
+            OrderVo orderVo = buildOrderVo(order,
+                    orderItemMap.get(order.getOrderNo()),
+                    shippingMap.get(order.getShippingId()));
+
+            orderVoList.add(orderVo);
+        }
+
+        PageInfo pageInfo = new PageInfo(orderList);
+        pageInfo.setList(orderVoList);
+
+        return ResponseVo.success(pageInfo);
+    }
+
+    @Override
+    public ResponseVo<OrderVo> detail(Integer uid, Long orderNo) {
+        return null;
     }
 
     private OrderVo buildOrderVo(Order order, List<OrderItem> orderItemList, Shipping shipping) {
