@@ -70,4 +70,12 @@ public class OrderServiceTest extends MallApplicationTests {
         log.info("result={}", gson.toJson(responseVo));
         Assert.assertEquals(ResponseEnum.SUCCESS.getCode(), responseVo.getStatus());
     }
+
+    @Test
+    public void cancel() {
+        ResponseVo<OrderVo> vo = create();
+        ResponseVo<OrderVo> responseVo = orderService.cancel(uid, vo.getData().getOrderNo());
+        log.info("result={}", gson.toJson(responseVo));
+        Assert.assertEquals(ResponseEnum.SUCCESS.getCode(), responseVo.getStatus());
+    }
 }
