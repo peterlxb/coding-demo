@@ -44,15 +44,29 @@ public class OrderServiceTest extends MallApplicationTests {
     }
 
     @Test
-    public void create() {
-        ResponseVo<OrderVo> responseVo = orderService.create(uid, shippingId);
+    public void createTest() {
+        ResponseVo<OrderVo> responseVo = create();
         log.info("result={}", gson.toJson(responseVo));
         Assert.assertEquals(ResponseEnum.SUCCESS.getCode(), responseVo.getStatus());
+    }
+
+    private ResponseVo<OrderVo> create() {
+        ResponseVo<OrderVo> responseVo = orderService.create(uid, shippingId);
+        log.info("result={}", gson.toJson(responseVo));
+        return responseVo;
     }
 
     @Test
     public void list() {
         ResponseVo<PageInfo> responseVo = orderService.list(uid,1,2);
+        log.info("result={}", gson.toJson(responseVo));
+        Assert.assertEquals(ResponseEnum.SUCCESS.getCode(), responseVo.getStatus());
+    }
+
+    @Test
+    public void detail() {
+        ResponseVo<OrderVo> vo = create();
+        ResponseVo<OrderVo> responseVo = orderService.detail(uid, vo.getData().getOrderNo());
         log.info("result={}", gson.toJson(responseVo));
         Assert.assertEquals(ResponseEnum.SUCCESS.getCode(), responseVo.getStatus());
     }

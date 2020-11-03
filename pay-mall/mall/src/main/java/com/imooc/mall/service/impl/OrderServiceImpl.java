@@ -177,7 +177,20 @@ public class OrderServiceImpl implements IOrderService {
 
     @Override
     public ResponseVo<OrderVo> detail(Integer uid, Long orderNo) {
-        return null;
+        Order order = orderMapper.selectByOrderNo(orderNo);
+        if (order == null && !order.getUserId().equals(uid)) {
+            return ResponseVo.error(ResponseEnum.ORDER_NOT_EXIST);
+        }
+
+        Set<Long> orderNoSet = new HashSet<>();
+        orderNoSet.add(order.getOrderNo());
+
+        List<OrderItem> orderItemList = orderItemMapper.selectByOrderNoSet(orderNoSet);
+        Shipping shipping = shippingMapper.selectByPrimaryKey(order.getShippingId());
+
+        OrderVo orderVo = buildOrderVo(order, orderItemList, shipping);
+
+        return ResponseVo.success(orderVo);
     }
 
     private OrderVo buildOrderVo(Order order, List<OrderItem> orderItemList, Shipping shipping) {
