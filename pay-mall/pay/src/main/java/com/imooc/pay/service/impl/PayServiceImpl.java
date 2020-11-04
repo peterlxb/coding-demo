@@ -1,5 +1,6 @@
 package com.imooc.pay.service.impl;
 
+import com.google.gson.Gson;
 import com.imooc.pay.dao.PayInfoMapper;
 import com.imooc.pay.enums.PayPlatformEnum;
 import com.imooc.pay.pojo.PayInfo;
@@ -11,6 +12,7 @@ import com.lly835.bestpay.model.PayRequest;
 import com.lly835.bestpay.model.PayResponse;
 import com.lly835.bestpay.service.BestPayService;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.amqp.core.AmqpTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -20,14 +22,20 @@ import java.math.BigDecimal;
 @Service
 public class PayServiceImpl implements IPayService {
 
+    private final static String QUEUE_PAY_NOTIFY = "pay_notify";
+
     /**
      * 将 BestPayService 配置相关代码移到config中，避免重复创建问题
      * */
     @Autowired
-    BestPayService bestPayService;
+    private BestPayService bestPayService;
 
     @Autowired
-    PayInfoMapper payInfoMapper;
+    private PayInfoMapper payInfoMapper;
+
+    @Autowired
+    private AmqpTemplate amqpTemplate;
+
 
     /**
      * 创建/发起 支付
@@ -84,7 +92,8 @@ public class PayServiceImpl implements IPayService {
             payInfoMapper.updateByPrimaryKeySelective(payInfo);
         }
 
-        //TODO pay 发送 MQ消息，mall 接收 MQ消息
+        //pay 发送 MQ消息，mall 接收 MQ消息
+        amqpTemplate.convertAndSend(QUEUE_PAY_NOTIFY, new Gson().toJson(payInfo));
 
         if (payResponse.getPayPlatformEnum() == BestPayPlatformEnum.WX) {
             // 4. 通知微信结果(避免重复通知)

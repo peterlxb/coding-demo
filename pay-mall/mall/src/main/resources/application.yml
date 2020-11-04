@@ -25,3 +25,4 @@ server:
   servlet:
     session:
       timeout: 120
+  port: 8082
