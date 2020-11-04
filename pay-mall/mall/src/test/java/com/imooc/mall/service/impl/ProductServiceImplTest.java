@@ -23,7 +23,7 @@ public class ProductServiceImplTest extends MallApplicationTests {
         Assert.assertEquals(ResponseEnum.SUCCESS.getCode(), responseVo.getStatus());
     }
 
-    @Test
+//    @Test
     public void detail() {
         ResponseVo<ProductDetailVo> responseVo =  productService.detail(100012);
         Assert.assertEquals(ResponseEnum.SUCCESS.getCode(), responseVo.getStatus());
