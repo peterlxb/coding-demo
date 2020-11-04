@@ -18,7 +18,7 @@ import java.math.BigDecimal;
 
 @Slf4j
 @Service
-public class PayService implements IPayService {
+public class PayServiceImpl implements IPayService {
 
     /**
      * 将 BestPayService 配置相关代码移到config中，避免重复创建问题

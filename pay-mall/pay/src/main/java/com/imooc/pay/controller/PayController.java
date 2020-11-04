@@ -1,7 +1,7 @@
 package com.imooc.pay.controller;
 
 import com.imooc.pay.pojo.PayInfo;
-import com.imooc.pay.service.impl.PayService;
+import com.imooc.pay.service.impl.PayServiceImpl;
 import com.lly835.bestpay.config.WxPayConfig;
 import com.lly835.bestpay.enums.BestPayTypeEnum;
 import com.lly835.bestpay.model.PayResponse;
@@ -24,7 +24,7 @@ import java.util.Map;
 public class PayController {
 
     @Autowired
-    private PayService payService;
+    private PayServiceImpl payService;
 
     @Autowired
     WxPayConfig wxPayConfig;
