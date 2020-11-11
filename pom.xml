@@ -8,10 +8,10 @@
 		<version>2.1.1.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>geektime.demo</groupId>
-	<artifactId>helloworld</artifactId>
+	<groupId>spring.demo</groupId>
+	<artifactId>java-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>HelloWorld</name>
+	<name>JavaService</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
