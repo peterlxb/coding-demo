@@ -40,10 +40,10 @@
       <module fileurl="file://$PROJECT_DIR$/spring-mvc/exception-demo/exception-demo.iml" filepath="$PROJECT_DIR$/spring-mvc/exception-demo/exception-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-autoconfig/geektime-spring-boot-starter/geektime-spring-boot-starter.iml" filepath="$PROJECT_DIR$/spring-autoconfig/geektime-spring-boot-starter/geektime-spring-boot-starter.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-autoconfig/greeting/greeting.iml" filepath="$PROJECT_DIR$/spring-autoconfig/greeting/greeting.iml" />
-      <module fileurl="file://$PROJECT_DIR$/spring-starter-demo/spring-demo/helloworld.iml" filepath="$PROJECT_DIR$/spring-starter-demo/spring-demo/helloworld.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-starter-demo/spring-demo-04/helloworld.iml" filepath="$PROJECT_DIR$/spring-starter-demo/spring-demo-04/helloworld.iml" />
       <module fileurl="file://$PROJECT_DIR$/helloworld (1).iml" filepath="$PROJECT_DIR$/helloworld (1).iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-gateway/gateway-service-zuul-simple/helloworld (1) (com.demo).iml" filepath="$PROJECT_DIR$/spring-gateway/gateway-service-zuul-simple/helloworld (1) (com.demo).iml" />
-      <module fileurl="file://$PROJECT_DIR$/spring-starter-demo/spring-demo/helloworld (2).iml" filepath="$PROJECT_DIR$/spring-starter-demo/spring-demo/helloworld (2).iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-starter-demo/spring-demo-04/helloworld (2).iml" filepath="$PROJECT_DIR$/spring-starter-demo/spring-demo-04/helloworld (2).iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-circuit-break/hystrix-dashboard-demo/hystrix-dashboard-demo.iml" filepath="$PROJECT_DIR$/spring-circuit-break/hystrix-dashboard-demo/hystrix-dashboard-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-nosql/jedis-demo/jedis-demo.iml" filepath="$PROJECT_DIR$/spring-nosql/jedis-demo/jedis-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-ORMapping/jpa-complex-demo/jpa-complex-demo.iml" filepath="$PROJECT_DIR$/spring-ORMapping/jpa-complex-demo/jpa-complex-demo.iml" />
@@ -62,7 +62,7 @@
       <module fileurl="file://$PROJECT_DIR$/spring-jdbc/simple-jdbc-demo/simple-jdbc-demo.iml" filepath="$PROJECT_DIR$/spring-jdbc/simple-jdbc-demo/simple-jdbc-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-nosql/cache-with-redis-demo/springbucks.iml" filepath="$PROJECT_DIR$/spring-nosql/cache-with-redis-demo/springbucks.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-nosql/cache-with-redis-demo/springbucks (1).iml" filepath="$PROJECT_DIR$/spring-nosql/cache-with-redis-demo/springbucks (1).iml" />
-      <module fileurl="file://$PROJECT_DIR$/spring-starter-demo/spring-demo/springdemo.iml" filepath="$PROJECT_DIR$/spring-starter-demo/spring-demo/springdemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-starter-demo/spring-demo-04/springdemo.iml" filepath="$PROJECT_DIR$/spring-starter-demo/spring-demo-04/springdemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/springInAction/chap3/taco-jpa/taco-cloud.iml" filepath="$PROJECT_DIR$/springInAction/chap3/taco-jpa/taco-cloud.iml" />
       <module fileurl="file://$PROJECT_DIR$/springInAction/chap1/taco-cloud/taco-cloud (1).iml" filepath="$PROJECT_DIR$/springInAction/chap1/taco-cloud/taco-cloud (1).iml" />
       <module fileurl="file://$PROJECT_DIR$/springInAction/chap2/taco-cloud/taco-cloud (2).iml" filepath="$PROJECT_DIR$/springInAction/chap2/taco-cloud/taco-cloud (2).iml" />
