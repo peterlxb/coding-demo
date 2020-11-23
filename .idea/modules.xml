@@ -64,14 +64,8 @@
       <module fileurl="file://$PROJECT_DIR$/spring-nosql/cache-with-redis-demo/springbucks (1).iml" filepath="$PROJECT_DIR$/spring-nosql/cache-with-redis-demo/springbucks (1).iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-starter-demo/spring-demo-05/springdemo.iml" filepath="$PROJECT_DIR$/spring-starter-demo/spring-demo-05/springdemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-starter-demo/spring-demo-04/springdemo (1).iml" filepath="$PROJECT_DIR$/spring-starter-demo/spring-demo-04/springdemo (1).iml" />
-      <module fileurl="file://$PROJECT_DIR$/springInAction/chap3/taco-jpa/taco-cloud (3).iml" filepath="$PROJECT_DIR$/springInAction/chap3/taco-jpa/taco-cloud (3).iml" />
-      <module fileurl="file://$PROJECT_DIR$/springInAction/chap7/tacocloud-api/tacocloud-api (1).iml" filepath="$PROJECT_DIR$/springInAction/chap7/tacocloud-api/tacocloud-api (1).iml" />
-      <module fileurl="file://$PROJECT_DIR$/springInAction/chap7/tacocloud-data/tacocloud-data (1).iml" filepath="$PROJECT_DIR$/springInAction/chap7/tacocloud-data/tacocloud-data (1).iml" />
-      <module fileurl="file://$PROJECT_DIR$/springInAction/chap7/tacocloud-domain/tacocloud-domain (1).iml" filepath="$PROJECT_DIR$/springInAction/chap7/tacocloud-domain/tacocloud-domain (1).iml" />
-      <module fileurl="file://$PROJECT_DIR$/springInAction/chap7/tacocloud-restclient/tacocloud-restclient.iml" filepath="$PROJECT_DIR$/springInAction/chap7/tacocloud-restclient/tacocloud-restclient.iml" />
-      <module fileurl="file://$PROJECT_DIR$/springInAction/chap7/tacocloud-security/tacocloud-security (1).iml" filepath="$PROJECT_DIR$/springInAction/chap7/tacocloud-security/tacocloud-security (1).iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-starter-demo/spring-demo-05/springdemo (2).iml" filepath="$PROJECT_DIR$/spring-starter-demo/spring-demo-05/springdemo (2).iml" />
       <module fileurl="file://$PROJECT_DIR$/springInAction/chap7/tacocloud-ui/tacocloud-ui (1).iml" filepath="$PROJECT_DIR$/springInAction/chap7/tacocloud-ui/tacocloud-ui (1).iml" />
-      <module fileurl="file://$PROJECT_DIR$/springInAction/chap7/tacocloud-web/tacocloud-web (1).iml" filepath="$PROJECT_DIR$/springInAction/chap7/tacocloud-web/tacocloud-web (1).iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-web/spring-hateoas-demo/todolist (1).iml" filepath="$PROJECT_DIR$/spring-web/spring-hateoas-demo/todolist (1).iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-web/spring-hateoas-demo/todolist (2).iml" filepath="$PROJECT_DIR$/spring-web/spring-hateoas-demo/todolist (2).iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-circuit-break/turbine-demo/turbine-demo.iml" filepath="$PROJECT_DIR$/spring-circuit-break/turbine-demo/turbine-demo.iml" />
@@ -102,7 +96,6 @@
       <module fileurl="file://$PROJECT_DIR$/spring-config/git-config-waiter-serivce/waiter-service (5).iml" filepath="$PROJECT_DIR$/spring-config/git-config-waiter-serivce/waiter-service (5).iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-mvc/more-complex-controller-demo/waiter-service (5) (com.spring.springbucks).iml" filepath="$PROJECT_DIR$/spring-mvc/more-complex-controller-demo/waiter-service (5) (com.spring.springbucks).iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-sleuth/final-waiter-service/waiter-service (5) (geektime.spring.springbucks).iml" filepath="$PROJECT_DIR$/spring-sleuth/final-waiter-service/waiter-service (5) (geektime.spring.springbucks).iml" />
-      <module fileurl="file://$PROJECT_DIR$/spring-config/nacos-config-waiter-service/waiter-service (6).iml" filepath="$PROJECT_DIR$/spring-config/nacos-config-waiter-service/waiter-service (6).iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-mvc/thymeleaf-view-demo/waiter-service (6) (com.spring.springbucks).iml" filepath="$PROJECT_DIR$/spring-mvc/thymeleaf-view-demo/waiter-service (6) (com.spring.springbucks).iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-config/zk-config-waiter-service/waiter-service (7).iml" filepath="$PROJECT_DIR$/spring-config/zk-config-waiter-service/waiter-service (7).iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-service-discovery/consul-waiter-service/waiter-service (7) (com.spring.springbucks).iml" filepath="$PROJECT_DIR$/spring-service-discovery/consul-waiter-service/waiter-service (7) (com.spring.springbucks).iml" />

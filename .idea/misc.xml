@@ -60,7 +60,6 @@
         <option value="$PROJECT_DIR$/spring-config/git-config-waiter-serivce/pom.xml" />
         <option value="$PROJECT_DIR$/spring-config/zk-config-waiter-service/pom.xml" />
         <option value="$PROJECT_DIR$/spring-config/consul-config-waiter-service/pom.xml" />
-        <option value="$PROJECT_DIR$/spring-config/nacos-config-waiter-service/pom.xml" />
         <option value="$PROJECT_DIR$/spring-stream/rabbitmq-waiter-service/pom.xml" />
         <option value="$PROJECT_DIR$/spring-jdbc/pure-spring-datasource-demo/pom.xml" />
         <option value="$PROJECT_DIR$/spring-stream/kafka-barista-service/pom.xml" />

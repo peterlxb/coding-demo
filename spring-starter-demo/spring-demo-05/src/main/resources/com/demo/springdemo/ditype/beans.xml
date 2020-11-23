@@ -3,9 +3,26 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
     <!-- 属性注入 -->
-    <bean id="car" class="com.demo.springdemo.ditype.Car">
-        <property name="brand" value="红旗&amp;CA72"/>
-        <property name="maxSpeed" value="200"/>
-        <property name="price" value="20000.00"/>
+<!--    <bean id="car" class="com.demo.springdemo.ditype.Car">-->
+<!--        <property name="brand" value="红旗&amp;CA72"/>-->
+<!--        <property name="maxSpeed" value="200"/>-->
+<!--        <property name="price" value="20000.00"/>-->
+<!--    </bean>-->
+
+    <!--  构造函数注入 - 根据类型-->
+    <bean id="car1" class="com.demo.springdemo.ditype.Car">
+        <constructor-arg type="java.lang.String">
+            <value>红旗&amp;CA72</value>
+        </constructor-arg>
+        <constructor-arg type="double">
+            <value>20000</value>
+        </constructor-arg>
+    </bean>
+
+    <bean id="car2" class="com.demo.springdemo.ditype.Car">
+        <!-- 索引从0开始  -->
+        <constructor-arg index="0" value="红旗CA72" />
+        <constructor-arg index="1" value="中国一汽" />
+        <constructor-arg index="2" value="20000" />
     </bean>
 </beans>
