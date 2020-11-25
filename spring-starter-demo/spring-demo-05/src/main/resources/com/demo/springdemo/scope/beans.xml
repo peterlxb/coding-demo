@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+         http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+         http://www.springframework.org/schema/aop">
+
+    <bean id="car" class="com.demo.springdemo.scope.Car" scope="request">
+        <aop:scoped-proxy></aop:scoped-proxy>
+    </bean>
+
+    <bean id="boss" class="com.demo.springdemo.scope.Boss">
+        <property name="car" ref="car"/>
+    </bean>
+
+    <bean id="car" class="com.demo.springdemo.scope.Car" scope="singleton"/>
+
+    <bean id="boss1" class="com.demo.springdemo.scope.Boss" p:car-ref="car" />
+    <bean id="boss2" class="com.demo.springdemo.scope.Boss" p:car-ref="car" />
+    <bean id="boss3" class="com.demo.springdemo.scope.Boss" p:car-ref="car" />
+</beans>
