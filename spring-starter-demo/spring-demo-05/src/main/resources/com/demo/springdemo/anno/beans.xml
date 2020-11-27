@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- 声明 context 命名空间 -->
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+         http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+         http://www.springframework.org/schema/context
+         http://www.springframework.org/schema/context/spring-context-4.0.xsd"
+         >
+    <!--	扫描类包以应用注解定义的 Bean -->
+    <context:component-scan base-package="com.demo.springdemo.anno"/>
+
+<!--	<context:component-scan base-package="com.demo.springdemo" resource-pattern="anno/*.class" />-->
+<!--	<context:component-scan base-package="com.demo.springdemo">-->
+<!--		<context:include-filter type="regex" expression="com\.demo\.springdemo\.anno.*"/>-->
+<!--		<context:exclude-filter type="aspectj" expression="com.demo.springdemo..*Controller+"/>-->
+<!--	</context:component-scan>-->
+
+<!--	<context:component-scan base-package="com.demo.springdemo">-->
+<!--		<context:include-filter type="annotation"-->
+<!--								expression="org.springframework.stereotype.Controller"/>-->
+<!--	</context:component-scan>-->
+
+<!--	<context:component-scan base-package="com.demo.springdemo" use-default-filters="false">-->
+<!--		<context:include-filter type="annotation"-->
+<!--								expression="org.springframework.stereotype.Controller"/>-->
+<!--	</context:component-scan>-->
+
+</beans>
