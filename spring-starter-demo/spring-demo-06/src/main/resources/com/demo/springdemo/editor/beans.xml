@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+         http://www.springframework.org/schema/beans/spring-beans-4.0.xsd">
+
+    <!-- 1.配置自动注册属性编辑器的 CustomEditorConfigurer  -->
+    <bean class="org.springframework.beans.factory.config.CustomEditorConfigurer">
+        <property name="customEditors">
+            <map>
+                <!-- 2.属性编辑器对应的属性类型 -->
+                <entry key="com.demo.springdemo.editor.Car"
+                       value="com.demo.springdemo.editor.CustomCarEditor"/>
+            </map>
+        </property>
+    </bean>
+
+    <bean id="boss" class="com.demo.springdemo.editor.Boss">
+        <property name="name" value="John"/>
+        <!-- 3.该属性将使用 2处的属性编辑器完成属性填充操作 -->
+        <property name="car" value="红旗CA72,200,20000.00"/>
+    </bean>
+
+</beans>
