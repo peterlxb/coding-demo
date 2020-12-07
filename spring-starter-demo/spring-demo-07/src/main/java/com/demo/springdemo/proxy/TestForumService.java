@@ -6,7 +6,8 @@ public class TestForumService {
 
     public static void main(String[] args) {
 //        test();
-        proxy();
+//        proxy();
+        CglibProxy();
     }
 
 
@@ -27,6 +28,15 @@ public class TestForumService {
 
         proxy.removeTopic(1012);
         proxy.removeForum(10);
+    }
+
+    private static void CglibProxy() {
+        CglibProxy proxy = new CglibProxy();
+        // 通过动态生成子类的方式创建代理类
+        ForumServiceImpl forumService =
+                (ForumServiceImpl) proxy.getProxy(ForumServiceImpl.class);
+        forumService.removeForum(10);
+        forumService.removeTopic(1023);
     }
 
     private static void test() {
