@@ -9,7 +9,7 @@ public class IntroduceTest {
     public static ApplicationContext ctx = new ClassPathXmlApplicationContext(configPath);
 
     public static void main(String[] args) throws Exception {
-//        throwAdviceTest();
+        throwAdviceTest();
     }
 
     public static void throwAdviceTest() {

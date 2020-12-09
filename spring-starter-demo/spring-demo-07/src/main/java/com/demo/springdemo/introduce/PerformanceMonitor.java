@@ -1,15 +1,15 @@
 package com.demo.springdemo.introduce;
 
 public class PerformanceMonitor {
-	private static ThreadLocal<MethodPerformace> performaceRecord = new ThreadLocal<MethodPerformace>();
+	private static ThreadLocal<MethodPerformance> MethodPerformance = new ThreadLocal<>();
 
 	public static void begin(String method) {
 		System.out.println("begin monitor...");
-		MethodPerformace mp = performaceRecord.get();
+		MethodPerformance mp = MethodPerformance.get();
 
 		if(mp == null){
-			mp = new MethodPerformace(method);
-			performaceRecord.set(mp);
+			mp = new MethodPerformance(method);
+			MethodPerformance.set(mp);
 
 		}else{
 		    mp.reset(method);	
@@ -18,7 +18,7 @@ public class PerformanceMonitor {
 
 	public static void end() {
 		System.out.println("end monitor...");
-		MethodPerformace mp = performaceRecord.get();
-		mp.printPerformace();
+		MethodPerformance mp = MethodPerformance.get();
+		mp.printPerformance();
 	}
 }
