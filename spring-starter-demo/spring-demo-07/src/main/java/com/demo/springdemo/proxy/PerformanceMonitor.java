@@ -4,7 +4,7 @@ public class PerformanceMonitor {
 
     // 1. 通过一个 ThreadLocal 保存与调用线程有关的性能监视信息
     private static ThreadLocal<MethodPerformance> performanceRecord =
-            new ThreadLocal<MethodPerformance>();
+            new ThreadLocal<>();
 
     // 2. 启动对某一目标方法的性能监视
     public static void begin(String method) {

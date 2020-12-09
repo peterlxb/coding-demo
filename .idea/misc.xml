@@ -70,7 +70,6 @@
         <option value="$PROJECT_DIR$/spring-sleuth/sleuth-waiter-service/pom.xml" />
         <option value="$PROJECT_DIR$/spring-sleuth/sleuth-customer-service/pom.xml" />
         <option value="$PROJECT_DIR$/spring-sleuth/mq-zipkin-barista-service/pom.xml" />
-        <option value="$PROJECT_DIR$/spring-sleuth/final-waiter-service/pom.xml" />
         <option value="$PROJECT_DIR$/spring-sleuth/final-customer-service/pom.xml" />
         <option value="$PROJECT_DIR$/spring-sleuth/final-barista-service/pom.xml" />
         <option value="$PROJECT_DIR$/spring-gateway/gateway-service-zuul-simple/pom.xml" />
