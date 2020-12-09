@@ -7,9 +7,13 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class AdviceTest {
 
-    public static void main(String[] args) {
+    public static String configPath = "com/demo/springdemo/advice/beans.xml";
+    public static ApplicationContext ctx = new ClassPathXmlApplicationContext(configPath);
+
+    public static void main(String[] args) throws Exception {
 //        before();
-        beforeWithSpring();
+        aopWithSpring();
+        throwAdviceTest();
     }
 
 
@@ -39,11 +43,25 @@ public class AdviceTest {
     }
 
     // 测试基于 Spring 的代理
-    private static void beforeWithSpring() {
-        String configPath = "com/demo/springdemo/advice/beans.xml";
-        ApplicationContext ctx = new ClassPathXmlApplicationContext(configPath);
+    private static void aopWithSpring()  {
         Waiter waiter = (Waiter) ctx.getBean("waiter");
         waiter.greetTo("John Dow");
+
+        Forum forum = new Forum();
+        forum.setForumId(10);
+    }
+
+    // ThrowAdviceTest
+    public static void throwAdviceTest() {
+        ForumService forumService = (ForumService) ctx.getBean("forumService");
+
+        try{
+            forumService.removeForum(10);
+        } catch (Exception e) {}
+
+        try{
+            forumService.updateForum(new Forum());
+        } catch (Exception e) {}
     }
 
 }

@@ -4,14 +4,42 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans 
      http://www.springframework.org/schema/beans/spring-beans-4.0.xsd">
 
-	<bean id="greetingAdvice" class="com.demo.springdemo.advice.GreetingBeforeAdvice" />
+	<bean id="greetingBefore" class="com.demo.springdemo.advice.GreetingBeforeAdvice" />
+	<bean id="greetingAfter" class="com.demo.springdemo.advice.GreetingAfterAdvice" />
+	<bean id="greetingAround" class="com.demo.springdemo.advice.GreetingInterceptor" />
+	<bean id="transactionManager" class="com.demo.springdemo.advice.TransactionManager"/>
+	<bean id="forumServiceTarget" class="com.demo.springdemo.advice.ForumService"/>
 	<bean id="target" class="com.demo.springdemo.advice.NaiveWaiter" />
 
 	<!--1. greetingAdvice -->
+	<!-->
 	<bean id="waiter" class="org.springframework.aop.framework.ProxyFactoryBean"
 		p:proxyInterfaces="com.demo.springdemo.advice.Waiter"
-		p:interceptorNames="greetingAdvice"
+		p:interceptorNames="greetingBefore"
 		p:target-ref="target"
+	/>
+	<-->
+
+	<!--2. before and after advice -->
+	<!-->
+	<bean id="waiter" class="org.springframework.aop.framework.ProxyFactoryBean"
+		  p:proxyInterfaces="com.demo.springdemo.advice.Waiter"
+		  p:interceptorNames="greetingBefore,greetingAfter"
+		  p:target-ref="target"
+	/>
+	<-->
+
+	<!--3. around advice -->
+	<bean id="waiter" class="org.springframework.aop.framework.ProxyFactoryBean"
+		  p:proxyInterfaces="com.demo.springdemo.advice.Waiter"
+		  p:interceptorNames="greetingAround"
+		  p:target-ref="target"
+	/>
+
+	<bean id="forumService" class="org.springframework.aop.framework.ProxyFactoryBean"
+		  p:interceptorNames="transactionManager"
+		  p:target-ref="forumServiceTarget"
+		  p:proxyTargetClass="true"
 	/>
 
 </beans>
