@@ -9,7 +9,8 @@ public class AdvisorTest {
     public static ApplicationContext ctx = new ClassPathXmlApplicationContext(configPath);
 
     public static void main(String[] args) throws Exception {
-        staticMethodMatcherTest();
+//        staticMethodMatcherTest();
+        regexpMethodMatcherTest();
     }
 
     public static void staticMethodMatcherTest() {
@@ -19,6 +20,13 @@ public class AdvisorTest {
         waiter.greetTo("John");
         waiter.serveTo("John");
         seller.greetTo("John");
+    }
+
+    public static void regexpMethodMatcherTest() {
+        Waiter waiter = (Waiter) ctx.getBean("waiter1");
+
+        waiter.greetTo("John");
+        waiter.serveTo("John");
     }
 
 }
