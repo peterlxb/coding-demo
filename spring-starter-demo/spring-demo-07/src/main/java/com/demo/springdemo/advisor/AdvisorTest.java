@@ -10,7 +10,8 @@ public class AdvisorTest {
 
     public static void main(String[] args) throws Exception {
 //        staticMethodMatcherTest();
-        regexpMethodMatcherTest();
+//        regexpMethodMatcherTest();
+        dynamicMethodMatcherTest();
     }
 
     public static void staticMethodMatcherTest() {
@@ -27,6 +28,16 @@ public class AdvisorTest {
 
         waiter.greetTo("John");
         waiter.serveTo("John");
+    }
+
+    // 动态切面测试
+    public static void dynamicMethodMatcherTest() {
+        Waiter waiter = (Waiter) ctx.getBean("waiter2");
+
+        waiter.serveTo("Peter");
+        waiter.greetTo("Peter");
+        waiter.serveTo("John");
+        waiter.greetTo("John");
     }
 
 }

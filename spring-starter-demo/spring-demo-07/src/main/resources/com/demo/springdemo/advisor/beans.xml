@@ -38,4 +38,21 @@
 		  p:proxyTargetClass="true"
 	/>
 
+	<!-- 动态切面配置	-->
+	<bean id="dynamicAdvisor"
+		  class="org.springframework.aop.support.DefaultPointcutAdvisor">
+		<property name="pointcut">
+			<bean class="com.demo.springdemo.advisor.GreetingDynamicPointcut" />
+		</property>
+		<property name="advice">
+			<bean class="com.demo.springdemo.advisor.GreetingBeforeAdvice" />
+		</property>
+	</bean>
+	<bean id="waiter2"
+		  class="org.springframework.aop.framework.ProxyFactoryBean"
+		  p:interceptorNames="dynamicAdvisor"
+		  p:target-ref="waiterTarget"
+		  p:proxyTargetClass="true"
+	/>
+
 </beans>
