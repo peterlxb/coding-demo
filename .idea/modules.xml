@@ -62,10 +62,10 @@
       <module fileurl="file://$PROJECT_DIR$/spring-jdbc/simple-jdbc-demo/simple-jdbc-demo.iml" filepath="$PROJECT_DIR$/spring-jdbc/simple-jdbc-demo/simple-jdbc-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-nosql/cache-with-redis-demo/springbucks.iml" filepath="$PROJECT_DIR$/spring-nosql/cache-with-redis-demo/springbucks.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-nosql/cache-with-redis-demo/springbucks (1).iml" filepath="$PROJECT_DIR$/spring-nosql/cache-with-redis-demo/springbucks (1).iml" />
-      <module fileurl="file://$PROJECT_DIR$/spring-starter-demo/spring-demo-05/springdemo.iml" filepath="$PROJECT_DIR$/spring-starter-demo/spring-demo-05/springdemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-starter-demo/spring-demo-06/springdemo.iml" filepath="$PROJECT_DIR$/spring-starter-demo/spring-demo-06/springdemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-starter-demo/spring-demo-04/springdemo (1).iml" filepath="$PROJECT_DIR$/spring-starter-demo/spring-demo-04/springdemo (1).iml" />
-      <module fileurl="file://$PROJECT_DIR$/spring-starter-demo/spring-demo-07/springdemo (2).iml" filepath="$PROJECT_DIR$/spring-starter-demo/spring-demo-07/springdemo (2).iml" />
-      <module fileurl="file://$PROJECT_DIR$/spring-starter-demo/spring-demo-06/springdemo (3).iml" filepath="$PROJECT_DIR$/spring-starter-demo/spring-demo-06/springdemo (3).iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-starter-demo/spring-demo-05/springdemo (2).iml" filepath="$PROJECT_DIR$/spring-starter-demo/spring-demo-05/springdemo (2).iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-starter-demo/spring-demo-08/springdemo (3).iml" filepath="$PROJECT_DIR$/spring-starter-demo/spring-demo-08/springdemo (3).iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-starter-demo/spring-demo-07/springdemo (4).iml" filepath="$PROJECT_DIR$/spring-starter-demo/spring-demo-07/springdemo (4).iml" />
       <module fileurl="file://$PROJECT_DIR$/springInAction/chap7/tacocloud-ui/tacocloud-ui (1).iml" filepath="$PROJECT_DIR$/springInAction/chap7/tacocloud-ui/tacocloud-ui (1).iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-web/spring-hateoas-demo/todolist (1).iml" filepath="$PROJECT_DIR$/spring-web/spring-hateoas-demo/todolist (1).iml" />
@@ -81,7 +81,6 @@
       <module fileurl="file://$PROJECT_DIR$/spring-stream/rabbitmq-waiter-service/waiter-service (11) (com.spring.springbucks).iml" filepath="$PROJECT_DIR$/spring-stream/rabbitmq-waiter-service/waiter-service (11) (com.spring.springbucks).iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-gateway/gateway-service-zuul-simple/waiter-service (12).iml" filepath="$PROJECT_DIR$/spring-gateway/gateway-service-zuul-simple/waiter-service (12).iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-stream/busy-waiter-service/waiter-service (12) (com.spring.springbucks).iml" filepath="$PROJECT_DIR$/spring-stream/busy-waiter-service/waiter-service (12) (com.spring.springbucks).iml" />
-      <module fileurl="file://$PROJECT_DIR$/spring-sleuth/final-waiter-service/waiter-service (13).iml" filepath="$PROJECT_DIR$/spring-sleuth/final-waiter-service/waiter-service (13).iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-gateway/gateway-service-zuul-simple/waiter-service (13) (com.spring.springbucks).iml" filepath="$PROJECT_DIR$/spring-gateway/gateway-service-zuul-simple/waiter-service (13) (com.spring.springbucks).iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-sleuth/sleuth-waiter-service/waiter-service (14).iml" filepath="$PROJECT_DIR$/spring-sleuth/sleuth-waiter-service/waiter-service (14).iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-stream/busy-waiter-service/waiter-service (15).iml" filepath="$PROJECT_DIR$/spring-stream/busy-waiter-service/waiter-service (15).iml" />
