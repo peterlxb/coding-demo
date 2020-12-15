@@ -55,4 +55,49 @@
 		  p:proxyTargetClass="true"
 	/>
 
+	<!-- 流程切面 -->
+	<!-- <bean id="greetingAdvice" class="com.demo.springdemo.advisor.GreetingBeforeAdvice"/>-->
+	<bean id="controlFlowPointcut" class="org.springframework.aop.support.ControlFlowPointcut">
+		<constructor-arg type="java.lang.Class" value="com.demo.springdemo.advisor.WaiterDelegate"/>
+		<constructor-arg type="java.lang.String" value="service"/>
+	</bean>
+	<bean id="controlFlowAdvisor" class="org.springframework.aop.support.DefaultPointcutAdvisor"
+		  p:pointcut-ref="controlFlowPointcut"
+		  p:advice-ref="greetingAdvice"
+	/>
+	<bean id="waiter3"
+		  class="org.springframework.aop.framework.ProxyFactoryBean"
+		  p:interceptorNames="controlFlowAdvisor"
+		  p:target-ref="waiterTarget"
+		  p:proxyTargetClass="true"
+	/>
+
+	<!-- 复合切点切面	-->
+	<!-- <bean id="greetingAdvice" class="com.demo.springdemo.advisor.GreetingBeforeAdvice"/>-->
+	<bean id="gcp" class="com.demo.springdemo.advisor.GreetingComposablePointcut" />
+	<bean id="composableAdvisor" class="org.springframework.aop.support.DefaultPointcutAdvisor"
+		  p:pointcut="#{gcp.intersectionPointcut}"
+		  p:advice-ref="greetingAdvice"
+	/>
+	<bean id="waiter4"
+		  class="org.springframework.aop.framework.ProxyFactoryBean"
+		  p:interceptorNames="composableAdvisor"
+		  p:target-ref="waiterTarget"
+		  p:proxyTargetClass="true"
+	/>
+
+
+	<!-- 引介切面 -->
+	<bean id="introduceAdvisor" class="org.springframework.aop.support.DefaultPointcutAdvisor" >
+	<!-- ControllablePerformanceMonitor 是一个 Advice 对象 -->
+		<constructor-arg>
+			<bean class="com.demo.springdemo.introduce.ControllablePerformanceMonitor"/>
+		</constructor-arg>
+	</bean>
+	<bean id="forumServiceTarget" class="com.demo.springdemo.introduce.ForumService" />
+	<bean id="forumService" class="org.springframework.aop.framework.ProxyFactoryBean"
+		  p:interceptorNames="introduceAdvisor"
+		  p:target-ref="forumServiceTarget"
+		  p:proxyTargetClass="true"
+	/>
 </beans>

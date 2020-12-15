@@ -1,5 +1,6 @@
 package com.demo.springdemo.advisor;
 
+import com.demo.springdemo.introduce.ForumService;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -11,8 +12,12 @@ public class AdvisorTest {
     public static void main(String[] args) throws Exception {
 //        staticMethodMatcherTest();
 //        regexpMethodMatcherTest();
-        dynamicMethodMatcherTest();
+//        dynamicMethodMatcherTest();
+//        defaultAdvisorTest();
+//        composableAdvisorTest();
+        controlFlowTest();
     }
+
 
     public static void staticMethodMatcherTest() {
         Waiter waiter = (Waiter) ctx.getBean("waiter");
@@ -40,5 +45,32 @@ public class AdvisorTest {
         waiter.greetTo("John");
     }
 
+    // 流程切面测试
+    public static void controlFlowTest() {
+        Waiter waiter = (Waiter) ctx.getBean("waiter3");
+        WaiterDelegate wd = new WaiterDelegate();
+        wd.setWaiter(waiter);
+        waiter.serveTo("Peter");
+        waiter.greetTo("Peter");
+        wd.service("Peter");
+    }
+
+    // 复合切面测试
+    public static void composableAdvisorTest() {
+        Waiter waiter = (Waiter) ctx.getBean("waiter4");
+        WaiterDelegate wd = new WaiterDelegate();
+        wd.setWaiter(waiter);
+        waiter.serveTo("Peter");
+        waiter.greetTo("Peter");
+        wd.service("Peter");
+    }
+
+    // 引介切面测试
+    public static void defaultAdvisorTest() {
+        ForumService forumService = (ForumService) ctx.getBean("forumService");
+
+        forumService.removeForum(10);
+        forumService.removeTopic(1022);
+    }
 }
 
