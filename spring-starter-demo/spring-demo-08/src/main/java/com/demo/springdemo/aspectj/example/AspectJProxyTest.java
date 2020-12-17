@@ -7,11 +7,10 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class AspectJProxyTest {
 
-    public static String configPath = "com/demo/springdemo/aspectj/example/beans.xml";
-    public static org.springframework.context.ApplicationContext ctx = new ClassPathXmlApplicationContext(configPath);
+    public static final String configPath = "com/demo/springdemo/aspectj/example/beans.xml";
+    protected static  org.springframework.context.ApplicationContext  ctx = new ClassPathXmlApplicationContext(configPath);
 
     public static void main(String[] args) {
-//        proxy();
         configTest();
     }
 
