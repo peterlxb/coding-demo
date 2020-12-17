@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+           http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.0.xsd">
+    <aop:aspectj-autoproxy/>
+    <!-- 1. 目标 Bean -->
+    <bean id="waiter" class="com.demo.springdemo.NaiveWaiter" />
+    <!-- 2.使用了 @Aspect 注解的切面类 -->
+    <bean class="com.demo.springdemo.aspectj.example.PreGreetingAspect" />
+    <!-- 3. 自动代理创建器，自动将 @Aspect 注解切面类织入目标 Bean 中 -->
+    <!--bean class="org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator"/-->
+</beans>
