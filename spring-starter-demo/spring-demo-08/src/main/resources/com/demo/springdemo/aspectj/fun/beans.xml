@@ -7,5 +7,7 @@
     <aop:aspectj-autoproxy/>
     <bean id="naiveWaiter" class="com.demo.springdemo.NaiveWaiter" />
     <bean id="naughtyWaiter" class="com.demo.springdemo.NaughtyWaiter" />
+
+    <bean class="com.demo.springdemo.aspectj.fun.EnableSellerAspect" />
     <bean class="com.demo.springdemo.aspectj.fun.TestAspect" />
 </beans>
