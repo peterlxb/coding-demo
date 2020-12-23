@@ -13,7 +13,7 @@ public class TestAspect {
 //    }
 
     // 后置增强切面，织入任何运行期对象为Seller类型的Bean中
-    @AfterReturning("this(com.demo.springdemo.Seller)")
+    @AfterReturning("target(com.demo.springdemo.Seller)")
     public void thisTest() {
         System.out.println("thisTest() executed!");
     }
