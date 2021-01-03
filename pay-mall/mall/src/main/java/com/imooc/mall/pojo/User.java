@@ -1,7 +1,6 @@
 package com.imooc.mall.pojo;
 
 import lombok.Data;
-
 import java.util.Date;
 
 @Data

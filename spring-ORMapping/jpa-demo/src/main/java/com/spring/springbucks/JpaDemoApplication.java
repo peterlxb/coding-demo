@@ -17,7 +17,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import java.util.Arrays;
 import java.util.Collections;
 
-@SpringBootApplication
+@SpringBootApplicatio
 @EnableJpaRepositories
 @Slf4j
 public class JpaDemoApplication implements ApplicationRunner {

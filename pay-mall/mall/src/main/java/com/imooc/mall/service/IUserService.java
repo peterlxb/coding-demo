@@ -7,7 +7,6 @@ public interface IUserService {
 
     /**
      * 注册
-     * @return
      */
     ResponseVo<User> register(User user);
 
