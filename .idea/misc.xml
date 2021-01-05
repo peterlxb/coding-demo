@@ -85,6 +85,7 @@
         <option value="$PROJECT_DIR$/spring-starter-demo/spring-demo/pom.xml" />
         <option value="$PROJECT_DIR$/spring-starter-demo/spring-demo-07/pom.xml" />
         <option value="$PROJECT_DIR$/java-common-mistakes/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-starter-demo/spring-demo-10/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
@@ -98,5 +99,5 @@
       </set>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_12" default="false" project-jdk-name="1.8.0_211" project-jdk-type="JavaSDK" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_12" project-jdk-name="1.8.0_211" project-jdk-type="JavaSDK" />
 </project>
