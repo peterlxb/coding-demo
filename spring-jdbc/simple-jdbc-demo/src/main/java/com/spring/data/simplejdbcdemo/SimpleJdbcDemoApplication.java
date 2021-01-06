@@ -12,8 +12,10 @@ import org.springframework.jdbc.core.simple.SimpleJdbcInsert;
 @SpringBootApplication
 @Slf4j
 public class SimpleJdbcDemoApplication implements CommandLineRunner {
+
     @Autowired
     private FooDao fooDao;
+
     @Autowired
     private BatchFooDao batchFooDao;
 

@@ -13,23 +13,27 @@ import java.sql.*;
 
 @Repository
 public class ForumDao {
+
+	@Autowired
 	private JdbcTemplate jdbcTemplate;
 
-
 	public void addForum(final Forum forum) {
-		final String sql = "INSERT INTO t_forum(forum_name,forum_desc) VALUES(?,?)";
 		KeyHolder keyHolder = new GeneratedKeyHolder();
-		jdbcTemplate.update(new PreparedStatementCreator() {
-			public PreparedStatement createPreparedStatement(Connection conn)
-					throws SQLException {
-				PreparedStatement ps = conn.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
-				ps.setString(1, forum.getForumName());
-				ps.setString(2, forum.getForumDesc());
-				return ps;
-			}
+//		int randomKey = keyHolder.getKey().intValue();
+		final String sql = "INSERT INTO forum(forumId, forumName,forumDesc) VALUES(?,?,?)";
+
+
+		jdbcTemplate.update(conn -> {
+			PreparedStatement ps = conn.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
+			ps.setString(1, String.valueOf(forum.getForumId()));
+			ps.setString(2, forum.getForumName());
+			ps.setString(3, forum.getForumDesc());
+			return ps;
 		}, keyHolder);
-		forum.setForumId(keyHolder.getKey().intValue());
+
+//		forum.setForumId(keyHolder.getKey().intValue());
 	}
+
 	public Forum getForum(final int forumId) {
 		String sql = "SELECT forum_name,forum_desc FROM t_forum WHERE forum_id=?";
 		final Forum forum = new Forum();
@@ -53,10 +57,5 @@ public class ForumDao {
 		final String sql = "UPDATE  t_forum SET forum_name=?,forum_desc=? WHERE forum_id=?";
 		Object[] params = new Object[]{forum.getForumName(),forum.getForumDesc(),forum.getForumId()};
 		jdbcTemplate.update(sql, params);
-	}
-
-	@Autowired
-	public void setJdbcTemplate(JdbcTemplate jdbcTemplate) {
-		this.jdbcTemplate = jdbcTemplate;
 	}
 }

@@ -7,6 +7,8 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public class TopicDao {
+
+	@Autowired
 	private JdbcTemplate jdbcTemplate;
 
 	public void addTopic(final Topic topic) {
@@ -25,10 +27,5 @@ public class TopicDao {
 		
 		Object[] params = new Object[]{topic.getTopicTitle()};
 		jdbcTemplate.update(sql, params);
-	}
-
-	@Autowired
-	public void setJdbcTemplate(JdbcTemplate jdbcTemplate) {
-		this.jdbcTemplate = jdbcTemplate;
 	}
 }

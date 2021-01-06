@@ -7,6 +7,8 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public class PostDao {
+
+	@Autowired
 	private JdbcTemplate jdbcTemplate;
 
 	public void addPost(final Post post) {
@@ -14,10 +16,5 @@ public class PostDao {
 				+ " VALUES(?,?)";
         Object[] params = new Object[]{post.getTopicId(),post.getPostText()};
 		jdbcTemplate.update(sql, params);
-	}
-
-	@Autowired
-	public void setJdbcTemplate(JdbcTemplate jdbcTemplate) {
-		this.jdbcTemplate = jdbcTemplate;
 	}
 }
