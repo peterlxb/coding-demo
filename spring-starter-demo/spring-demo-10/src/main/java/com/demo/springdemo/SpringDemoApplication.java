@@ -21,7 +21,7 @@ public class SpringDemoApplication implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
         Forum forum  = new Forum();
-        forum.setForumId(123);
+//        forum.setForumId(123);
         forum.setForumDesc("First Forum");
         forum.setForumName("ForumDemo");
 
