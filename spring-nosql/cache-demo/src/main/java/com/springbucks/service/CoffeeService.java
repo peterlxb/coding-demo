@@ -20,6 +20,7 @@ import static org.springframework.data.domain.ExampleMatcher.GenericPropertyMatc
 @Service
 @CacheConfig(cacheNames = "coffee")
 public class CoffeeService {
+
     @Autowired
     private CoffeeRepository coffeeRepository;
 
@@ -28,6 +29,7 @@ public class CoffeeService {
         return coffeeRepository.findAll();
     }
 
+    // 清除缓存
     @CacheEvict
     public void reloadCoffee() {
     }
@@ -35,8 +37,10 @@ public class CoffeeService {
     public Optional<Coffee> findOneCoffee(String name) {
         ExampleMatcher matcher = ExampleMatcher.matching()
                 .withMatcher("name", exact().ignoreCase());
+
         Optional<Coffee> coffee = coffeeRepository.findOne(
                 Example.of(Coffee.builder().name(name).build(), matcher));
+
         log.info("Coffee Found: {}", coffee);
         return coffee;
     }

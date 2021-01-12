@@ -17,6 +17,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @EnableJpaRepositories
 @EnableCaching(proxyTargetClass = true)
 public class SpringBucksApplication implements ApplicationRunner {
+
 	@Autowired
 	private CoffeeService coffeeService;
 
@@ -26,11 +27,14 @@ public class SpringBucksApplication implements ApplicationRunner {
 
 	@Override
 	public void run(ApplicationArguments args) throws Exception {
+
 		log.info("Count: {}", coffeeService.findAllCoffee().size());
+
 		for (int i = 0; i < 5; i++) {
 			log.info("Reading from cache.");
 			coffeeService.findAllCoffee();
 		}
+
 		Thread.sleep(5_000);
 		log.info("Reading after refresh.");
 		coffeeService.findAllCoffee().forEach(c -> log.info("Coffee {}", c.getName()));
