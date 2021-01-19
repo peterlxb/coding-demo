@@ -18,15 +18,19 @@ public class UserController {
     @Autowired
     private UserService userService;
 
-    @RequestMapping("/test")
-    public void test() {
-        log.info("Test Hello World!");
+    @RequestMapping(value = "/greet", method = RequestMethod.GET)
+    public ModelAndView firstView() {
+        ModelAndView mav = new ModelAndView("greet");
+        // must match the jsp page name which is being requested.
+        mav.addObject("greeting", "GeeksForGeeks Welcomes you to Spring!");
+        return mav;
     }
 
     @RequestMapping(method = RequestMethod.POST)
     public ModelAndView createUser(User user) {
         userService.createUser(user);
         ModelAndView mav = new ModelAndView();
+
         mav.setViewName("user/createSuccess");
         mav.addObject("user", user);
         return mav;

@@ -1,6 +1,8 @@
 package com.demo.springdemo.domain;
 
 
+import java.util.Date;
+
 public class User {
 
     private String userId;
@@ -10,6 +12,26 @@ public class User {
     private String password;
 
     private String realName;
+
+    private Date birthday;
+
+    private long salary;
+
+    public Date getBirthday() {
+        return birthday;
+    }
+
+    public void setBirthday(Date birthday) {
+        this.birthday = birthday;
+    }
+
+    public long getSalary() {
+        return salary;
+    }
+
+    public void setSalary(long salary) {
+        this.salary = salary;
+    }
 
     public User() {}
 
