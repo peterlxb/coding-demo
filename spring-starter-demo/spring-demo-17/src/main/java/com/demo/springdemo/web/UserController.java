@@ -4,10 +4,13 @@ import com.demo.springdemo.domain.User;
 import com.demo.springdemo.service.UserService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.io.ClassPathResource;
+import org.springframework.http.HttpEntity;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.util.FileCopyUtils;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
 @Slf4j
@@ -30,7 +33,6 @@ public class UserController {
     public ModelAndView createUser(User user) {
         userService.createUser(user);
         ModelAndView mav = new ModelAndView();
-
         mav.setViewName("user/createSuccess");
         mav.addObject("user", user);
         return mav;
@@ -41,5 +43,41 @@ public class UserController {
         log.info("register user");
         return "user/register";
     }
+
+    @RequestMapping(value = "/handle41")
+    // 将请求报文体转换为字符串绑定到 RequestBody 入参中
+    public String handle41(@RequestBody String requestBody) {
+        System.out.println("requestBody:" + requestBody);
+        return "success";
+    }
+
+    @ResponseBody
+    @RequestMapping(path = "/handle42/{imageId}")
+    // 读取一张图片，并将图片数据输出到响应流中
+    public byte[] handle42(@PathVariable("imageId") String imageId) throws Exception {
+       System.out.println("load image of: " + imageId);
+       ClassPathResource res = new ClassPathResource("images/image.jpg");
+       byte[] fileData = FileCopyUtils.copyToByteArray(res.getInputStream());
+       return fileData;
+    }
+
+    @RequestMapping(path = "handle43")
+    public String handle43(HttpEntity<String> httpEntity) {
+      Long contentLen = httpEntity.getHeaders().getContentLength();
+      System.out.println("body :" + httpEntity.getBody());
+      return "success";
+    }
+
+   @RequestMapping(path = "/handle44/{imageId}")
+   public ResponseEntity<byte[]> handle44(@PathVariable("imageId") String imageId)
+        throws Exception {
+
+     ClassPathResource res = new ClassPathResource("images/image.jpg");
+     byte[] fileData = FileCopyUtils.copyToByteArray(res.getInputStream());
+     ResponseEntity<byte[]> responseEntity =
+              new ResponseEntity<>(fileData, HttpStatus.OK);
+
+     return responseEntity;
+   }
 
 }
