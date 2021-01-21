@@ -9,8 +9,15 @@ import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
+<<<<<<< HEAD
 import org.springframework.util.FileCopyUtils;
 import org.springframework.web.bind.annotation.*;
+=======
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+>>>>>>> 11ae227f97dd4d8e6b4f66944fd24358b645d59a
 import org.springframework.web.servlet.ModelAndView;
 
 @Slf4j
@@ -44,6 +51,7 @@ public class UserController {
         return "user/register";
     }
 
+<<<<<<< HEAD
     @RequestMapping(value = "/handle41")
     // 将请求报文体转换为字符串绑定到 RequestBody 入参中
     public String handle41(@RequestBody String requestBody) {
@@ -80,4 +88,15 @@ public class UserController {
      return responseEntity;
    }
 
+=======
+    @RequestMapping("/{userId}")
+    public ModelAndView showDetail(@PathVariable("userId") String userId) {
+        ModelAndView mav = new ModelAndView();
+
+        mav.setViewName("user/showDetail");
+        mav.addObject("user", userService.getUserById(userId));
+        return mav;
+    }
+
+>>>>>>> 11ae227f97dd4d8e6b4f66944fd24358b645d59a
 }
