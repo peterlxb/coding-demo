@@ -220,12 +220,8 @@ public class UserController {
 		return responseEntity;
 	}
 
-	@RequestMapping(value = "/handle51")
-	public ResponseEntity<User> handle51(HttpEntity<User> requestEntity) {
-		User user = requestEntity.getBody();
-		user.setUserId("1000");
-		return new ResponseEntity<User>(user, HttpStatus.OK);
-	}
+
+
 
 	@RequestMapping(value = "/handle61")
 	public String handle61(@ModelAttribute("user") User user) {
