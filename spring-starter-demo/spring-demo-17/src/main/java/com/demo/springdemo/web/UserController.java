@@ -11,12 +11,15 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 
 import org.springframework.util.FileCopyUtils;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
+
+import javax.validation.Valid;
 
 @Slf4j
 @Controller
@@ -37,6 +40,7 @@ public class UserController {
     @RequestMapping(method = RequestMethod.POST)
     public ModelAndView createUser(User user) {
         userService.createUser(user);
+        log.info("user: ",user);
         ModelAndView mav = new ModelAndView();
         mav.setViewName("user/createSuccess");
         mav.addObject("user", user);
@@ -92,13 +96,24 @@ public class UserController {
       return new ResponseEntity<User>(user,HttpStatus.OK);
    }
 
-    @RequestMapping("/{userId}")
-    public ModelAndView showDetail(@PathVariable("userId") String userId) {
-        ModelAndView mav = new ModelAndView();
+   // 在入参对象前加入 @Valid 注解，同时在后面声明一个 BindingResult 对象
+   @RequestMapping(path = "/handle91")
+   public String handle91(@Valid @ModelAttribute("user") User user,
+                          BindingResult bindingResult) {
+      if (bindingResult.hasErrors()) {
+        return "/user/register3";
+      } else {
+        return "/user/showUser";
+     }
+   }
 
-        mav.setViewName("user/showDetail");
-        mav.addObject("user", userService.getUserById(userId));
-        return mav;
-    }
+//    @RequestMapping("/{userId}")
+//    public ModelAndView showDetail(@PathVariable("userId") String userId) {
+//        ModelAndView mav = new ModelAndView();
+//
+//        mav.setViewName("user/showDetail");
+//        mav.addObject("user", userService.getUserById(userId));
+//        return mav;
+//    }
 
 }
