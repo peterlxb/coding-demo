@@ -10,6 +10,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 
+import org.springframework.ui.ModelMap;
 import org.springframework.util.FileCopyUtils;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
@@ -19,7 +20,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import org.apache.poi.ss.usermodel.Workbook;
+
 import javax.validation.Valid;
+import java.util.*;
 
 @Slf4j
 @Controller
@@ -107,11 +113,63 @@ public class UserController {
      }
    }
 
+   @RequestMapping(path = "/showUserListByFtl")
+   public String showUserListInFtl(ModelMap modelMap) {
+     Calendar calendar = new GregorianCalendar();
+     List<User> userList = new ArrayList<>();
+     User user1 = new User();
+     user1.setUserName("tom");
+     user1.setRealName("汤姆");
+     calendar.set(1980, 1, 1);
+     user1.setBirthday(calendar.getTime());
+
+     User user2 = new User();
+     user2.setUserName("john");
+     user2.setRealName("约翰");
+     calendar.set(1991, 1, 23);
+     user2.setBirthday(calendar.getTime());
+
+     userList.add(user1);
+     userList.add(user2);
+
+     modelMap.addAttribute("userList", userList);
+     return "userListFtl";
+   }
+
+  @RequestMapping(path = "/showUserListByXls")
+  public String showUserListInExcel(ModelMap modelMap) throws Exception {
+    Calendar calendar = new GregorianCalendar();
+    List<User> userList = new ArrayList<>();
+    User user1 = new User();
+    user1.setUserName("tom");
+    user1.setRealName("汤姆");
+    calendar.set(1980, 1, 1);
+    user1.setBirthday(calendar.getTime());
+
+    User user2 = new User();
+    user2.setUserName("john");
+    user2.setRealName("约翰");
+    calendar.set(1991, 1, 23);
+    user2.setBirthday(calendar.getTime());
+
+    userList.add(user1);
+    userList.add(user2);
+
+    modelMap.addAttribute("userList", userList);
+    return "userListExcel";
+//    Workbook workbook = null;
+//    HttpServletRequest request = null;
+//    HttpServletResponse response = null;
+//    new UserListExcelView().buildExcelDocument(modelMap, workbook, request, response);
+  }
+
+
+
 //    @RequestMapping("/{userId}")
 //    public ModelAndView showDetail(@PathVariable("userId") String userId) {
 //        ModelAndView mav = new ModelAndView();
 //
-//        mav.setViewName("user/showDetail");
+//        mav.setViewName("showUser");
 //        mav.addObject("user", userService.getUserById(userId));
 //        return mav;
 //    }
