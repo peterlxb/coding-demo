@@ -20,16 +20,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-import org.apache.poi.ss.usermodel.Workbook;
-
 import javax.validation.Valid;
 import java.util.*;
 
-@Slf4j
+
 @Controller
 @RequestMapping("/user")
+@Slf4j
 public class UserController {
 
     @Autowired
@@ -137,7 +134,7 @@ public class UserController {
    }
 
   @RequestMapping(path = "/showUserListByXls")
-  public String showUserListInExcel(ModelMap modelMap) throws Exception {
+  public ResponseEntity<byte[]> showUserListInExcel(ModelMap modelMap) throws Exception {
     Calendar calendar = new GregorianCalendar();
     List<User> userList = new ArrayList<>();
     User user1 = new User();
@@ -156,13 +153,49 @@ public class UserController {
     userList.add(user2);
 
     modelMap.addAttribute("userList", userList);
-    return "userListExcel";
-//    Workbook workbook = null;
-//    HttpServletRequest request = null;
-//    HttpServletResponse response = null;
-//    new UserListExcelView().buildExcelDocument(modelMap, workbook, request, response);
+    return UserListExcelViewUtils.exportUser2Excel(userList);
   }
 
+  @RequestMapping(value = "/showUserListByPdf")
+  public String showUserListInPdf(ModelMap mm) {
+    Calendar calendar = new GregorianCalendar();
+
+    List<User> userList = new ArrayList<User>();
+    User user1 = new User();
+    user1.setUserName("tom");
+    user1.setRealName("汤姆");
+    calendar.set(1980, 1, 1);
+    user1.setBirthday(calendar.getTime());
+    User user2 = new User();
+    user2.setUserName("john");
+    user2.setRealName("约翰");
+    user2.setBirthday(calendar.getTime());
+    userList.add(user1);
+    userList.add(user2);
+    mm.addAttribute("userList", userList);
+    return "userListPdf";
+  }
+
+  @RequestMapping(value = "/showUserListByJson")
+  public List<User> showUserListInJson(ModelMap mm) {
+
+    log.info("Json view");
+    Calendar calendar = new GregorianCalendar();
+    List<User> userList = new ArrayList<User>();
+    User user1 = new User();
+    user1.setUserName("tom");
+    user1.setRealName("汤姆");
+    calendar.set(1980, 1, 1);
+    user1.setBirthday(calendar.getTime());
+    User user2 = new User();
+    user2.setUserName("john");
+    user2.setRealName("约翰");
+    user2.setBirthday(calendar.getTime());
+    userList.add(user1);
+    userList.add(user2);
+    mm.addAttribute("userList", userList);
+    return userList;
+  }
 
 
 //    @RequestMapping("/{userId}")
